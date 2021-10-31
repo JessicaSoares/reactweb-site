@@ -1,5 +1,5 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -9,6 +9,12 @@
   top: 0;
   z-index: 999;
 }
+img {
+height:50px;
+width:50px;
+
+}
+
 
 .navbar-container {
   display: flex;
@@ -19,12 +25,14 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: #0067B3;
   justify-self: start;
+  position: align;
   margin-left: 20px;
   cursor: pointer;
+  font-family: 'Cantarell';
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
 }
@@ -50,21 +58,23 @@
 }
 
 .nav-links {
-  color: #fff;
+  color: #000000;
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-family: 'Yanone Kaffeesatz';
+  font-size: 1.2rem;
   padding: 0.5rem 1rem;
   height: 100%;
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid #0067B3;
   transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-  color: #fff;
+  color: #0067B3;
 }
 
 .nav-links-mobile {
@@ -131,7 +141,7 @@
   }
 
   .fa-times {
-    color: #fff;
+    color: #00773D;
     font-size: 2rem;
   }
 
