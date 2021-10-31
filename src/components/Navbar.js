@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
+import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 import './Navbar.css';
 import Dropdown from './Dropdown';
 
@@ -19,6 +20,11 @@ function Navbar() {
       setDropdown(true);
     }
   };
+  const [isMenuSubMenu, setMenuSubMenu] = useState(false);
+  const toggleSubmenu = () => {
+    setMenuSubMenu(isMenuSubMenu === false ? true : false);
+  };
+  
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -42,6 +48,27 @@ function Navbar() {
     }
   };
 
+  const [isMenu, setisMenu] = useState(false);
+  const [isResponsiveclose, setResponsiveclose] = useState(false);
+  const toggleClass = () => {
+    setisMenu(isMenu === false ? true : false);
+    setResponsiveclose(isResponsiveclose === false ? true : false);
+};
+
+  let boxClass = ["main-menu menu-right menuq1"];
+  if(isMenu) {
+      boxClass.push('menuq2');
+  }else{
+      boxClass.push('');
+  }
+
+  let boxClassSubMenu = ["sub__menus"];
+  if(isMenuSubMenu) {
+      boxClassSubMenu.push('sub__menus__Active');
+  }else {
+      boxClassSubMenu.push('');
+  }
+
   window.addEventListener('resize', showButton);
 
   return (
@@ -50,7 +77,6 @@ function Navbar() {
           <p className='navbar-logo' >
           <img src='images/logo.png'/> 
           Observatório de Dados Estatísticos <br/> e Geografícos de Parauapebas
-
           </p>
 
 
@@ -63,27 +89,22 @@ function Navbar() {
               Início
             </Link>
           </li>
-          <li
-            className='nav-item'
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          >
-            <Link
-              to='/services'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Indicadores <i className='fas fa-caret-down' />
-            </Link>
-            {dropdown && <Dropdown />}
+
+          <li className='nav-links'>
+          <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Indicadores <FiChevronDown /> </Link>
+                        <ul className={boxClassSubMenu.join(' ')} > 
+                            <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Online`}> Online Shop </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Offline Shop </NavLink> </li>
+                        </ul>
+                    </li>
           </li>
           <li className='nav-item'>
             <Link
-              to='/products'
+              to='/contact-us'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Mapas dinâmicos
+             Mapas dinâmicos
             </Link>
           </li>
           <li className='nav-item'>
