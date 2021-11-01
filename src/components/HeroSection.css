@@ -35,6 +35,11 @@ video {
 .hero-btns {
   margin-top: 32px;
 }
+.sliderimg{
+  width: 100%;
+  height: 500px;
+  object-fit: cover
+}
 
 .hero-btns .btn {
   margin: 6px;

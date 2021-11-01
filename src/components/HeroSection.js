@@ -1,32 +1,17 @@
-import React from 'react';
-import '../App.css';
-import { Button } from './Button';
-import './HeroSection.css';
+import React from "react";
+import "./HeroSection.css";
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
 
 function HeroSection() {
   return (
-    <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
-      <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          GET STARTED
-        </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          WATCH TRAILER <i className='far fa-play-circle' />
-        </Button>
-      </div>
-    </div>
+    <div className="App">
+    <AliceCarousel autoPlay autoPlayInterval="2000">
+     <img src={'images/DJI_001.jpg'} className="sliderimg" alt=""/>
+     <img src={'images/DJI_0142.jpg'} className="sliderimg" alt=""/>
+     <img src={'images/DJI_0165.jpg'} className="sliderimg" alt=""/>
+   </AliceCarousel>
+   </div>
   );
 }
 

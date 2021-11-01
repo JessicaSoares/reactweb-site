@@ -11,21 +11,21 @@ function Cards() {
 
           <ul className='cards__items'>
             <CardItem
-              src='images/img-3.jpg'
+              src='images/coin_icon.png'
               text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
+              label='Economia'
               path='/services'
             />
             <CardItem
-              src='images/img-4.jpg'
+              src='images/graduation_icon.png'
               text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
+              label='Educação'
               path='/products'
             />
             <CardItem
-              src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
+              src='images/rural_icon.png'
+              text='Agropecuária'
+              label='Agricultura'
               path='/sign-up'
             />
           </ul>
