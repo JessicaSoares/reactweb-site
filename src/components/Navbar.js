@@ -90,14 +90,26 @@ function Navbar() {
             </Link>
           </li>
 
-          <li className='nav-links'>
-          <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Indicadores <FiChevronDown /> </Link>
+          <ul className={boxClass.join(' ')}>
+
+                  
+                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Indicadores <FiChevronDown /> </Link>
                         <ul className={boxClassSubMenu.join(' ')} > 
-                            <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Online`}> Online Shop </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Offline Shop </NavLink> </li>
+                        <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Online`}>Agronegócio </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Paineis Orçamentários </NavLink> </li>
+                            <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Online`}> Assistência Social </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Desenvolvimento Humano</NavLink> </li>
+                            <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Online`}> Economia </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Educação </NavLink> </li>
+                            <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Online`}> Empregos </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Infraestrutura </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Mapas Dinâmicos </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Meio ambiente </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Saúde </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Trânsito </NavLink> </li>
                         </ul>
                     </li>
-          </li>
+                    </ul>
           <li className='nav-item'>
             <Link
               to='/contact-us'

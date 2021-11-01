@@ -29,11 +29,10 @@ width:50px;
   color: #0067B3;
   justify-self: center;
   margin-left: 20px;
-
   cursor: pointer;
-  font-family: 'Cantarell';
+  font-family: 'Yanone Kaffeesatz';
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -63,8 +62,8 @@ width:50px;
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-family: 'Yanone Kaffeesatz';
-  font-size: 1.2rem;
+  font-family: 'Roboto';
+  font-size: 0.9rem;
   padding: 0.5rem 1rem;
   height: 100%;
 }
@@ -95,7 +94,7 @@ width:50px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+
     position: absolute;
     top: 80px;
     left: -100%;
@@ -127,7 +126,7 @@ width:50px;
   .navbar-logo {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -90px;
     transform: translate(25%, 50%);
   }
 
@@ -142,7 +141,7 @@ width:50px;
   }
 
   .fa-times {
-    color: #00773D;
+    color: #0067B3;
     font-size: 2rem;
   }
 
@@ -168,38 +167,19 @@ width:50px;
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-body {
-  background-color: white;
-  margin: auto;
-  padding: 0px;
-  overflow-x: hidden;
-  background-repeat: repeat;
-  font-family: 'Inter', sans-serif;
-  display: grid;
-}
-.container {
-  width: 100%;
-	padding-right:15px;
-	padding-left:15px;
-	margin-right:auto;
-	margin-left:auto
-}
+
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-.sec__one {
-    position: relative;
-    width: 100%;
-    display: flex;
-    padding: 60px 0;
-}
+
 .sec__one h1{
   text-align: center;
   display: block;
   margin: 0 auto;
-  color: #07a8ff;
+  color: #0067B3;
   font-family: 'Inter', sans-serif;
 }
 .navBar .logo img {
@@ -226,21 +206,21 @@ ul.main-menu>li.menu-item:first-child {
   margin-left: 0;
 }
 .menu-item {
-  line-height: 23px;
+  line-height: 2px;
 }
 li {
   list-style-type: none;
 }
 .menu-item a {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 40px;
+  font-size: 0.9rem;
+  line-height: 20px;
   position: relative;
   display: block;
-  color: #545050;
-  margin: 27px 17px;
+  color: #050505;
+  margin: 28px 17px;
   text-decoration: none;
   cursor: pointer;
+  font-family: 'Roboto';
 }
 .header__middle__logo{
   width: 20%;
@@ -291,7 +271,6 @@ li {
 .sub__menus__arrows svg, .sub__menus__arrows__full svg{
   padding-top: 0px;
   position: absolute;
-  top: 13px;
 }
 .sub__menus {
   position: absolute;
@@ -299,7 +278,7 @@ li {
   background: white;
   border: 1px solid lavender;
   width: 227px;
-  left: -17px;
+  left: -50px;
   padding: 2px 0 0 0;
   z-index: 1000;
   box-shadow: 0 10px 12px rgb(22 33 39 / 25%);
@@ -323,10 +302,10 @@ li {
   margin: 7px 27px;
 }
 .menu-item:hover > a{
-  color: #07a8ff !important;
+  color: #0067B3 !important;
 }
 .menu-item .sub__menus li:hover a{
-  color: #07a8ff !important;
+  color: #0067B3 !important;
 }
 
 .header__middle__logo img{
