@@ -12,19 +12,19 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/coin_icon.png'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
+              text=''
               label='Economia'
               path='/services'
             />
             <CardItem
               src='images/graduation_icon.png'
-              text='Experience Football on Top of the Himilayan Mountains'
+              text=''
               label='Educação'
               path='/products'
             />
             <CardItem
               src='images/rural_icon.png'
-              text='Agropecuária'
+              text=''
               label='Agricultura'
               path='/sign-up'
             />
