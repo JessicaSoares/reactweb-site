@@ -9,13 +9,11 @@
   top: 0;
   z-index: 999;
 }
+
 img {
 height:50px;
 width:50px;
-
-
 }
-
 
 .navbar-container {
   display: flex;
@@ -168,12 +166,10 @@ width:50px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-
 img {
   max-width: 100%;
   height: auto;
 }
-
 
 .sec__one h1{
   text-align: center;
