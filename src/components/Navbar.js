@@ -92,7 +92,7 @@ function Navbar() {
 
                     <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Indicadores <FiChevronDown /> </Link>
                         <ul className={boxClassSubMenu.join(' ')}> 
-                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/Services`}> Agronegócio </NavLink> </li>
+                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/Agronegocio`}> Agronegócio </NavLink> </li>
                             <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Products`}> Paineis Orçamentários </NavLink> </li>
                             <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/SignUp`}> Assistência Social </NavLink> </li>
                             <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/SignUp`}> Desenvolvimento Humano</NavLink> </li>
