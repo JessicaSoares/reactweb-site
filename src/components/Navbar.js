@@ -4,7 +4,6 @@ import { NavLink,Link } from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 import './Navbar.css';
 
-
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -93,17 +92,17 @@ function Navbar() {
                     <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Indicadores <FiChevronDown /> </Link>
                         <ul className={boxClassSubMenu.join(' ')}> 
                         <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/Agronegocio`}> Agronegócio </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Products`}> Paineis Orçamentários </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/SignUp`}> Assistência Social </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/SignUp`}> Desenvolvimento Humano</NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Online`}> Economia </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/SignUp`}> Educação </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Services`}> Empregos </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Services`}> Infraestrutura </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Products`}> Mapas Dinâmicos </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Services`}> Meio ambiente </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/SignUp`}> Saúde </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Services`}> Trânsito </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Orcamentarios`}> Paineis Orçamentários </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Social`}> Assistência Social </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/DesenvolvimentoHumano`}> Desenvolvimento Humano</NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Economia`}> Economia </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Educacao`}> Educação </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Empregos`}> Empregos </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Infraestrutura`}> Infraestrutura </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Mapas`}> Mapas Dinâmicos </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/MeioAmbiente`}> Meio ambiente </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Social`}> Saúde </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Transito`}> Trânsito </NavLink> </li>
                         </ul>
                     </li>
                     </ul>

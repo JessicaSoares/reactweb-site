@@ -4,14 +4,13 @@ import Cards from '../Cards';
 import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 
-function Home() {
+
+export default function MeioAmbiente() {
   return (
     <>
-      <HeroSection />
-      <Cards />
-      <Footer />
+      
     </>
   );
 }
 
-export default Home;
+
