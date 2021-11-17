@@ -5,7 +5,7 @@
     font-family: 'PT Sans', sans-serif;
   }
   
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yanone+Kaffeesatz&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&family=Yanone+Kaffeesatz&display=swap');
   .home,
   .services,
   .transito,
@@ -38,21 +38,21 @@
   }
   
   .indicadortitle {
-    background-color: rgb(22, 15, 2);
+    background: url('../../../images/EconomiaFundo1.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
-    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
     text-align: center;
     font-family: 'Roboto';
   }
   
   .titulobi {
-    color: rgb(0, 0, 0);
-    font-size: 15px;
+    color: rgb(4, 65, 80);
+    font-size: 17px;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: 'Crete Round';
     padding: 0.5em;
   }
   
@@ -81,7 +81,7 @@
     }
   }
 
-@media only screen and (min-width: 375px) and(max-width: 414px) {
+@media only screen and (min-width: 375px) and (max-width: 768px) {
   .home,
   .services,
   .transito,
@@ -99,13 +99,14 @@
   .social {
     display: flex;
     height: 35vh;
-    width: 45vh;
+    width: 50vh;
     align-items: center;
     justify-content: center;
     font-size: 10rem;
   }
 }
-  @media only screen and (min-width: 414px) and (max-width: 768px) {
+
+  @media only screen and (min-width: 768px) and (max-width: 1020px) {
     .home,
   .services,
   .transito,
@@ -122,11 +123,38 @@
   .saude,
   .social {
     display: flex;
-    height: 30vh;
-    width: 50vh;
+    height: 45vh;
+    width: 65vh;
     align-items: center;
     justify-content: center;
     font-size: 10rem;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1440px) {
+  .home,
+.services,
+.transito,
+.products,
+.sign-up
+.agronegocio,
+.desenvolvimentohumano,
+.economia,
+.educacao,
+.empregos,
+.infraestrutura,
+.meioambiente,
+.orcamentario,
+.saude,
+.social {
+  display: flex;
+  height: 100vh;
+  width: 160vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  padding: 20px;
   }
 }
 

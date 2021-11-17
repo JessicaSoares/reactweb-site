@@ -3,7 +3,6 @@ import './BoxLegend.css';
 import BoxItens from './BoxItens';
 
 
-
 function Cards() {
   return (
     <div className='boxlegend'>

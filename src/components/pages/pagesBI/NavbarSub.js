@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '../../Button';
 import { NavLink,Link } from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
-import './Navbarteste.css';
+import './NavbarSub.css';
 
 
-function Navbarteste() {
+function NavbarSub() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const [dropdown, setDropdown] = useState(false);
@@ -76,24 +76,24 @@ function Navbarteste() {
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
-            <Link to='/BalancaBI' className='nav-links' onClick={closeMobileMenu}>
+          <li className='nav-item-sub'>
+            <Link to='/BalancaBI' className='nav-links-sub' onClick={closeMobileMenu}>
               Balança comercial
             </Link>
           </li>
-          <li className='nav-item'>
+          <li className='nav-item-sub'>
             <Link
               to='/PIBBI'
-              className='nav-links'
+              className='nav-links-sub'
               onClick={closeMobileMenu}
             >
             PIB
             </Link>
           </li>
-          <li className='nav-item'>
+          <li className='nav-item-sub'>
             <Link
               to='/ComercialBI'
-              className='nav-links'
+              className='nav-links-sub'
               onClick={closeMobileMenu}
             >
             Comércio e industria
@@ -105,4 +105,4 @@ function Navbarteste() {
   );
 }
 
-export default Navbarteste;
+export default NavbarSub;

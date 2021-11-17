@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../App.css';
 import Iframe from 'react-iframe';
-import Navbarteste from './pagesBI/Navbarteste';
+import NavbarSub from './pagesBI/NavbarSub';
 
 export default function Economia() {
     return <> <h1 className='sign-up'>Economia</h1>
-     <Navbarteste/>
+     <NavbarSub/>
      <div>
    <Iframe url="https://app.powerbi.com/view?r=eyJrIjoiNzBhNDFjNzEtMmEyMy00NDY0LWIzYjctZjYwNjkwZWJiMzlmIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9" 
             position="absolute"
