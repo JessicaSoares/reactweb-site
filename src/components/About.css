@@ -215,9 +215,11 @@ progress {
   font-family: 'Lato';
 }
 .abouttitle {
-  font-size: 1.25rem;
-  font-weight: 300;
-  font-family: 'Lato';
+  font-size: 1.90rem;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Asap';
+  padding-bottom:30px;
 }
 
 .display-1 {
@@ -567,6 +569,7 @@ progress {
 .g-0,
 .gy-0 {
   --bs-gutter-y: 0;
+  background-color: rgb(209, 216, 228);
 }
 
 .g-1,
@@ -1118,6 +1121,7 @@ progress {
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
+    background-color: rgb(209, 216, 228);
   }
 
   .col-lg-7 {
@@ -1148,6 +1152,8 @@ progress {
   .col-lg-12 {
     flex: 0 0 auto;
     width: 100%;
+    color: rgba(9, 52, 71, 0.671);
+    background-color: rgb(209, 216, 228);
   }
 
   .offset-lg-0 {
@@ -6855,6 +6861,7 @@ textarea.form-control-lg {
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  
 }
 
 .text-body {
@@ -8599,6 +8606,7 @@ textarea.form-control-lg {
 
   .order-lg-2 {
     order: 2 !important;
+    background-color: rgb(209, 216, 228);
   }
 
   .order-lg-3 {
@@ -10428,6 +10436,7 @@ header.masthead h1, header.masthead .h1 {
   padding: 3rem;
 }
 .showcase .showcase-img1 {
+
     min-height: 30rem;
     background-size: cover;
     background-image: url(../images/sobre1.jpg);

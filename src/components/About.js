@@ -7,8 +7,8 @@ function About() {
 <section class="showcase">
 <div class="container-fluid p-0">
     <div class="row g-0">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img1" ></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <div class="col-lg-6 order-lg-2 text-white1" ></div>
+        <div class="col-lg-12 order-lg-1 my-auto showcase-text">
             <h2 class = "abouttitle">Sobre o Observatório de Dados Estatísticos e Geografícos de Parauapebas</h2>
             <p class="lead mb-0">É um portal voltado ao monitoramento e planejamento do desenvolvimento do Município de Parauapebas. Consiste em um Repositório único de dados para exposição de informações que visam subsidiar e oferecer ao Governo do Município, suporte ao planejamento de políticas públicas, investimentos, tomada de decisões e análise dos principais fatores que afetam a competitividade e desempenho econômico do Município em diversos segmentos tais como: saúde, educação, agronegócios, indústria, segurança, infra-estrutura e economia.</p>
         </div>
@@ -17,7 +17,7 @@ function About() {
         <div class="col-lg-6 text-white showcase-img2" ></div>
         <div class="col-lg-6 my-auto showcase-text">
             <h2>Objetivos</h2>
-            <p class="lead mb-0">•  Contribuir para monitoramento do principais fatores de desempenho econômico do Município;
+            <p class="lead mb-0">• Contribuir para monitoramento do principais fatores de desempenho econômico do Município;
 •  Transparência das ações relativas ao desenvolvimento econômico e infra-estrutura do Município;
 • Funcionar como ferramenta de apoio à gestão pública;
 •  Subsidiar as tomadas de decisões e direcionar políticas públicas e investimentos. ;

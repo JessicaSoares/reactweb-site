@@ -2,9 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+
 }
-@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Crete+Round&family=Roboto:wght@300&family=Yanone+Kaffeesatz&display=swap&?family=Lato:300,400,700,300italic,400italic,700italic');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Asap:ital,wght@1,700&family=Coustard&family=Crete+Round&family=Roboto:wght@300&family=Yanone+Kaffeesatz&display=swap');
 .home,
 .services,
 .transito,
