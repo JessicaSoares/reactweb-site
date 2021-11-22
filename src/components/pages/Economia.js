@@ -1,34 +1,43 @@
 import React from "react";
 import "../../App.css";
-import Iframe from "react-iframe";
 import NavbarSub from "./pagesBI/NavbarSub";
+import "../Cards.css";
+import CardItem from "../CardItem";
 
 export default function Economia() {
   return (
     <>
       <NavbarSub />
-      <div>
-        <Iframe
-          url="https://app.powerbi.com/view?r=eyJrIjoiNzBhNDFjNzEtMmEyMy00NDY0LWIzYjctZjYwNjkwZWJiMzlmIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-          position="absolute"
-          width="100%"
-          id="myId"
-          className="economia"
-          height="10%"
-          styles={{ height: "25px" }}
-        />
+      <div className="cards">
+      <h1>Indicadores da economia</h1>
+      <div className="cards__container">
+        <div className="cards__wrapper">
+          <ul className="cards__items">
+            <CardItem
+              src="images/balance.png"
+              text=""
+              label="Balança comercial"
+              path="/services"
+            />
+            <CardItem
+              src="images/PIB.png"
+              text=""
+              label="PIB"
+              path="/PIBBI"
+            />
+            <CardItem
+              src="images/industry.png"
+              text=""
+              label="Comercio e Industria"
+              path="/sign-up"
+            />
+          </ul>
+          <ul className="cards__items">
+
+          </ul>
+        </div>
       </div>
-      <div>
-        <Iframe
-          url="https://app.powerbi.com/view?r=eyJrIjoiNzBhNDFjNzEtMmEyMy00NDY0LWIzYjctZjYwNjkwZWJiMzlmIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-          position="absolute"
-          width="100%"
-          id="myId"
-          className="economia"
-          height="10%"
-          styles={{ height: "25px" }}
-        />
-      </div>
+    </div>
     </>
   );
 }

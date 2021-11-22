@@ -5,6 +5,14 @@
     font-family: 'PT Sans', sans-serif;
 
   }
+
+    
+  .page-section-sub {
+    padding: 3rem 0;
+    font-family: 'Roboto';
+    text-align: justify;
+
+  }
   
   @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&family=Yanone+Kaffeesatz&display=swap');
   .home,

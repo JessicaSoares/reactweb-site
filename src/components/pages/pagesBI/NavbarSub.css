@@ -120,7 +120,7 @@
   .navbar-logo-sub {
     position: absolute;
     top: -15px;
-    left: -9px;
+    left: 60px;
     transform: translate(25%, 50%);
     font-family: 'Roboto';
     color: #0067B3;
