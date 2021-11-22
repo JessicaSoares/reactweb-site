@@ -10435,29 +10435,8 @@ header.masthead h1, header.masthead .h1 {
 .showcase .showcase-text {
   padding: 3rem;
 }
-.showcase .showcase-img1 {
 
-    min-height: 30rem;
-    background-size: cover;
-    background-image: url(../images/sobre1.jpg);
-  }
-  .showcase .showcase-img2 {
-    min-height: 30rem;
-    background-size: cover;
-    background-image: url(../images/sobre2.jpg);
-  }
-  .showcase .showcase-img3 {
-    min-height: 30rem;
-    background-size: cover;
-    background-image: url(../images/sobre3.jpg);
-  }
 
-  .showcase .showcase-img4 {
-    min-height: 30rem;
-    background-size: cover;
-    background-image: url(../images/sobre3.jpg);
-  }
-  
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem;
