@@ -1355,7 +1355,7 @@
     color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
   }
   
-  .text-muted {
+  .text-muted >li {
     --bs-text-opacity: 1;
     color: #6c757d !important;
     text-align: left;
@@ -4977,6 +4977,7 @@
     }
   }
   
+
   header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);

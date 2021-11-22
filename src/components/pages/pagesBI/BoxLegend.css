@@ -10,6 +10,7 @@
   margin-top: 20px;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.424);
+  position: center;
 
 }
 
@@ -24,7 +25,7 @@
   margin: 0 auto;
  
   padding: 15px;
-  font-family:'Antic Slab';
+  font-family:'Roboto';
 }
 
 @media only screen and (max-width: 375px) {
@@ -32,6 +33,7 @@
     height: 60vh;
     width: 46vh;
     padding: 4px;
+    align-items: center;
     }
 }
 
