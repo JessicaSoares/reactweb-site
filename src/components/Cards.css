@@ -35,8 +35,8 @@ h1 {
 
 .cards__item__link {
   display: flex;
-  width: 200px;
-  height: 200px;
+  width: 270px;
+  height: 270px;
   box-shadow: 1px 10px 30px rgba(10, 20, 110, 0.459);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));

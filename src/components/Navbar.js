@@ -74,7 +74,7 @@ function Navbar() {
       <nav className='navbar'>
           <p className='navbar-logo' >
           <img src='images/logo.png'/> 
-          Observatório de Dados Estatísticos <br/> e Geografícos de Parauapebas
+          Observatório de Desenvolvimento <br/> de Parauapebas
           </p>
 
 
