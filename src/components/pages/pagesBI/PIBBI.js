@@ -8,7 +8,34 @@ import React, { useState, useEffect } from 'react';
 import Button from '@material-ui/core/Button';
 import { AiOutlineCloudDownload } from 'react-icons/ai';
 
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+
+
+
 export default function PIBBI() {
+
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+
+
+
 
         const [click, setClick] = useState(false);
         const [button, setButton] = useState(true);
@@ -73,14 +100,19 @@ export default function PIBBI() {
               </div>
             </div>
           </div>
-        </section>
+          </section>
+          <section class="page-section-sub-boxlegend " id="about">
         <Container>
           <Row>
             <Col sm={12}>
               {" "}
               <div className="boxlegend">
                 <h1 className="titulobi">
-                  PIB: Dados históricos de Parauapebas
+                  PIB: Dados históricos de Parauapebas 
+
+                  Height - {window.innerHeight}
+
+                  Width - {window.innerWidth}
                 </h1>
                 <Iframe
                   url="https://app.powerbi.com/view?r=eyJrIjoiOWVhOTljZTUtOTg5Yy00ZDBjLWExOTEtZDRmYjQxYTAzMmY1IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
@@ -166,6 +198,8 @@ export default function PIBBI() {
             </Col>
           </Row>
         </Container>
-      </>
+     
+      </section>
+       </>
     );  
 }

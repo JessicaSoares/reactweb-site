@@ -5,6 +5,7 @@ import { BsPeopleFill } from 'react-icons/bs';
 import { AiOutlineAim } from 'react-icons/ai';
 import './Aboutother.css';
 
+
 function Aboutother() {
     return (
       <>
@@ -38,7 +39,7 @@ function Aboutother() {
                   <div class="mb-2">
                     <i class="bi-gem fs-1 text-primary">
                       {" "}
-                      <AiOutlineAim color="#0f295a" />
+                      <AiOutlineAim color="#00773D;" />
                     </i>
                   </div>
                   <h3 class="h4 mb-2">Objetivos</h3>
@@ -63,7 +64,7 @@ function Aboutother() {
                   <div class="mb-2">
                     <i class="bi-gem fs-1 text-primary">
                       {" "}
-                      <CgSearch color="#0f295a" />
+                      <CgSearch color="#00773D;" />
                     </i>
                   </div>
                   <h3 class="h4 mb-2">O que encontra</h3>
@@ -80,7 +81,7 @@ function Aboutother() {
                 <div class="mt-5">
                   <div class="mb-2">
                     <i class="bi-laptop fs-1 text-primary">
-                      <BsGraphUp color="#0f295a" />
+                      <BsGraphUp color="#00773D;" />
                     </i>
                   </div>
                   <h3 class="h4 mb-2">Tipos de indicadores</h3>
@@ -105,7 +106,7 @@ function Aboutother() {
                 <div class="mt-5">
                   <div class="mb-2">
                     <i class="bi-globe fs-1 text-primary">
-                      <BsPeopleFill color="#0f295a" />
+                      <BsPeopleFill color="#00773D;" />
                     </i>
                   </div>
                   <h3 class="h4 mb-2">A quem se destina?</h3>

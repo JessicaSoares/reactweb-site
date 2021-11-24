@@ -13,7 +13,7 @@ function Cards() {
               src="images/coin_icon.png"
               text=""
               label="Economia"
-              path="/services"
+              path="/economia"
             />
             <CardItem
               src="images/graduation_icon.png"

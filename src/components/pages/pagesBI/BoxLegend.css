@@ -1,9 +1,5 @@
 .boxlegend {
-  width: 1130px;
-  height: 850px;
-  padding-left: 40px;
   border: 2px solid rgba(56, 136, 202, 0.534);
-  margin: 0;
   border-radius: 2px;
   text-align: center;
   font-family: 'Roboto';
@@ -28,37 +24,5 @@
   text-align: justify;
 }
 
-@media only screen and (max-width: 375px) {
-  .boxlegend {
-    height: 60vh;
-    width: 46vh;
-    padding: 4px;
-    align-items: center;
-    }
-}
 
-@media only screen and (min-width: 375px) and (max-width: 768px) {
-  .boxlegend {
-    height: 75vh;
-    width: 52vh;
-    padding: 4px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1020px) {
-  .boxlegend {
-    height: 95vh;
-    width: 70vh;
-    padding: 4px;
-    }
-}
-
-@media only screen and (min-width: 1020px) and (max-width: 1440px) {
-  .boxlegend {
-    height: 140vh;
-    width: 165vh;
-    padding: 4px;
-    align-items: center;
-    }
-}
 
