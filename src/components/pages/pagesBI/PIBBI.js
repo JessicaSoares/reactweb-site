@@ -118,7 +118,7 @@ export default function PIBBI() {
                   url="https://app.powerbi.com/view?r=eyJrIjoiOWVhOTljZTUtOTg5Yy00ZDBjLWExOTEtZDRmYjQxYTAzMmY1IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
                   className="economia"
                   height="100%"
-                  styles={{ height: "25px" }}
+
                 />{" "}
                 <br/>
                 <Link to="/sign-up">
