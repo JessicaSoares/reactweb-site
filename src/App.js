@@ -12,6 +12,7 @@ import Agronegocio from './components/pages/Agronegocio';
 import Economia from './components/pages/Economia';
 import Pibbi from './components/pages/pagesBI/PIBBI';
 import ComercialBI from './components/pages/pagesBI/ComercialBI';
+import Graphs from './components/pages/pagesBI/Graphs';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/economia' component={Economia} />
           <Route path='/PIBBI' component={Pibbi} />
           <Route path='/ComercialBI' component={ComercialBI} />
+          <Route path='/graphs' component={Graphs} />
         </Switch>
       </Router>
     </>

@@ -17,7 +17,7 @@ export default function Economia() {
               src="images/balance.png"
               text=""
               label="Balança comercial"
-              path="/services"
+              path="/graphs"
             />
             <CardItem
               src="images/PIB.png"
@@ -29,7 +29,7 @@ export default function Economia() {
               src="images/industry.png"
               text=""
               label="Comercio e Industria"
-              path="/sign-up"
+              path="/comercioeindustria"
             />
           </ul>
           <ul className="cards__items">

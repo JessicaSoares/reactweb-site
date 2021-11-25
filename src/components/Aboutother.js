@@ -5,7 +5,6 @@ import { BsPeopleFill } from 'react-icons/bs';
 import { AiOutlineAim } from 'react-icons/ai';
 import './Aboutother.css';
 
-
 function Aboutother() {
     return (
       <>
