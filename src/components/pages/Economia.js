@@ -3,11 +3,19 @@ import "../../App.css";
 import NavbarSub from "./pagesBI/NavbarSub";
 import "../Cards.css";
 import CardItem from "../CardItem";
+import NavSubItem from "../pages/pagesBI/NavSubItem";
 
 export default function Economia() {
   return (
     <>
-      <NavbarSub />
+      <NavSubItem 
+      link1 = "/balancacomercial"
+      name1 = "Balança comercial"
+      link2 = "/PIBBI"
+      name2 = "PIB"
+      link3 = "/comercioeindustria"
+      name3 = "Comércio e industria"
+      />
       <div className="cards">
       <h1>Indicadores da economia</h1>
       <div className="cards__container">
