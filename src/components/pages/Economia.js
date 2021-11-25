@@ -15,6 +15,8 @@ export default function Economia() {
       name2 = "PIB"
       link3 = "/comercioeindustria"
       name3 = "Comércio e industria"
+      imageicon = "images/economy-icon.png"
+      subname = "economia"
       />
       <div className="cards">
       <h1>Indicadores da economia</h1>

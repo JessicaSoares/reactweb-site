@@ -74,8 +74,8 @@ function NavSubItem(props) {
       <nav className='navbarteste'>
 
       <p className='navbar-logo-sub' >
-          <img src='images/economy-icon.png'/> 
-    Economia </p>
+          <img src={props.imageicon} />
+            {props.subname} </p>
 
           <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
