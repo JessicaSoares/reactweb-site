@@ -11,7 +11,6 @@ import GraphItem from "./GraphItem";
 import TextSectionItem from "./TextSectionItem";
 import NavSubItem from "./NavSubItem";
 
-
 export default function Graphs() {
 
   return (
