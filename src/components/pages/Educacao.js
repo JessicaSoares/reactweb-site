@@ -22,20 +22,38 @@ export default function Educacao() {
             <CardItem
               src="images/balance.png"
               text=""
-              label="Balança comercial"
-              path="/graphs"
+              label="Docentes"
+              path="/docentes"
             />
             <CardItem
               src="images/PIB.png"
               text=""
-              label="PIB"
-              path="/PIBBI"
+              label="Evasão Escolar"
+              path="/evasaoescolar"
             />
             <CardItem
               src="images/industry.png"
               text=""
-              label="Comercio e Industria"
-              path="/comercioeindustria"
+              label="IDEB"
+              path="/ideb"
+            />
+            <CardItem
+              src="images/industry.png"
+              text=""
+              label="Matriculas"
+              path="'/matriculas"
+            />
+            <CardItem
+              src="images/industry.png"
+              text=""
+              label="Raio X da Educação"
+              path="/raiox"
+            />
+            <CardItem
+              src="images/industry.png"
+              text=""
+              label="Taxa de Aparovação e Reprovação"
+              path="/aprovacaoereprovacao"
             />
           </ul>
           <ul className="cards__items">

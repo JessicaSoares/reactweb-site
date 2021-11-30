@@ -15,26 +15,27 @@ export default function DesenvolvimentoHumano() {
       name3 = "Comércio e industria"
       />
       <div className="cards">
-      <h1>Indicadores da economia</h1>
+      <h1>Indicadores de Desenvolvimento Humano</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
               src="images/balance.png"
               text=""
-              label="Balança comercial"
+              label="Densidade Demográfica"
               path="/graphs"
             />
             <CardItem
               src="images/PIB.png"
               text=""
-              label="PIB"
+              label="Índice de Desenvolvimento Humano"
               path="/PIBBI"
             />
+
             <CardItem
               src="images/industry.png"
               text=""
-              label="Comercio e Industria"
+              label="Número de Eleitores"
               path="/comercioeindustria"
             />
           </ul>

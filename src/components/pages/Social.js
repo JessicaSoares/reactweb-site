@@ -8,38 +8,31 @@ export default function Social() {
   return( <>
    <NavSubItem 
       link1 = "/balancacomercial"
-      name1 = "Balança comercial"
+      name1 = "Projetos"
       link2 = "/PIBBI"
-      name2 = "PIB"
-      link3 = "/comercioeindustria"
-      name3 = "Comércio e industria"
+      name2 = "População atendida"
+      link3 = ""
+      name3 = ""
       />
       <div className="cards">
-      <h1>Indicadores da economia</h1>
+      <h1>Indicadores da Assistência Social</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/balance.png"
+              src="images/projetos.png"
               text=""
-              label="Balança comercial"
+              label="Projetos"
               path="/graphs"
             />
             <CardItem
-              src="images/PIB.png"
+              src="images/populacaoatendida.png"
               text=""
-              label="PIB"
+              label="População atendida"
               path="/PIBBI"
-            />
-            <CardItem
-              src="images/industry.png"
-              text=""
-              label="Comercio e Industria"
-              path="/comercioeindustria"
             />
           </ul>
           <ul className="cards__items">
-
           </ul>
         </div>
       </div>

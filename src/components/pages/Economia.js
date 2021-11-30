@@ -11,9 +11,9 @@ export default function Economia() {
       <NavSubItem 
       link1 = "/balancacomercial"
       name1 = "Balança comercial"
-      link2 = "/PIBBI"
+      link2 = "/pib"
       name2 = "PIB"
-      link3 = "/comercioeindustria"
+      link3 = "/comercioindustria"
       name3 = "Comércio e industria"
       imageicon = "images/economy-icon.png"
       subname = "economia"
@@ -27,19 +27,19 @@ export default function Economia() {
               src="images/balance.png"
               text=""
               label="Balança comercial"
-              path="/graphs"
+              path="/balancacomercial"
             />
             <CardItem
               src="images/PIB.png"
               text=""
               label="PIB"
-              path="/PIBBI"
+              path="/pib"
             />
             <CardItem
               src="images/industry.png"
               text=""
               label="Comercio e Industria"
-              path="/comercioeindustria"
+              path="/comercioindustria"
             />
           </ul>
           <ul className="cards__items">

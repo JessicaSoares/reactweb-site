@@ -1,16 +1,15 @@
-import "./graphs.css";
+import "../graphs.css";
 import { Link } from "react-router-dom";
 import Iframe from "react-iframe";
-import NavbarSub from "./NavbarSub";
+import NavbarSub from "../NavbarSub";
 import { Container, Row, Col } from "react-grid-system";
-import "./BoxLegend.css";
+import "../BoxLegend.css";
 import React, { useState, useEffect } from "react";
 import Button from "@material-ui/core/Button";
 import { AiOutlineCloudDownload } from "react-icons/ai";
-import GraphItem from "./GraphItem";
-import TextSectionItem from "./TextSectionItem";
-import NavSubItem from "./NavSubItem";
-
+import GraphItem from "../GraphItem";
+import TextSectionItem from "../TextSectionItem";
+import NavSubItem from "../NavSubItem";
 
 export default function Graphs() {
 

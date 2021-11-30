@@ -8,37 +8,37 @@ export default function Agronegocio() {
   return <>
   
   <NavSubItem 
-      link1 = "/balancacomercial"
-      name1 = "Balança comercial"
-      link2 = "/PIBBI"
-      name2 = "PIB"
-      link3 = "/comercioeindustria"
-      name3 = "Comércio e industria"
+      link1 = "/producaoagricola"
+      name1 = "Produção agrícola Municipal"
+      link2 = "/centrodeabastecimento"
+      name2 = "Produção Centro de Abastecimento de Parauapebas"
+      link3 = "/pecuaria"
+      name3 = "Produção Pecuária Municipal"
       imageicon = "images/economy-icon.png"
       subname = "Agronegócio"
       />
       <div className="cards">
-      <h1>Indicadores da economia</h1>
+      <h1>Indicadores do Agronegócio</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/balance.png"
+              src="images/producaoagricola.png"
               text=""
-              label="Balança comercial"
-              path="/graphs"
+              label="Produção agrícola Municipal"
+              path="/producaoagricola"
             />
             <CardItem
-              src="images/PIB.png"
+              src="images/centrodeabastecimento.png"
               text=""
-              label="PIB"
-              path="/PIBBI"
+              label="Produção Centro de Abastecimento de Parauapebas"
+              path="/centrodeabastecimento"
             />
             <CardItem
-              src="images/industry.png"
+              src="images/pecuaria.png"
               text=""
-              label="Comercio e Industria"
-              path="/comercioeindustria"
+              label="Produção Pecuária Municipal"
+              path="/pecuaria"
             />
           </ul>
           <ul className="cards__items">

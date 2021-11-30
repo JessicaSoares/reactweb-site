@@ -19,9 +19,24 @@ import Empregos from './components/pages/Empregos';
 import Educacao from './components/pages/Educacao';
 import DesenvolvimentoHumano from './components/pages/DesenvolvimentoHumano';
 import Economia from './components/pages/Economia';
-import Pibbi from './components/pages/pagesBI/PIBBI';
+import PIB from './components/pages/pagesBI/Economia/PIB';
 import ComercialBI from './components/pages/pagesBI/ComercialBI';
 import Graphs from './components/pages/pagesBI/Graphs';
+import BalancaComercial from './components/pages/pagesBI/Economia/BalancaComercial';
+import ComercioIndustria from './components/pages/pagesBI/Economia/ComercioIndustria';
+import ProdCentro from './components/pages/pagesBI/Agronegocio/ProdCentro';
+import ProdMunicipal from './components/pages/pagesBI/Agronegocio/ProdMunicipal';
+import ProdPecuaria from './components/pages/pagesBI/Agronegocio/ProdPecuaria';
+
+import DespesaOrcamentaria from './components/pages/pagesBI/PaineisOrcamentarios/DespesaOrcamentaria';
+import ReceitaOrcamentaria from './components/pages/pagesBI/PaineisOrcamentarios/ReceitaOrcamentaria';
+
+import Docentes from './components/pages/pagesBI/Educacao/Docentes';
+import EvasaoEscolar from './components/pages/pagesBI/Educacao/EvasaoEscolar';
+import AprovacaoReprovacao from './components/pages/pagesBI/Educacao/AprovacaoReprovacao';
+import RaioX from './components/pages/pagesBI/Educacao/RaioX';
+import Matriculas from './components/pages/pagesBI/Educacao/Matriculas';
+import Ideb from './components/pages/pagesBI/Educacao/Ideb';
 
 function App() {
   return (
@@ -44,9 +59,27 @@ function App() {
           <Route path='/Transito' element={<Transito />} />
           <Route path='/Social' element={<Social />} />
           <Route path='/economia' element={<Economia />} />
-          <Route path='/PIBBI' element={<Pibbi />} />
+          <Route path='/pib' element={<PIB />} />
           <Route path='/ComercialBI' element={<ComercialBI />} />
           <Route path='/graphs' element={<Graphs />} />
+
+          <Route path='/balancacomercial' element={<BalancaComercial />} />
+          <Route path='/comercioindustria' element={<ComercioIndustria />} />
+
+          <Route path='/producaoagricola' element={<ProdMunicipal />} />
+          <Route path='/centrodeabastecimento' element={<ProdCentro />} />
+          <Route path='/pecuaria' element={<ProdPecuaria />} />
+
+          <Route path='/despesaorcamentaria' element={<DespesaOrcamentaria />} />
+          <Route path='/receitaorcamentaria' element={<ReceitaOrcamentaria />} />
+
+          <Route path='/docentes' element={<Docentes />} />
+          <Route path='/evasaoescolar' element={<EvasaoEscolar />} />
+          <Route path='/aprovacaoereprovacao' element={<AprovacaoReprovacao />} />
+          <Route path='/raiox' element={<RaioX />} />
+          <Route path='/matriculas' element={<Matriculas />} />
+          <Route path='/ideb' element={<Ideb />} />
+
         </Routes>
       </Router>
     </>
