@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 
 import './App.css';
 import Home from './components/pages/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
@@ -28,26 +28,26 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/meioambiente' exact component={MeioAmbiente} />
-          <Route path='/infraestrutura' exact component={Infraestrutura} />
-          <Route path='/empregos' exact component={Empregos} />
-          <Route path='/educacao' exact component={Educacao} />
-          <Route path='/desenvolvimentohumano' exact component={DesenvolvimentoHumano} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={SignUp} />
-          <Route path='/agronegocio' component={Agronegocio} />
-          <Route path='/Orcamentarios' component={Orcamentarios} />
-          <Route path='/Saude' component={Saude} />
-          <Route path='/Transito' component={Transito} />
-          <Route path='/Social' component={Social} />
-          <Route path='/economia' component={Economia} />
-          <Route path='/PIBBI' component={Pibbi} />
-          <Route path='/ComercialBI' component={ComercialBI} />
-          <Route path='/graphs' component={Graphs} />
-        </Switch>
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/meioambiente' exact element={<MeioAmbiente />} />
+          <Route path='/infraestrutura' exact element={<Infraestrutura />} />
+          <Route path='/empregos' exact element={<Empregos />} />
+          <Route path='/educacao' exact element={<Educacao />} />
+          <Route path='/desenvolvimentohumano' exact element={<DesenvolvimentoHumano />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/sign-up' element={<SignUp />} />
+          <Route path='/agronegocio' element={<Agronegocio />} />
+          <Route path='/Orcamentarios' element={<Orcamentarios />} />
+          <Route path='/Saude' element={<Saude />} />
+          <Route path='/Transito' element={<Transito />} />
+          <Route path='/Social' element={<Social />} />
+          <Route path='/economia' element={<Economia />} />
+          <Route path='/PIBBI' element={<Pibbi />} />
+          <Route path='/ComercialBI' element={<ComercialBI />} />
+          <Route path='/graphs' element={<Graphs />} />
+        </Routes>
       </Router>
     </>
   );

@@ -201,7 +201,7 @@ ul.main-menu {
   margin: 0px auto 0;
   padding: 0;
   float: right;
-  z-index: 7;
+  z-index: 5;
 }
 ul.main-menu>li.menu-item:first-child {
   padding-left: 0;

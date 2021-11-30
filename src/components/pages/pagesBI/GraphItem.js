@@ -35,7 +35,7 @@ function GraphItem(props) {
                     color="primary"
                     startIcon={<AiOutlineCloudDownload />}
                   >
-                    Exportar
+                    Baixar Dados
                   </Button>{" "}
                 </Link>{" "}
                 <div className="legend">
