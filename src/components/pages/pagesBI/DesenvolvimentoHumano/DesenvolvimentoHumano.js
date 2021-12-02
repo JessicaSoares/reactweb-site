@@ -9,13 +9,13 @@ import Button from "@material-ui/core/Button";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
-import NavAgronegocio from "./NavAgronegocio";
+import NavDesenvolvimento from "./NavDesenvolvimento";
 
-export default function Graphs() {
+export default function DesenvolvimentoHumano() {
 
   return (
     <>
-      <NavAgronegocio/>
+      <NavEconomia/>
       
       <TextSectionItem
       titlesection = "teste2"

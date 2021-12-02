@@ -16,13 +16,10 @@ function TextSectionItem(props) {
         <div class="container px-4 px-lg-5">
           <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 text-center">
-              <h2 class="text-white mt-0">{props.titlesection}PIB</h2>
+              <h2 class="text-white mt-0">{props.titlesection}</h2>
               <hr class="divider divider-light" />
               <p class="text-white-75 mb-4"> {props.textsection}
-                Produto Interno Bruto é uma forma de mensurar a atividade
-                econômica de uma determinada região (nacional, estadual ou
-                municipal), através de cálculos que levam em consideração a
-                oferta e a demanda de bens e serviços.
+  
               </p>
             </div>
           </div>

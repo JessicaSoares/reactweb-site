@@ -15,6 +15,8 @@ export default function Economia() {
       name2 = "PIB"
       link3 = "/comercioindustria"
       name3 = "Comércio e industria"
+      link4 = "/orcamentario"
+      name4 = "Orçamentário"
       imageicon = "images/economy-icon.png"
       subname = "economia"
       />
@@ -40,6 +42,12 @@ export default function Economia() {
               text=""
               label="Comercio e Industria"
               path="/comercioindustria"
+            />
+            <CardItem
+              src="images/receitas.png"
+              text=""
+              label="Orçamentário"
+              path="/orcamentario"
             />
           </ul>
           <ul className="cards__items">

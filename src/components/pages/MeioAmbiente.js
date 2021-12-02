@@ -9,39 +9,30 @@ export default function MeioAmbiente() {
   return (
     <>
         <NavSubItem 
-      link1 = "/balancacomercial"
-      name1 = "Balança comercial"
-      link2 = "/PIBBI"
-      name2 = "PIB"
-      link3 = "/comercioeindustria"
-      name3 = "Comércio e industria"
+      link1 = "/meioambiente"
+      name1 = "Meio Ambiente"
+      link2 = ""
+      name2 = ""
+      link3 = ""
+      name3 = ""
+      link4 = ""
+      name4 = ""
+      imageicon = "images/meioambienteIcon.png"
+      subname = "Meio Ambiente"
       />
       <div className="cards">
-      <h1>Indicadores da economia</h1>
+      <h1>Indicadores do meio ambiente</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/balance.png"
+              src="images/meioambiente.png"
               text=""
-              label="Balança comercial"
-              path="/graphs"
-            />
-            <CardItem
-              src="images/PIB.png"
-              text=""
-              label="PIB"
-              path="/PIBBI"
-            />
-            <CardItem
-              src="images/industry.png"
-              text=""
-              label="Comercio e Industria"
-              path="/comercioeindustria"
+              label="Meio Ambiente"
+              path="/meioAmbiente"
             />
           </ul>
           <ul className="cards__items">
-
           </ul>
         </div>
       </div>

@@ -15,6 +15,8 @@ export default function Empregos() {
       name2 = "PIB"
       link3 = "/comercioeindustria"
       name3 = "Comércio e industria"
+      link4 = "/comercioeindustria"
+      name4 = "Comércio e industria"
       />
       <div className="cards">
       <h1>Indicadores da economia</h1>

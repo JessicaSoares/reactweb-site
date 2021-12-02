@@ -7,29 +7,44 @@ import NavSubItem from "../pages/pagesBI/NavSubItem";
 export default function Social() {
   return( <>
    <NavSubItem 
-      link1 = "/balancacomercial"
-      name1 = "Projetos"
-      link2 = "/PIBBI"
-      name2 = "População atendida"
-      link3 = ""
-      name3 = ""
+      link1 = "/educacao"
+      name1 = "Educação"
+      link2 = "/populacao"
+      name2 = "População"
+      link3 = "/saude"
+      name3 = "Saúde"
+
+      imageicon = "images/populacaoatendidaIcon.png"
+      subname = "Social"
       />
       <div className="cards">
-      <h1>Indicadores da Assistência Social</h1>
+      <h1>Indicadores Sociais</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/projetos.png"
+              src="images/raiox.png"
               text=""
-              label="Projetos"
-              path="/graphs"
+              label="Educacao"
+              path="/educacao"
             />
             <CardItem
               src="images/populacaoatendida.png"
               text=""
-              label="População atendida"
-              path="/PIBBI"
+              label="População"
+              path="/populacao"
+            />
+            <CardItem
+              src="images/saude.png"
+              text=""
+              label="Saúde"
+              path="/saude"
+            />
+            <CardItem
+              src="images/emprego.png"
+              text=""
+              label="Empregos"
+              path="/empregos"
             />
           </ul>
           <ul className="cards__items">
@@ -39,5 +54,4 @@ export default function Social() {
     </div>
   </>
   );
-
 }

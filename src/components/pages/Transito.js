@@ -8,39 +8,28 @@ export default function Transito() {
   return (
       <>
          <NavSubItem 
-          link1 = "/balancacomercial"
-          name1 = "Balança comercial"
-          link2 = "/PIBBI"
-          name2 = "PIB"
-          link3 = "/comercioeindustria"
-          name3 = "Comércio e industria"
+          link1 = "/transito"
+          name1 = "Transito"
+          link2 = ""
+          name2 = ""
+          link3 = ""
+          name3 = ""
+          imageicon = "images/transitoIcon.png"
+          subname = "Transito"
           />
           <div className="cards">
-          <h1>Indicadores da economia</h1>
+          <h1>Indicadores de Trânsito</h1>
           <div className="cards__container">
             <div className="cards__wrapper">
               <ul className="cards__items">
                 <CardItem
-                  src="images/balance.png"
+                  src="images/transito.png"
                   text=""
-                  label="Balança comercial"
-                  path="/graphs"
-                />
-                <CardItem
-                  src="images/PIB.png"
-                  text=""
-                  label="PIB"
-                  path="/PIBBI"
-                />
-                <CardItem
-                  src="images/industry.png"
-                  text=""
-                  label="Comercio e Industria"
-                  path="/comercioeindustria"
+                  label="Trânsito"
+                  path="/transito"
                 />
               </ul>
               <ul className="cards__items">
-    
               </ul>
             </div>
           </div>

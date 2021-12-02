@@ -14,6 +14,8 @@ export default function Infraestrutura() {
       name2 = "PIB"
       link3 = "/comercioeindustria"
       name3 = "Comércio e industria"
+      link4 = ""
+      name4 = ""
       />
       <div className="cards">
       <h1>Indicadores da economia</h1>

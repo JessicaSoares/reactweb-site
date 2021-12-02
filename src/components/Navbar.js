@@ -153,26 +153,19 @@ function Navbar() {
               Início
             </Link>
           </li>
-
           <ul className={boxClass.join(' ')}>
 
-                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Indicadores &nbsp;<FiChevronDown /> </Link>
-                        <ul className={boxClassSubMenu.join(' ')}> 
-                        <li> <NavLink  onClick={closeMobileMenu} activeClassName='is-active' to={`/Agronegocio`}> Agronegócio </NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Orcamentarios`}> Paineis Orçamentários </NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Social`}> Assistência Social </NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/DesenvolvimentoHumano`}> Desenvolvimento Humano</NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Economia`}> Economia </NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Educacao`}> Educação </NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Empregos`}> Empregos </NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Infraestrutura`}> Infraestrutura </NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Mapas`}> Mapas Dinâmicos </NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/MeioAmbiente`}> Meio ambiente </NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Social`}> Saúde </NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Transito`}> Trânsito </NavLink> </li>
-                        </ul>
-                    </li>
-                    </ul>
+<li onClick={toggleSubmenu2} className="menu-item sub__menus__arrows" > <Link to="#"> Perfil do município &nbsp; <FiChevronDown /> </Link>
+    <ul className={boxClassSubMenu2.join(' ')}> 
+    <li> <NavLink  onClick={closeMobileMenu2} activeClassName='is-active' to={`/Agronegocio`}> Agronegócio </NavLink> </li>
+        <li><NavLink onClick={closeMobileMenu2} activeClassName='is-active' to={`/Orcamentarios`}> Paineis Orçamentários </NavLink> </li>
+       
+    </ul>
+</li>
+</ul>
+
+
+
           <li className='nav-item'>
             <Link
               to='/Products'
@@ -182,16 +175,23 @@ function Navbar() {
              Mapas dinâmicos
             </Link>
           </li>
-          <ul className={boxClass.join(' ')}>
 
-                    <li onClick={toggleSubmenu2} className="menu-item sub__menus__arrows" > <Link to="#"> Perfil do município &nbsp; <FiChevronDown /> </Link>
-                        <ul className={boxClassSubMenu2.join(' ')}> 
-                        <li> <NavLink  onClick={closeMobileMenu2} activeClassName='is-active' to={`/Agronegocio`}> Agronegócio </NavLink> </li>
-                            <li><NavLink onClick={closeMobileMenu2} activeClassName='is-active' to={`/Orcamentarios`}> Paineis Orçamentários </NavLink> </li>
-                           
-                        </ul>
-                    </li>
-                    </ul>
+
+                    <ul className={boxClass.join(' ')}>
+
+<li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Indicadores &nbsp;<FiChevronDown /> </Link>
+    <ul className={boxClassSubMenu.join(' ')}> 
+    <li> <NavLink  onClick={closeMobileMenu} activeClassName='is-active' to={`/Agronegocio`}> Agronegócio </NavLink> </li>
+
+        <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Social`}> Social </NavLink> </li>
+        <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/DesenvolvimentoHumano`}> Desenvolvimento Humano</NavLink> </li>
+        <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Economia`}> Economia </NavLink> </li>
+        <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Infraestrutura`}> Infraestrutura </NavLink> </li>
+        <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/MeioAmbiente`}> Meio ambiente </NavLink> </li>
+        <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Transito`}> Trânsito </NavLink> </li>
+    </ul>
+</li>
+</ul>
           <li className='nav-item'>
             <Link
               to='/Products'

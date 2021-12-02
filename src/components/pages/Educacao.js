@@ -13,44 +13,47 @@ export default function Educacao() {
       name2 = "PIB"
       link3 = "/comercioeindustria"
       name3 = "Comércio e industria"
+      link4 = "/comercioeindustria"
+      name4 = "Comércio e industria"
+
       />
       <div className="cards">
-      <h1>Indicadores da economia</h1>
+      <h1>Indicadores da Educação</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/balance.png"
+              src="images/docentes.png"
               text=""
               label="Docentes"
               path="/docentes"
             />
             <CardItem
-              src="images/PIB.png"
+              src="images/evasao.png"
               text=""
               label="Evasão Escolar"
               path="/evasaoescolar"
             />
             <CardItem
-              src="images/industry.png"
+              src="images/ideb.png"
               text=""
               label="IDEB"
               path="/ideb"
             />
             <CardItem
-              src="images/industry.png"
+              src="images/matriculas.png"
               text=""
               label="Matriculas"
               path="'/matriculas"
             />
             <CardItem
-              src="images/industry.png"
+              src="images/raiox.png"
               text=""
               label="Raio X da Educação"
               path="/raiox"
             />
             <CardItem
-              src="images/industry.png"
+              src="images/taxa.png"
               text=""
               label="Taxa de Aparovação e Reprovação"
               path="/aprovacaoereprovacao"

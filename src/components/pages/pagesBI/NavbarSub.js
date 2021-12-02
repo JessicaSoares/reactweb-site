@@ -76,7 +76,6 @@ function NavbarSub() {
       <p className='navbar-logo-sub' >
           <img src='images/economy-icon.png'/> 
     Economia </p>
-
           <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>

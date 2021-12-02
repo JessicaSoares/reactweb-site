@@ -1,21 +1,16 @@
 import "../graphs.css";
-import { Link } from "react-router-dom";
-import Iframe from "react-iframe";
-import NavbarSub from "../NavbarSub";
 import { Container, Row, Col } from "react-grid-system";
 import "../BoxLegend.css";
 import React, { useState, useEffect } from "react";
-import Button from "@material-ui/core/Button";
-import { AiOutlineCloudDownload } from "react-icons/ai";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
-import NavAgronegocio from "./NavAgronegocio";
+import NavInfraestutura from "./NavInfraestutura";
 
-export default function Graphs() {
+export default function Esgoto() {
 
   return (
     <>
-      <NavAgronegocio/>
+      <NavInfraestutura/>
       
       <TextSectionItem
       titlesection = "teste2"

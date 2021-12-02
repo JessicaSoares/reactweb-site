@@ -11,10 +11,12 @@ export default function Agronegocio() {
       link1 = "/producaoagricola"
       name1 = "Produção agrícola Municipal"
       link2 = "/centrodeabastecimento"
-      name2 = "Produção Centro de Abastecimento de Parauapebas"
+      name2 = "Agricultura Familiar"
       link3 = "/pecuaria"
       name3 = "Produção Pecuária Municipal"
-      imageicon = "images/economy-icon.png"
+      link4 = ""
+      name4 = ""
+      imageicon = "images/agronegocioIcon.png"
       subname = "Agronegócio"
       />
       <div className="cards">
@@ -31,7 +33,7 @@ export default function Agronegocio() {
             <CardItem
               src="images/centrodeabastecimento.png"
               text=""
-              label="Produção Centro de Abastecimento de Parauapebas"
+              label="Agricultura Familiar"
               path="/centrodeabastecimento"
             />
             <CardItem

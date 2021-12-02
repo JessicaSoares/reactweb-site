@@ -31,9 +31,10 @@ width:50px;
   cursor: pointer;
   font-family: 'Yanone Kaffeesatz';
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .fa-typo3 {
@@ -309,7 +310,6 @@ li {
   margin: 17px 0 0 0;
 }
 
-
 @media(max-width:991px){
 .header__middle__logo {width: 77%;}
 .header__middle__menus {width: 20%;}
@@ -348,7 +348,5 @@ li {
 .menus__categorysss{display: none;}
 .menus__categorysss2{display: none;}
 .menu-item .sub__menus__full a {text-align: left;}
-
 }
-
 

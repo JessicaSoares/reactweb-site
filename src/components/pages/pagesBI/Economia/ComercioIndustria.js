@@ -9,22 +9,13 @@ import Button from "@material-ui/core/Button";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
-import NavSubItem from "../NavSubItem";
+import NavEconomia from "./NavEconomia";
 
 export default function Graphs() {
 
   return (
     <>
-      <NavSubItem 
-      link1 = "/balancacomercial"
-      name1 = "Balança comercial"
-      link2 = "/PIBBI"
-      name2 = "PIB"
-      link3 = "/comercioeindustria"
-      name3 = "Comércio e industria"
-      imageicon = "images/economy-icon.png"
-      subname = "economia"
-      />
+      <NavEconomia/>
       
       <TextSectionItem
       titlesection = "teste2"
