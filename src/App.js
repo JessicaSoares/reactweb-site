@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Navbar from './components/Navbar';
 
 import './App.css';
@@ -16,7 +15,7 @@ import Transito from './components/pages/Transito';
 import MeioAmbiente from './components/pages/MeioAmbiente';
 import Infraestrutura from './components/pages/Infraestrutura';
 import Empregos from './components/pages/Empregos';
-import DesenvolvimentoHumano from './components/pages/DesenvolvimentoHumano';
+
 import Economia from './components/pages/Economia';
 import PIB from './components/pages/pagesBI/Economia/PIB';
 import ComercialBI from './components/pages/pagesBI/ComercialBI';
@@ -33,6 +32,12 @@ import Educacao from './components/pages/pagesBI/Social/Educacao';
 
 import Saude from './components/pages/pagesBI/Social/Saude';
 
+import DesenvolvimentoHumano from './components/pages/DesenvolvimentoHumano';
+import DesenvHumano from './components/pages/pagesBI/DesenvolvimentoHumano/DesenvHumano';
+
+import Agua from './components/pages/pagesBI/Infraestrutura/Agua';
+import Esgoto from './components/pages/pagesBI/Infraestrutura/Esgoto';
+import Iluminacao from './components/pages/pagesBI/Infraestrutura/Iluminacao';
 
 function App() {
   return (
@@ -62,10 +67,15 @@ function App() {
           <Route path='/populacao' element={<Populacao />} />
           <Route path='/balancacomercial' element={<BalancaComercial />} />
           <Route path='/comercioindustria' element={<ComercioIndustria />} />
-
+          <Route path='/desenvhumano' element={<DesenvHumano />} />
           <Route path='/producaoagricola' element={<ProdMunicipal />} />
           <Route path='/centrodeabastecimento' element={<ProdCentro />} />
           <Route path='/pecuaria' element={<ProdPecuaria />} />
+
+          <Route path='/esgoto' element={<Esgoto />} />
+          <Route path='/agua' element={<Agua />} />
+          <Route path='/iluminacao' element={<Iluminacao />} />
+
 
 
 

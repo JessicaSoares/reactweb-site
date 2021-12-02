@@ -3,7 +3,7 @@ import "../BoxLegend.css";
 import React, { useState, useEffect } from "react";
 import NavSubItem from "../NavSubItem";
 
-export default function NavEconomia() {
+export default function   NavDesenvolvimento() {
 
   return (
     

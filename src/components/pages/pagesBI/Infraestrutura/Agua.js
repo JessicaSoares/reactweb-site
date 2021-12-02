@@ -4,13 +4,13 @@ import "../BoxLegend.css";
 import React, { useState, useEffect } from "react";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
-import NavInfraestutura from "./NavInfraestutura";
+import NavInfraestrutura from "./NavInfraestrutura";
 
 export default function Agua() {
 
   return (
     <>
-      <NavInfraestutura/>
+      <NavInfraestrutura/>
       
       <TextSectionItem
       titlesection = "teste2"

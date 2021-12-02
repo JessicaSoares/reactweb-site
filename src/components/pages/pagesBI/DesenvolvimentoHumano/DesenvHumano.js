@@ -15,7 +15,7 @@ export default function DesenvolvimentoHumano() {
 
   return (
     <>
-      <NavEconomia/>
+      <NavDesenvolvimento/>
       
       <TextSectionItem
       titlesection = "teste2"
