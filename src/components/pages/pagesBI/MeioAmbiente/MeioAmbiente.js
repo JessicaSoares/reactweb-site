@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavMeioAmbiente from "./NavMeioAmbiente";
+import Footer from '../../../Footer';
 
 export default function MeioAmbiente() {
 
@@ -37,6 +38,7 @@ export default function MeioAmbiente() {
           </Row>
         </Container>
       </section>
+      < Footer />
     </>
   );
 }

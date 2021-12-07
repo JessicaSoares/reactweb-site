@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavTransito from "./NavTransito";
+import Footer from '../../../Footer';
 
 export default function Transito() {
 
@@ -37,6 +38,7 @@ export default function Transito() {
           </Row>
         </Container>
       </section>
+      < Footer />
     </>
   );
 }

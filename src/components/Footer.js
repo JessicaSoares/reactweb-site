@@ -6,7 +6,45 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div className='footer-container'>
+      <section className='footer-subscription'>
 
+        <p className='footer-subscription-text'>
+        Secretaria Especial de Governo - SEGOV | Centro Administrativo, Morro dos ventos, Bairro Beira Rio II 
+        </p>
+        <div className='input-areas'>
+
+        </div>
+      </section>
+      <div class='footer-links'>
+        <div className='footer-link-wrapper'>
+          <div class='footer-link-items'>
+            <h2>Serviços</h2>
+            <Link to='/sign-up'>Cidadão</Link>
+            <Link to='/'>Área do servidor</Link>
+            <Link to='/'>Planejamentos</Link>
+          </div>
+          <div class='footer-link-items'>
+            <h2>Contatos</h2>
+            <Link to='/'>Fale conosco</Link>
+            <Link to='/'>Ouvidoria</Link>
+            <Link to='/'>Informação ao Cidadão</Link>
+          </div>
+        </div>
+        <div className='footer-link-wrapper'>
+          <div class='footer-link-items'>
+            <h2>Portais</h2>
+            <Link to='/'>Prefeitura de Parauapebas</Link>
+            <Link to='/'>Governo do Estado</Link>
+            <Link to='/'>Transparência</Link>
+          </div>
+          <div class='footer-link-items'>
+            <h2>Ajuda</h2>
+            <Link to='/'>Perguntas Frequêntes</Link>
+            <Link to='/'>Mapa do Site</Link>
+            <Link to='/'>Endereços</Link>
+          </div>
+        </div>
+      </div>
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
@@ -15,7 +53,7 @@ function Footer() {
               <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'>SEGOV</small>
+          <small class='website-rights'>SEGOV © 2021</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'

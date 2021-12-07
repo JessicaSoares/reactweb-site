@@ -10,6 +10,7 @@ import { AiOutlineCloudDownload } from "react-icons/ai";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavDesenvolvimento from "./NavDesenvolvimento";
+import Footer from '../../../Footer';
 
 export default function DesenvolvimentoHumano() {
 
@@ -42,6 +43,7 @@ export default function DesenvolvimentoHumano() {
           </Row>
         </Container>
       </section>
+      < Footer />
     </>
   );
 }

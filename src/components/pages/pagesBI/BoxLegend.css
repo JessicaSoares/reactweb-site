@@ -1,27 +1,37 @@
 .boxlegend {
-  border: 2px solid rgba(56, 136, 202, 0.534);
+  border: 2px solid rgba(22, 128, 27, 0.308);
   border-radius: 2px;
   text-align: center;
   font-family: 'Roboto';
   margin-top: 20px;
+  margin-bottom: 20px;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.424);
   position: center;
 }
 
-.legend {
-  width: 11px;
-  height: 85px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  max-width: 1120px;
-  width: 90%;
+.maisinfos {
+  width: 40%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 10px;
   font-family:'Roboto';
   font-size: 14px;
   text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+.legend {
+  width: 98%;
+  margin: 0 auto;
+  padding: 10px;
+  font-family:'Roboto';
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
 }
 
 

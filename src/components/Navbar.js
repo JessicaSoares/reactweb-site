@@ -137,12 +137,12 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-          <Link to='/sign-up' className='btn-mobile'>
+         
           <p className='navbar-logo' >
-          <img src='images/logo.png'/> 
+          <img src='images/logo.png' className='logo' />
           Observatório de Desenvolvimento <br/> de Parauapebas
           </p>
-    </Link>
+ 
     
           <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

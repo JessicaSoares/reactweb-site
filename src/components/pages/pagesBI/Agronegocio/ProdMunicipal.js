@@ -10,6 +10,7 @@ import { AiOutlineCloudDownload } from "react-icons/ai";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavAgronegocio from "./NavAgronegocio";
+import Footer from '../../../Footer';
 
 export default function Graphs() {
 
@@ -42,6 +43,7 @@ export default function Graphs() {
           </Row>
         </Container>
       </section>
+      < Footer />
     </>
   );
 }

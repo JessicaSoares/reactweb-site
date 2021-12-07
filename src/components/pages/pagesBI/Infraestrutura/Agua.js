@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavInfraestrutura from "./NavInfraestrutura";
+import Footer from '../../../Footer';
 
 export default function Agua() {
 
@@ -37,6 +38,7 @@ export default function Agua() {
           </Row>
         </Container>
       </section>
+      < Footer />
     </>
   );
 }

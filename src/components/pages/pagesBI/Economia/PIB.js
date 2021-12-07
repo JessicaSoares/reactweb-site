@@ -10,12 +10,16 @@ import { AiOutlineCloudDownload } from "react-icons/ai";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavEconomia from "./NavEconomia";
+import Footer from '../../../Footer';
 
 export default function PIB() {
 
   return (
     <>
       <NavEconomia/>
+
+      Height - {window.innerHeight}
+            Width - {window.innerWidth}
       
       <TextSectionItem
       titlesection = "teste2"
@@ -27,7 +31,8 @@ export default function PIB() {
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiOWI4ZjgyM2MtMTJjNC00YWM1LWExZmYtMjZlODVjOGYyZTQxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="sdsdsdsd"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
+        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante.asdasdasdasdasda"
+        mais = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante.asdasdasdasdasdaLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante.asdasdasdasdasdaLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante.asdasdasdasdasda"
         />
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiOWI4ZjgyM2MtMTJjNC00YWM1LWExZmYtMjZlODVjOGYyZTQxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
@@ -42,6 +47,7 @@ export default function PIB() {
           </Row>
         </Container>
       </section>
+      < Footer />
     </>
   );
 }

@@ -16,6 +16,8 @@ export default function NavInfraestrutura() {
     name3 = "Iluminação Pública"
     link4 = ""
     name4 = ""
+    imageicon = "images/infracon.png"
+    subname = "Infraestrutura"
     />
       ); 
     }

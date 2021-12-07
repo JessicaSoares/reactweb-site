@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavInfraestrutura from "./NavInfraestrutura";
+import Footer from '../../../Footer';
 
 export default function Iluminacao() {
 
@@ -37,6 +38,7 @@ export default function Iluminacao() {
           </Row>
         </Container>
       </section>
+      < Footer />
     </>
   );
 }

@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavSocial from "./NavSocial";
+import Footer from '../../../Footer';
 
 export default function Educacao() {
 
@@ -37,6 +38,7 @@ export default function Educacao() {
           </Row>
         </Container>
       </section>
+      < Footer />
     </>
   );
 }
