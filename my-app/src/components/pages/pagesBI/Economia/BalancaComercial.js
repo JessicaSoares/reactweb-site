@@ -18,7 +18,7 @@ export default function Graphs() {
       <NavEconomia/>
       
       <TextSectionItem
-      titlesection = "Comércio exterior"
+      titlesection = "Comércio exteriorr"
       textsection = "Comércio exterior é o conjunto das compras e vendas de bens e serviços feitos entre países. Quando um país vende um bem ou serviço a outro, a operação é chamada de exportação. Quando compra de outro país, efetua realiza uma importação "
       />
       <section class="page-section-sub-boxlegend " id="about">
