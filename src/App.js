@@ -39,6 +39,9 @@ import Agua from './components/pages/pagesBI/Infraestrutura/Agua';
 import Esgoto from './components/pages/pagesBI/Infraestrutura/Esgoto';
 import Iluminacao from './components/pages/pagesBI/Infraestrutura/Iluminacao';
 
+import Despesas from './components/pages/pagesBI/Economia/Despesas';
+import Receitas from './components/pages/pagesBI/Economia/Receitas';
+
 function App() {
   return (
     <>
@@ -63,7 +66,6 @@ function App() {
           <Route path='/pib'exact element={<PIB />} />
           <Route path='/ComercialBI' element={<ComercialBI />} />
           <Route path='/graphs' element={<Graphs />} />
-
           <Route path='/populacao' element={<Populacao />} />
           <Route path='/balancacomercial' element={<BalancaComercial />} />
           <Route path='/comercioindustria' element={<ComercioIndustria />} />
@@ -71,15 +73,12 @@ function App() {
           <Route path='/producaoagricola' element={<ProdMunicipal />} />
           <Route path='/centrodeabastecimento' element={<ProdCentro />} />
           <Route path='/pecuaria' element={<ProdPecuaria />} />
-
           <Route path='/esgoto' element={<Esgoto />} />
           <Route path='/agua' element={<Agua />} />
           <Route path='/iluminacao' element={<Iluminacao />} />
 
-
-
-
-
+          <Route path='/despesas' element={<Despesas />} />
+          <Route path='/receitas' element={<Receitas />} />
         </Routes>
       </Router>
     </>
