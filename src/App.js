@@ -14,7 +14,7 @@ import Social from './components/pages/Social';
 import Transito from './components/pages/Transito';
 import MeioAmbiente from './components/pages/MeioAmbiente';
 import Infraestrutura from './components/pages/Infraestrutura';
-import Empregos from './components/pages/Empregos';
+import Empregos from './components/pages/pagesBI/Social/Empregos';
 
 import Economia from './components/pages/Economia';
 import PIB from './components/pages/pagesBI/Economia/PIB';
