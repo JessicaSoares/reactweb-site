@@ -9,7 +9,7 @@ export default function MeioAmbiente() {
   return (
     <>
         <NavSubItem 
-      link1 = "/meioambiente"
+      link1 = "/meioambientecard"
       name1 = "Meio Ambiente"
       link2 = ""
       name2 = ""
@@ -29,7 +29,7 @@ export default function MeioAmbiente() {
               src="images/meioambiente.png"
               text=""
               label="Meio Ambiente"
-              path="/meioAmbiente"
+              path="/meioambientecard"
             />
           </ul>
           <ul className="cards__items">

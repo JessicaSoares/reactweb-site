@@ -42,6 +42,7 @@ import Iluminacao from './components/pages/pagesBI/Infraestrutura/Iluminacao';
 import Despesas from './components/pages/pagesBI/Economia/Despesas';
 import Receitas from './components/pages/pagesBI/Economia/Receitas';
 
+import MeioAmbientecard from './components/pages/pagesBI/MeioAmbiente/MeioAmbiente';
 function App() {
   return (
     <>
@@ -79,6 +80,8 @@ function App() {
 
           <Route path='/despesas' element={<Despesas />} />
           <Route path='/receitas' element={<Receitas />} />
+
+          <Route path='/meioambientecard' element={<MeioAmbientecard />} />
         </Routes>
       </Router>
     </>
