@@ -14,8 +14,8 @@ export default function Esgoto() {
       <NavInfraestrutura/>
       
       <TextSectionItem
-      titlesection = "Serviço de Esgoto"
-      textsection = "teste2"
+      titlesection = "Esgoto"
+      textsection = "Esgoto é um sistema destinado a escoar e tratar os dejetos dos diversos aglomerados populacionais. Esses dejetos são a água proveniente do banho, limpeza de roupas, louças ou descarga do vaso sanitário. Dependendo do uso, há distintas denominações. Os resíduos provenientes das residências formam os esgotos domésticos, os formados no processo de fábricas recebem o nome de esgotos industriais e as água das chuvas são denominados pluviais e não podem ser lançados na rede de esgoto."
       />
       <section class="page-section-sub-boxlegend " id="about">
         <Container>
@@ -33,6 +33,16 @@ export default function Esgoto() {
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiYmIxYzAxNTAtNDlmYi00NzUzLTg2MjMtZDE1MTZlNTY4ZDBhIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Evolução de População Atendida"
+        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
+        />
+        <GraphItem
+        url= "https://app.powerbi.com/view?r=eyJrIjoiMjlhMDJiZjYtNjBmMS00MzRlLTg2NTktMjFmZjQxMjMzMmJkIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
+        titulobi="Ranking Por Cidade"
+        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
+        />
+        <GraphItem
+        url= "https://app.powerbi.com/view?r=eyJrIjoiMzcyYzFjZDAtZGYyOS00MjYzLWE1NDUtOGQ5MWQ5MGVmNTFhIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
+        titulobi="Serviço de Esgoto de Parauapebas e Região"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
           </Row>

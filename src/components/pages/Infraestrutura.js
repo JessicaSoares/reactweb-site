@@ -8,35 +8,40 @@ export default function Infraestrutura() {
   return (
     <>
         <NavSubItem 
-      link1 = "/agua"
-      name1 = "Água"
-      link2 = "/esgoto"
-      name2 = "Esgoto"
-      link3 = "/iluminacao"
-      name3 = "Iluminação"
-      link4 = ""
-      name4 = ""
-      imageicon = "images/infraestruturaIcon.png"
-      subname = "Infraestrutura"
+      link1 = "/lixo"
+      name1 = "Lixo"
+      link2 = "/agua"
+      name2 = "Agua"
+      link3 = "/esgoto"
+      name3 = "Esgoto"
+      link4 = "/iluminacao"
+      name4 = "Ilumicao"
       />
       <div className="cards">
-      <h1>Indicadores de infraestrutura</h1>
+      <h1>Indicadores da Infraestrutura</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
+  
             <CardItem
-              src="images/agua.png"
+              src="images/esgoto.png"
               text=""
-              label="Agua"
-              path="/agua"
+              label="Lixo"
+              path="/lixo"
             />
-            <CardItem
+                        <CardItem
               src="images/esgoto.png"
               text=""
               label="Esgoto"
               path="/esgoto"
             />
-            <CardItem
+                        <CardItem
+              src="images/agua.png"
+              text=""
+              label="Água"
+              path="/agua"
+            />
+                                <CardItem
               src="images/iluminacao.png"
               text=""
               label="Iluminação"
