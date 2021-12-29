@@ -23,26 +23,7 @@ export default function Empregos() {
       <section class="page-section-sub-boxlegend " id="about">
         <Container>
           <Row>
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMzZkYjAwOWQtNzlmMC00Yzk1LWI5N2QtZTRlZjk5OWJlMmM3IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Admitidos"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiYzVkN2I5MDQtNjc3ZC00N2Q3LWIwNWMtNDU0YTVjZGI3NzkwIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Desligados"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMzA0OTE3NmEtZTQxOC00NTEyLTg3ZWQtZjNjY2YwZTZiMTAwIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Saldo"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiOGY5ZGExNDMtNjZkNy00MWJiLWIwMmQtYWRjYmUxODZhMjAxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Carteiras Assinadas"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
+
                 <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiMTBkOTQ0MzMtYWVmZS00Y2I3LWFiNmUtZTRiMTUyZThkZWFhIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Quantitativo de Empregos"
@@ -54,11 +35,7 @@ export default function Empregos() {
         titulobi="Admissões por Grupo Econômico"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiOTlmYmYwMGQtMTljNi00ZTMyLTk5NjgtZjVmZDdlYTMwZDJjIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Evolução de Admissões e Desligamentos"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
+ 
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiNjI3MjI4OTktMDYzZS00YmRiLWJlOTQtZGI3ZDM4YjFlMThkIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Admissões e Desligamentos"

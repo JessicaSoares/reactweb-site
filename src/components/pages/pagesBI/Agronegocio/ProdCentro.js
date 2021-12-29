@@ -10,6 +10,8 @@ import { AiOutlineCloudDownload } from "react-icons/ai";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavAgronegocio from "./NavAgronegocio";
+import Footer from "../../../Footer"
+
 
 export default function Graphs() {
 
@@ -32,7 +34,7 @@ export default function Graphs() {
         />
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiZTBiZGZkY2MtNTk1ZC00ZWU5LWEyOGMtMTczMDA2YmEzOWMwIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Percentual dos Chefes de Família por Faixa Étaria"
+        titulobi="Percentual dos Chefes de Família por Faixa Etária"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
         <GraphItem
@@ -96,10 +98,11 @@ export default function Graphs() {
         titulobi="Percentual de Aves Por Finalidade "
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
-        
           </Row>
+         
         </Container>
       </section>
+      <Footer />
     </>
   );
 }

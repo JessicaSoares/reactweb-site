@@ -33,7 +33,7 @@ function GraphItem(props) {
               Baixar Dados
             </Button>{" "}
           </Link>{" "}
-          <div className="legend"> {props.legend}</div>{" "}
+          <div className="legend"> </div>{" "}
           <Accordion classname = "maisinfos" defaultActiveKey="1" >
             <Accordion.Item eventKey="0">
               <Accordion.Header>Mais informações</Accordion.Header>
