@@ -88,6 +88,8 @@ function App() {
           <Route path='/receitas' element={<Receitas />} />
           <Route path='/lixo' element={<Lixo />} />
           <Route path='/meioambientecard' element={<MeioAmbientecard />} />
+
+        
         </Routes>
         <Footer />
       </Router>
