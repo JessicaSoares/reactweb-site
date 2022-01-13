@@ -158,7 +158,7 @@ function Navbar() {
 <li onClick={toggleSubmenu2} className="menu-item sub__menus__arrows" > <Link to="#"> Perfil do município &nbsp; <FiChevronDown /> </Link>
     <ul className={boxClassSubMenu2.join(' ')}> 
     <li> <NavLink  onClick={closeMobileMenu2} activeClassName='is-active' to={`/Agronegocio`}> Parauapebas em números </NavLink> </li>
-        <li><NavLink onClick={closeMobileMenu2} activeClassName='is-active' to={`/Orcamentarios`}> Painéis Orçamentários </NavLink> </li>
+        <li><NavLink onClick={closeMobileMenu2} activeClassName='is-active' to={`/DashboardsGov`}> Dashboards Governamentais </NavLink> </li>
        
     </ul>
 </li>

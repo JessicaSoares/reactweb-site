@@ -32,6 +32,8 @@ import Educacao from './components/pages/pagesBI/Social/Educacao';
 
 import Saude from './components/pages/pagesBI/Social/Saude';
 
+import DashboardsGov from './components/pages/DashboardsGov';
+
 import DesenvolvimentoHumano from './components/pages/DesenvolvimentoHumano';
 import DesenvHumano from './components/pages/pagesBI/DesenvolvimentoHumano/DesenvHumano';
 
@@ -65,6 +67,7 @@ function App() {
           <Route path='/Orcamentarios' element={<Orcamentarios />} />
           <Route path='/Saude' element={<Saude />} />
           <Route path='/Transito' element={<Transito />} />
+          <Route path='/DashboardsGov' element={<DashboardsGov />} />
           <Route path='/Social' element={<Social />} />
           <Route path='/economia' element={<Economia />} />
           <Route path='/pib'exact element={<PIB />} />

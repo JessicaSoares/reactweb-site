@@ -13,6 +13,10 @@ class TutorialDataService {
     return http.get("/tutorials/downloaddefesas");
   }
 
+  downloadaves() {
+    return http.get("/tutorials/downloadaves");
+  }
+
   downloadfolhapagamento() {
     return http.get("/tutorials/downloadfolhapagamento");
   }
