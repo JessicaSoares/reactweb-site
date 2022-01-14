@@ -101,6 +101,12 @@ function DashboardsGov() {
               label="Agricultura Familiar"
               path="https://app.powerbi.com/view?r=eyJrIjoiYjExYmEzYWMtYTE0OC00MzgxLWEwMWEtYzNmNTIxYzE5ODIyIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
             />
+                       <CardItemgov
+              src="images/negociosgov.png"
+              text=""
+              label="Orçamento"
+              path=""
+            />
   
           </ul>
         </div>
