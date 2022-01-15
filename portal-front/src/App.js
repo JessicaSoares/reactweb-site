@@ -47,6 +47,10 @@ import Receitas from './components/pages/pagesBI/Economia/Receitas';
 import Lixo from './components/pages/pagesBI/Infraestrutura/Lixo';
 
 import MeioAmbientecard from './components/pages/pagesBI/MeioAmbiente/MeioAmbiente';
+import Mapas from './components/pages/Mapas';
+import Infraestruturamaps from './components/pages/Mapas/Infraestrutura/Infraestrutura';
+import Urbanismomaps from './components/pages/Mapas/Urbanismo/Urbanismo';
+
 function App() {
   return (
     <>
@@ -88,6 +92,9 @@ function App() {
           <Route path='/receitas' element={<Receitas />} />
           <Route path='/lixo' element={<Lixo />} />
           <Route path='/meioambientecard' element={<MeioAmbientecard />} />
+          <Route path='/mapas' element={<Mapas />} />
+          <Route path='/infraestruturamaps' element={<Infraestruturamaps />} />
+          <Route path='/urbanismomaps' element={<Urbanismomaps />} />
 
         
         </Routes>

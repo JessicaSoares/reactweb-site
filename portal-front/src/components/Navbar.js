@@ -167,11 +167,11 @@ function Navbar() {
 
           <li className='nav-item'>
             <Link
-              to='/Products'
+              to='/mapas'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-             Mapas dinâmicos
+             Mapas temáticos
             </Link>
           </li>
 
