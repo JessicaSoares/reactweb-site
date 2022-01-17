@@ -9,6 +9,7 @@ import Button from "@material-ui/core/Button";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
+import Footer from '../../GraphFooter';
 
 
 function GraphItem(props) {
@@ -23,6 +24,7 @@ function GraphItem(props) {
 
           <Iframe url={props.url} className="economia" height="100%" /> <br />
           <Link to="/sign-up">
+          < Footer />
             {" "}
  
           </Link>{" "}
