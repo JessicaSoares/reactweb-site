@@ -50,6 +50,9 @@ import MeioAmbientecard from './components/pages/pagesBI/MeioAmbiente/MeioAmbien
 import Mapas from './components/pages/Mapas';
 import Infraestruturamaps from './components/pages/Mapas/Infraestrutura/Infraestrutura';
 import Urbanismomaps from './components/pages/Mapas/Urbanismo/Urbanismo';
+import MeioAmbientemaps from './components/pages/Mapas/MeioAmbiente/MeioAmbiente';
+import Patrimoniomaps from './components/pages/Mapas/PatrimonioPublico/Patrimonio';
+import Turismomaps from './components/pages/Mapas/Turismo/Turismo';
 
 function App() {
   return (
@@ -95,6 +98,9 @@ function App() {
           <Route path='/mapas' element={<Mapas />} />
           <Route path='/infraestruturamaps' element={<Infraestruturamaps />} />
           <Route path='/urbanismomaps' element={<Urbanismomaps />} />
+          <Route path='/meioambientemaps' element={<MeioAmbientemaps />} />
+          <Route path='/patrimoniomaps' element={<Patrimoniomaps />} />
+          <Route path='/turismomaps' element={<Turismomaps />} />
 
         
         </Routes>

@@ -18,26 +18,26 @@ export default function Mapas() {
             <CardItem
               src="images/inframaps.png"
               text=""
-              label="Infraestrtura"
-              path="/meioambientecard"
+              label="Infraestrutura"
+              path="/infraestruturamaps"
             />
                      <CardItem
               src="images/ambientemaps.png"
               text=""
               label="Meio Ambiente"
-              path="/meioambientecard"
+              path="/meioambientemaps"
             />
                      <CardItem
               src="images/patrimoniomaps.png"
               text=""
               label="Patrimônio Público"
-              path="/meioambientecard"
+              path="/patrimoniomaps"
             />
                      <CardItem
               src="images/turismaps.png"
               text=""
               label="Turismo"
-              path="/meioambientecard"
+              path="/turismomaps"
             />
                      <CardItem
               src="images/dinheiromaps.png"

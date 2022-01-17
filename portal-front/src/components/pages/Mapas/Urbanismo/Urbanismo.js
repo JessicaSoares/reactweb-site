@@ -8,11 +8,13 @@ import TextSectionItem from "../../pagesBI/TextSectionItem";
 import Footer from '../../../Footer';
 import NavMaps from '../NavMaps'
 
-export default function Infraestrutura() {
+export default function Urbanismo() {
 
   return (
     <>
-   <NavMaps/>
+         <NavMaps 
+ 
+ />
       
 
       <section class="page-section-sub-boxlegend " id="about">
@@ -26,7 +28,7 @@ export default function Infraestrutura() {
           </Row>
         </Container>
       </section>
-      < Footer />
+    
     </>
   );
 }

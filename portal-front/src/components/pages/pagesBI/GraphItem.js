@@ -24,7 +24,7 @@ function GraphItem(props) {
 
           <Iframe url={props.url} className="economia" height="100%" /> <br />
           <Link to="/sign-up">
-          < Footer />
+       
             {" "}
  
           </Link>{" "}
