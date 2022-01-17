@@ -28,7 +28,7 @@ function GraphItem(props) {
             {" "}
  
           </Link>{" "}
-          <div className="legend"> </div>{" "}
+        
           <Accordion classname = "maisinfos" defaultActiveKey="1" >
             <Accordion.Item eventKey="0">
               <Accordion.Header>Mais informações</Accordion.Header>

@@ -4,14 +4,15 @@ import "../../pagesBI/BoxLegend.css";
 import React, { useState, useEffect } from "react";
 import GraphItem from "../../pagesBI/GraphItem";
 import TextSectionItem from "../../pagesBI/TextSectionItem";
-import NavTransito from "../../pagesBI/Transito/NavTransito";
+
 import Footer from '../../../Footer';
+import NavMaps from '../NavMaps'
 
 export default function Infraestrutura() {
 
   return (
     <>
-   <NavTransito/>
+   <NavMaps/>
       
 
       <section class="page-section-sub-boxlegend " id="about">
