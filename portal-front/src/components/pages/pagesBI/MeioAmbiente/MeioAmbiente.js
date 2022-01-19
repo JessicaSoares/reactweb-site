@@ -91,7 +91,7 @@ export default class MeioAmbiente extends Component {
         let csvContent = "data:text/csv;charset=utf-8," 
         + rows;
         var encodedUri = encodeURI(csvContent);
-window.open(encodedUri);
+window.open(encodedUri , "_Self");
 let settings = {
   fileName: 'MySpreadsheet', // Name of the resulting spreadsheet
   extraLength: 3, // A bigger number means that columns will be wider

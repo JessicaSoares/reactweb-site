@@ -49,8 +49,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              SEGOV
-              <i class='fab fa-typo3' />
+              <img src="images/logosegov.png" className='social-logo'/>
             </Link>
           </div>
           <small class='website-rights'>SEGOV © 2021</small>
