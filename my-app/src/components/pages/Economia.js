@@ -12,9 +12,9 @@ export default function Economia() {
     <NavSubItem 
     link1 = "/balancacomercial"
     name1 = "Balança comercial"
-    link2 = "/PIBBI"
+    link2 = "/pib"
     name2 = "PIB"
-    link3 = "/comercioeindustria"
+    link3 = "/comercioindustria"
     name3 = "Comércio e industria"
     link4 = "/despesas"
     name4 = "Despesas"

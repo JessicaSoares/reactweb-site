@@ -6,11 +6,32 @@
 
   }
 
-    
+    .botaobaixar {
+      height:100px; 
+      width:300px; 
+      margin: -20px -50px; 
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position:relative;
+      top:50%; 
+      left:50%;
+    }
+
   .page-section-sub {
     padding: 3rem 0;
     font-family: 'Roboto';
     text-align: justify;
+  }
+
+  .teste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0;
+    margin-left:10%;
+    margin-right:10%;
   }
 
   .maisinfos {

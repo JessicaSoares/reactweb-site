@@ -8,7 +8,7 @@ export default function DesenvolvimentoHumano() {
   return <>
       <NavSubItem 
       link1 = "/desenvHumano"
-      name1 = "Dsenvolvimento Humano"
+      name1 = "Desenvolvimento Humano"
       link2 = ""
       name2 = ""
       link3 = ""
@@ -16,7 +16,7 @@ export default function DesenvolvimentoHumano() {
       link4 = ""
       name4 = ""
       imageicon = "images/desenvolvimentoHumanIcon.png"
-      subname = "Desenvolvimneto Humano"
+      subname = "Desenvolvimento Humano"
       />
       <div className="cards">
       <h1>Indicadores de Desenvolvimento Humano</h1>

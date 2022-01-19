@@ -2,17 +2,19 @@ import React from "react";
 import "../../App.css";
 import "../Cards.css";
 import CardItem from "../CardItem";
-import NavSubItem from "../pages/pagesBI/NavSubItem";
+import NavSubSocial from "../pages/pagesBI/Social/NavSubSocial";
 
 export default function Social() {
   return( <>
-   <NavSubItem 
+   <NavSubSocial 
       link1 = "/educacao"
       name1 = "Educação"
       link2 = "/populacao"
       name2 = "População"
       link3 = "/saude"
       name3 = "Saúde"
+      link4 = "/empregos"
+      name4 = "Empregos"
 
       imageicon = "images/populacaoatendidaIcon.png"
       subname = "Social"

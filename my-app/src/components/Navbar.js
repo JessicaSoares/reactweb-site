@@ -158,23 +158,24 @@ function Navbar() {
 <li onClick={toggleSubmenu2} className="menu-item sub__menus__arrows" > <Link to="#"> Perfil do município &nbsp; <FiChevronDown /> </Link>
     <ul className={boxClassSubMenu2.join(' ')}> 
     <li> <NavLink  onClick={closeMobileMenu2} activeClassName='is-active' to={`/Agronegocio`}> Parauapebas em números </NavLink> </li>
-        <li><NavLink onClick={closeMobileMenu2} activeClassName='is-active' to={`/Orcamentarios`}> Painéis Orçamentários </NavLink> </li>
+
        
     </ul>
 </li>
 </ul>
 
 
-
           <li className='nav-item'>
             <Link
-              to='/Products'
+              to='/mapas'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-             Mapas dinâmicos
+             Mapas temáticos
             </Link>
           </li>
+
+  
 
 
                     <ul className={boxClass.join(' ')}>
@@ -191,17 +192,23 @@ function Navbar() {
         <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Transito`}> Trânsito </NavLink> </li>
     </ul>
 </li>
+
 </ul>
-          <li className='nav-item'>
+
+
+<li className='nav-item'>
             <Link
-              to='/Products'
+              to='/DashboardsGov'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-             Entrar  &nbsp; <GiPadlock />
+            Dashboards Governamentais
             </Link>
           </li>
+
         </ul>
+
+        
       </nav>
     </>
   );

@@ -97,12 +97,12 @@ function NavSubItem(props) {
             </Link>
           </li>
           <li className='nav-item-sub'>
-          <Link to= {props.link3} className='nav-links-sub' onClick={closeMobileMenu}>
+          <Link to= {props.link4} className='nav-links-sub' onClick={closeMobileMenu}>
              {props.name4}
             </Link>
           </li>
           <li className='nav-item-sub'>
-          <Link to= {props.link3} className='nav-links-sub' onClick={closeMobileMenu}>
+          <Link to= {props.link5} className='nav-links-sub' onClick={closeMobileMenu}>
              {props.name5}
             </Link>
           </li>

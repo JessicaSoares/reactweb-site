@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 import "../Cards.css";
 import CardItem from "../CardItem";
-import NavSubItem from "../pages/pagesBI/NavSubItem";
+import NavSubItem from "../pages/pagesBI/Infraestrutura/NavInfraestrutura";
 
 export default function Infraestrutura() {
   return (
@@ -24,7 +24,7 @@ export default function Infraestrutura() {
           <ul className="cards__items">
   
             <CardItem
-              src="images/esgoto.png"
+              src="images/lixo.png"
               text=""
               label="Lixo"
               path="/lixo"

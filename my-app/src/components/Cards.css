@@ -37,12 +37,13 @@ h1 {
   display: flex;
   width: 240px;
   height: 240px;
-  box-shadow: 1px 10px 30px rgba(10, 20, 110, 0.459);
+  box-shadow: 15px 20px 40px rgba(2, 7, 49, 0.767);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   border-radius: 20px;
   overflow: hidden;
   text-decoration: none;
+  border-color: black;
 }
 
 .cards__item__pic-wrap {
@@ -64,10 +65,10 @@ h1 {
   margin-left: 10px;
   padding: 6px 8px;
   max-width: calc((100%) - 60px);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   color: #fff;
-  background-color: #1f98f4;
+  background-color: #1b7709;
   box-sizing: border-box;
 }
 

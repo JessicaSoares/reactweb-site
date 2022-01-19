@@ -33,7 +33,7 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Portais</h2>
-            <Link to='/'>Prefeitura de Parauapebas</Link>
+            <Link to='/'>Prefeitura</Link>
             <Link to='/'>Governo do Estado</Link>
             <Link to='/'>Transparência</Link>
           </div>
@@ -49,11 +49,10 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              SEGOV
-              <i class='fab fa-typo3' />
+              <img src="images/logosegov.png" className='social-logo'/>
             </Link>
           </div>
-          <small class='website-rights'>SEGOV © 2021</small>
+          <small class='website-rights'>SEGOV © 2022</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'

@@ -1,7 +1,7 @@
 import "../graphs.css";
 import "../BoxLegend.css";
 import React, { useState, useEffect } from "react";
-import NavSubItem from "../NavSubItem";
+import NavSubItem from "./NavSubSocial";
 
 export default function NavSocial() {
 
@@ -14,8 +14,8 @@ export default function NavSocial() {
     name2 = "População"
     link3 = "/saude"
     name3 = "Saúde"
-    link4 = ""
-    name4 = ""
+    link4 = "/empregos"
+    name4 = "Empregos"
     imageicon = "images/populacaoatendidaIcon.png"
     subname = "Social"
     />

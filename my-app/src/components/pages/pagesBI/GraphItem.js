@@ -9,6 +9,7 @@ import Button from "@material-ui/core/Button";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
+import Footer from '../../GraphFooter';
 
 
 function GraphItem(props) {
@@ -22,18 +23,8 @@ function GraphItem(props) {
           </h1>
 
           <Iframe url={props.url} className="economia" height="100%" /> <br />
-          <Link to="/sign-up">
-            {" "}
-            <Button
-              url="dsf"
-              variant="contained"
-              color="primary"
-              startIcon={<AiOutlineCloudDownload />}
-            >
-              Baixar Dados
-            </Button>{" "}
-          </Link>{" "}
-          <div className="legend"> </div>{" "}
+ 
+        <Footer />
           <Accordion classname = "maisinfos" defaultActiveKey="1" >
             <Accordion.Item eventKey="0">
               <Accordion.Header>Mais informações</Accordion.Header>
