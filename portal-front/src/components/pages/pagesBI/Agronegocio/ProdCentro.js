@@ -139,19 +139,14 @@ xlsx(rows, settings)
       
       <TextSectionItem
       titlesection = "Agricultura Familiar"
-      textsection = "  Agricultura familiar é toda forma de cultivo de terra que é administrada por uma família e emprega como mão de obra os membros da mesma. A produção de alimentos acontece em pequenas propriedades de terra e se destina a subsistência do produtor rural e ao mercado interno do país.A agricultura familiar é a responsável pela maior parcela dos empregos gerados no campo e representa a maior parte das propriedades agropecuárias brasileiras. 
-      Esse segmento caracteriza-se pela produção de uma grande variedade de alimentos, com destaque para culturas como café, feijão, mandioca, banana e abacaxi."
-                
-  
-      
+      textsection = "Agricultura familiar é toda forma de cultivo de terra que é administrada por uma família e emprega como mão de obra os membros da mesma. Ela é responsável pela maior parcela de empregos gerados no campo e representa a maior parte das propriedades agropecuárias brasileiras. 
+      Este segmento caracteriza-se pela produção de uma grande variedade de alimentos, com destaque para culturas como café, feijão, mandioca, banana e abacaxi."
       />
         <div className = "teste">      
         <Button color="success" onClick={this.downloadagrifamiliar} startIcon= {< AiOutlineCloudDownload />} variant="contained">Download dos dados da agricultura familiar    </Button> </div>
-      <section class="page-section-sub-boxlegend " id="about">
+        <section class="page-section-sub-boxlegend " id="about">
         <Container>
           <Row>
-
-  
           <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiZDkyMzAzYjMtNzQzNC00YTUxLWI4N2EtZDU4MTBhODZmZjE2IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Quantidade de Familias Atendidas"
@@ -166,12 +161,7 @@ xlsx(rows, settings)
         url= "https://app.powerbi.com/view?r=eyJrIjoiN2FkYjkyNTYtOGJhNy00ODY0LTk3ZjAtNWZjOWNmNWMwMDgxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Total de Chefes de Família por Escolaridade"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMjk3MzM2NDAtNjZiOS00ZTU4LTljM2ItYTJjMDg5ZjYxZmFhIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Total de Chefes de Unidade Familiar  Por Sexo"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
+        />       
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiMjZmZTE0NTMtMTU0Mi00YTRmLTlhOGEtZWFhMTQ5OTdmZjY5IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Percentual de Chefes de Família por Tipo"
@@ -193,17 +183,7 @@ xlsx(rows, settings)
         titulobi="Produtos mais Comercializados por Categoria"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiOTMzYjMxNGItMGM4My00ZTViLWI2ZTMtNzM5ZDExNDBlYmQ4IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9&pageName=ReportSection"
-        titulobi="Produtos por Tipo de Beneficiamento"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMmFmNGZhOGEtNWJmZS00NzViLTk2NDgtYTUyNjEzMjNmY2NjIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Produtos por Tipo de Origem"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiMDI0ZDY1NTgtMmEzMC00MzMyLTgxMGEtNWYyZjE5ZjFhMzM2IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi=" Rebanho Bovino"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
@@ -218,16 +198,10 @@ xlsx(rows, settings)
         titulobi=" Avicultura "
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMWRjMTAzYTEtZjI1Ni00ODNmLTk2ZjQtNzQ5OTg1YzQzMTk4IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Percentual de Aves Por Finalidade "
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-          </Row>
+       </Row>
          
         </Container>
       </section>
-
     </>
   );
 }}

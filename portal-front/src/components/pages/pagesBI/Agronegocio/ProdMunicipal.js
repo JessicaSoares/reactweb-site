@@ -18,10 +18,8 @@ export default function Graphs() {
       <NavAgronegocio/>
       
       <TextSectionItem
-      titlesection = "Produção Agricultura Municipal - PAM"
-      textsection = "A Produção Agrícola Municipal - PAM teve início no Ministério da Agricultura em 1938. Suas informações eram levantadas pela Rede de Coleta do IBGE, cabendo ao Ministério a elaboração dos questionários, a apuração, a crítica e a divulgação dos resultados. Com a publicação do Decreto n. 73.482, de 17.01.1974, o Instituto tornou-se responsável por todas as fases da pesquisa a partir daquela data, bem como pelos demais inquéritos estatísticos relacionados ao setor agropecuário. As estatísticas relativas aos anos de 1971 e 1972, porém, não estão disponíveis por não terem sido divulgadas pelo Ministério.
-
-      A pesquisa fornece informações sobre área plantada, área destinada à colheita, área colhida, quantidade produzida, rendimento médio e preço médio pago ao produtor, no ano de referência, para 64 produtos agrícolas (31 de culturas temporárias e 33 de culturas permanentes). As culturas temporárias, cabe destacar, são as de curta ou média duração, uma vez que seu ciclo reprodutivo é inferior a um ano, e, depois de colhidas, precisam de um novo plantio. As culturas permanentes, por outro lado, são as de ciclo longo, cujas colheitas podem ser feitas por vários anos sem a necessidade de novo plantio."
+      titlesection = "Agricultura Municipal - Produção"
+      textsection = " A Produção Agricultura Municipal é um conjunto de produtos das lavouras temporárias e permanentes do município que se caracterizam não só pela grande importância econômica que possuem na pauta de exportações, como também por sua relevância social, componentes que são da cesta básica do cidadão."
       />
       <section class="page-section-sub-boxlegend " id="about">
         <Container>
