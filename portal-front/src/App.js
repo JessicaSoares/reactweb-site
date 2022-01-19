@@ -4,19 +4,19 @@ import Footer from './components/Footer'
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
 import Agronegocio from './components/pages/Agronegocio';
 import Orcamentarios from './components/pages/Orcamentarios';
 import Social from './components/pages/Social';
-
 import Transito from './components/pages/Transito';
 import MeioAmbiente from './components/pages/MeioAmbiente';
 import Infraestrutura from './components/pages/Infraestrutura';
 import Empregos from './components/pages/pagesBI/Social/Empregos';
-
 import Economia from './components/pages/Economia';
+
 import PIB from './components/pages/pagesBI/Economia/PIB';
 import ComercialBI from './components/pages/pagesBI/ComercialBI';
 import Graphs from './components/pages/pagesBI/Graphs';
@@ -25,28 +25,22 @@ import ComercioIndustria from './components/pages/pagesBI/Economia/ComercioIndus
 import ProdCentro from './components/pages/pagesBI/Agronegocio/ProdCentro';
 import ProdMunicipal from './components/pages/pagesBI/Agronegocio/ProdMunicipal';
 import ProdPecuaria from './components/pages/pagesBI/Agronegocio/ProdPecuaria';
-
 import Populacao from './components/pages/pagesBI/Social/Populacao';
-
 import Educacao from './components/pages/pagesBI/Social/Educacao';
-
 import Saude from './components/pages/pagesBI/Social/Saude';
 
 import DashboardsGov from './components/pages/DashboardsGov';
 
 import DesenvolvimentoHumano from './components/pages/DesenvolvimentoHumano';
 import DesenvHumano from './components/pages/pagesBI/DesenvolvimentoHumano/DesenvHumano';
-
 import Agua from './components/pages/pagesBI/Infraestrutura/Agua';
 import Esgoto from './components/pages/pagesBI/Infraestrutura/Esgoto';
 import Iluminacao from './components/pages/pagesBI/Infraestrutura/Iluminacao';
-
 import Despesas from './components/pages/pagesBI/Economia/Despesas';
 import Receitas from './components/pages/pagesBI/Economia/Receitas';
-
 import Lixo from './components/pages/pagesBI/Infraestrutura/Lixo';
-
 import MeioAmbientecard from './components/pages/pagesBI/MeioAmbiente/MeioAmbiente';
+
 import Mapas from './components/pages/Mapas';
 import Infraestruturamaps from './components/pages/Mapas/Infraestrutura/Infraestrutura';
 import Urbanismomaps from './components/pages/Mapas/Urbanismo/Urbanismo';
@@ -59,7 +53,6 @@ function App() {
     <>
       <Router>
         <Navbar />
-        
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/meioambiente' exact element={<MeioAmbiente />} />
@@ -90,7 +83,6 @@ function App() {
           <Route path='/esgoto' element={<Esgoto />} />
           <Route path='/agua' element={<Agua />} />
           <Route path='/iluminacao' element={<Iluminacao />} />
-
           <Route path='/despesas' element={<Despesas />} />
           <Route path='/receitas' element={<Receitas />} />
           <Route path='/lixo' element={<Lixo />} />
@@ -101,14 +93,10 @@ function App() {
           <Route path='/meioambientemaps' element={<MeioAmbientemaps />} />
           <Route path='/patrimoniomaps' element={<Patrimoniomaps />} />
           <Route path='/turismomaps' element={<Turismomaps />} />
-
-        
         </Routes>
         <Footer />
       </Router>
-      
     </>
-    
   );
 }
 

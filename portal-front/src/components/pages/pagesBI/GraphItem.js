@@ -23,12 +23,8 @@ function GraphItem(props) {
           </h1>
 
           <Iframe url={props.url} className="economia" height="100%" /> <br />
-          <Link to="/sign-up">
-       
-            {" "}
  
-          </Link>{" "}
-        
+        <Footer />
           <Accordion classname = "maisinfos" defaultActiveKey="1" >
             <Accordion.Item eventKey="0">
               <Accordion.Header>Mais informações</Accordion.Header>

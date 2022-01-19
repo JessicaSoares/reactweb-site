@@ -8,8 +8,8 @@
 }
 
 .graphfooter-container {
-  background-color: #ffffff;
-  padding: 2rem 0 2rem 0;
+  background-color: #000000;
+  height: 55px;
   display: flex;
   flex-direction: column;
   justify-content: center;
