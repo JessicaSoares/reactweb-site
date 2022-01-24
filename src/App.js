@@ -15,7 +15,7 @@ import Social from './components/pages/Social';
 import Transito from './components/pages/Transito';
 import MeioAmbiente from './components/pages/MeioAmbiente';
 import Infraestrutura from './components/pages/Infraestrutura';
-import Empregos from './components/pages/Empregos';
+import Empregos from './components/pages/pagesBI/Social/Empregos';
 import DesenvolvimentoHumano from './components/pages/DesenvolvimentoHumano';
 import Economia from './components/pages/Economia';
 import PIB from './components/pages/pagesBI/Economia/PIB';
@@ -26,6 +26,7 @@ import ComercioIndustria from './components/pages/pagesBI/Economia/ComercioIndus
 import ProdCentro from './components/pages/pagesBI/Agronegocio/ProdCentro';
 import ProdMunicipal from './components/pages/pagesBI/Agronegocio/ProdMunicipal';
 import ProdPecuaria from './components/pages/pagesBI/Agronegocio/ProdPecuaria';
+import MeioAmbientecard from './components/pages/pagesBI/MeioAmbiente/MeioAmbiente';
 
 import Populacao from './components/pages/pagesBI/Social/Populacao';
 
@@ -33,6 +34,7 @@ import Educacao from './components/pages/pagesBI/Social/Educacao';
 
 import Saude from './components/pages/pagesBI/Social/Saude';
 
+import Lixo from './components/pages/pagesBI/Infraestrutura/Lixo';
 
 function App() {
   return (
@@ -66,6 +68,10 @@ function App() {
           <Route path='/producaoagricola' element={<ProdMunicipal />} />
           <Route path='/centrodeabastecimento' element={<ProdCentro />} />
           <Route path='/pecuaria' element={<ProdPecuaria />} />
+
+          <Route path='/meioambientecard' element={<MeioAmbientecard />} />
+          <Route path='/lixo' element={<Lixo />} />
+
 
 
 

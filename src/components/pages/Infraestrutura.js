@@ -14,31 +14,20 @@ export default function Infraestrutura() {
       name2 = "PIB"
       link3 = "/comercioeindustria"
       name3 = "Comércio e industria"
-      link4 = ""
-      name4 = ""
+      link4 = "/lixo"
+      name4 = "Lixo"
       />
       <div className="cards">
       <h1>Indicadores da economia</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
-            <CardItem
-              src="images/balance.png"
-              text=""
-              label="Balança comercial"
-              path="/graphs"
-            />
-            <CardItem
-              src="images/PIB.png"
-              text=""
-              label="PIB"
-              path="/PIBBI"
-            />
+  
             <CardItem
               src="images/industry.png"
               text=""
-              label="Comercio e Industria"
-              path="/comercioeindustria"
+              label="Lixo"
+              path="/lixo"
             />
           </ul>
           <ul className="cards__items">
