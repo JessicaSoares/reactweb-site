@@ -32,7 +32,6 @@ export default function DesenvolvimentoHumano() {
            
           </ul>
           <ul className="cards__items">
-
           </ul>
         </div>
       </div>
