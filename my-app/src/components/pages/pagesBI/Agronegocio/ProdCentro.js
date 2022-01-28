@@ -139,8 +139,7 @@ xlsx(rows, settings)
       
       <TextSectionItem
       titlesection = "Agricultura Familiar"
-      textsection = "Agricultura familiar é toda forma de cultivo de terra que é administrada por uma família e emprega como mão de obra os membros da mesma. Ela é responsável pela maior parcela de empregos gerados no campo e representa a maior parte das propriedades agropecuárias brasileiras. 
-      Este segmento caracteriza-se pela produção de uma grande variedade de alimentos, com destaque para culturas como café, feijão, mandioca, banana e abacaxi."
+      textsection = "Agricultura familiar é toda forma de cultivo de terra que é administrada por uma família e emprega como mão de obra os membros da mesma. Ela é responsável pela maior parcela de empregos gerados no campo e representa a maior parte das propriedades agropecuárias brasileiras.Este segmento caracteriza-se pela produção de uma grande variedade de alimentos, com destaque para culturas como café, feijão, mandioca, banana e abacaxi. Os dados dos gráficos a seguir foram coletados da FONTE: SEMPROR."
       />
         <div className = "teste">      
         <Button color="success" onClick={this.downloadagrifamiliar} startIcon= {< AiOutlineCloudDownload />} variant="contained">Download dos dados da agricultura familiar    </Button> </div>

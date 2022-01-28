@@ -19,7 +19,7 @@ export default function Graphs() {
       
       <TextSectionItem
       titlesection = "Produção Pecuária Municipal"
-      textsection = "A pecuária é uma atividade econômica pertencente ao setor primário que diz respeito à criação de animais para a comercialização direta, para o fornecimento de matérias-primas empregadas em outros setores produtivos (como couros, lãs e peles) e, principalmente, para a produção de alimentos como carnes, leites, ovos e mel."
+      textsection = "A pecuária é uma atividade econômica pertencente ao setor primário que diz respeito à criação de animais para a comercialização direta, para o fornecimento de matérias-primas empregadas em outros setores produtivos (como couros, lãs e peles) e, principalmente, para a produção de alimentos como carnes, leites, ovos e mel. Os dados dos gráficos a seguir foram coletados da FONTE: IBGE: PPM."
       />
       <section class="page-section-sub-boxlegend " id="about">
         <Container>
