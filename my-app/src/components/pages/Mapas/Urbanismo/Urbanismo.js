@@ -22,7 +22,7 @@ export default function Urbanismo() {
           <Row>
         <GraphItem
         url= "https://map.vm2info.com/parauapebas/1802"
-        titulobi="sdsdsdsd"
+        titulobi="Bairros de Parauapebas"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
           </Row>

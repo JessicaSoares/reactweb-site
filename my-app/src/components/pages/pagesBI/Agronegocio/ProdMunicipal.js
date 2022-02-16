@@ -13,7 +13,8 @@ import NavAgronegocio from "./NavAgronegocio";
 
 export default function Graphs() {
 
-  return (
+
+   return (
     <>
       <NavAgronegocio/>
       

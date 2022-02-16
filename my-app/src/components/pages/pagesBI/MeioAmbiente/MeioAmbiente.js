@@ -134,7 +134,7 @@ xlsx(rows, settings)
       
       <TextSectionItem
       titlesection = "Queimadas"
-      textsection = "Há pelo menos duas décadas a Embrapa – Empresa Brasileira de Pesquisa Agropecuária em parceria com outros órgãos governamentais, monitora por meio de imagens de satélite a ocorrência de queimadas em áreas rurais e de vegetação nativa no Brasil. Dados divulgados pela empresa dão conta de um aumento expressivo destas ocorrências nos últimos anos em todo o país."
+      textsection = "Há pelo menos duas décadas a Embrapa – Empresa Brasileira de Pesquisa Agropecuária em parceria com outros órgãos governamentais, monitora por meio de imagens de satélite a ocorrência de queimadas em áreas rurais e de vegetação nativa no Brasil. Dados divulgados pela empresa dão conta de um aumento expressivo destas ocorrências nos últimos anos em todo o país. Os dados dos gráficos a seguir foram coletados da FONTE: Defesa Civil de Parauapebas."
       />
 
 <button
@@ -161,6 +161,16 @@ xlsx(rows, settings)
         titulobi="Indicador de Queimadas por Bairro"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
+           <GraphItem
+        url= "https://app.powerbi.com/view?r=eyJrIjoiYzFjODcyNDctOTc5Yy00MDI2LWE3NjctOTEzZmE3M2U0YTg5IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
+        titulobi="Indicador de Queimadas por Zona"
+        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
+        />
+         <GraphItem
+        url= "https://app.powerbi.com/view?r=eyJrIjoiOWI3YzYxMmItYzk0Mi00ZDNiLThjMGItYjFiOTFjM2YwYjFmIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
+        titulobi="Quantidade de Focos de Queimadas por Natureza"
+        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
+        />       
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiNzQ5OGYwNTYtMmFkYi00M2FlLTk5NzUtY2Q3MGY2N2YzY2NiIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Indicador de Queimadas por Municipio"
@@ -170,18 +180,7 @@ xlsx(rows, settings)
         url= "https://app.powerbi.com/view?r=eyJrIjoiMDk4YWU0M2MtYjhlYS00YmYyLWE1MDItN2MxYzkwNTY5NjhjIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Indicador de Queimadas por Chamado ao Mês"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-         <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiYzFjODcyNDctOTc5Yy00MDI2LWE3NjctOTEzZmE3M2U0YTg5IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Indicador de Queimadas por Zona"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiOWI3YzYxMmItYzk0Mi00ZDNiLThjMGItYjFiOTFjM2YwYjFmIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Focos de Queimadas por Natureza"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        
+        />     
           </Row>
         </Container>
       </section>

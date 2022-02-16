@@ -48,7 +48,7 @@ export default function Esgoto() {
           </Row>
         </Container>
       </section>
-      < Footer />
+  
     </>
   );
 }

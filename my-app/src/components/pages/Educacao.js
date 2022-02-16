@@ -17,6 +17,8 @@ export default function Educacao() {
       name4 = "Comércio e industria"
 
       />
+
+      
       <div className="cards">
       <h1>Indicadores da Educação</h1>
       <div className="cards__container">

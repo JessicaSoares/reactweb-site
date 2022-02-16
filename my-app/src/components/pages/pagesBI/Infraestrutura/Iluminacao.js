@@ -38,7 +38,7 @@ export default function Iluminacao() {
           </Row>
         </Container>
       </section>
-      < Footer />
+
     </>
   );
 }

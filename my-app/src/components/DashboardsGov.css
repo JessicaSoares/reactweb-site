@@ -35,8 +35,8 @@ h1 {
 
 .cards__item__linkgov {
   display: flex;
-  width: 240px;
-  height: 240px;
+  width: 180px;
+  height: 180px;
   box-shadow: 15px 20px 40px rgba(2, 7, 49, 0.767);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
@@ -65,19 +65,19 @@ h1 {
   margin-left: 10px;
   padding: 6px 8px;
   max-width: calc((100%) - 60px);
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 700;
   color: #fff;
-  background-color: #276110;
+  background-color: #376D2B;
   box-sizing: border-box;
 }
 
 .cards__item__imggov {
   position: absolute;
-  top: 50px;
+  top: 25px;
   right: 50px;
-  bottom: 50px;
-  left: 50px;
+  bottom: 40px;
+  left:  35px;
   display: block;
   width: 60%;
   max-width: 60%;
@@ -85,7 +85,6 @@ h1 {
   max-height: 60%;
   object-fit: cover;
   transition: all 0.2s linear;
-  align-items: center;
 }
 
 .cards__item__imggov:hover {

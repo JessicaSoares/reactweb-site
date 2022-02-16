@@ -7,28 +7,12 @@ import './Aboutother.css';
 
 function Aboutother() {
     return (
-      <>
-        <section class="page-section bg-primary" id="about">
-          <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-              <div class="col-lg-8 text-center">
-                <h2 class="text-white mt-0">Sobre o Observatório</h2>
-              
-                <p class="text-white-75 mb-4">
-                  É um portal voltado ao monitoramento e planejamento do
-                  desenvolvimento do Município de Parauapebas. Consiste em um
-                  Repositório único de dados para exposição de informações que
-                  visam subsidiar e oferecer ao Governo do Município, suporte ao
-                  planejamento de políticas públicas, investimentos, tomada de
-                  decisões e análise dos principais fatores que afetam a
-                  competitividade e desempenho econômico do Município em
-                  diversos segmentos tais como: saúde, educação, agronegócios,
-                  indústria, segurança, infra-estrutura e economia.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <> 
+
+
+     
+
+
 
         <section class="page-section" id="services">
           <div class="container px-4 px-lg-5">

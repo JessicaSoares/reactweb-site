@@ -34,7 +34,7 @@
     margin-right:10%;
   }
 
-  .maisinfos {
+  .legend {
     padding: 3rem 0;
     font-family: 'Roboto';
     text-align: justify;
@@ -71,7 +71,7 @@
   
   .titulobi {
     color: rgb(4, 65, 80);
-    font-size: 17px;
+    font-size: 13px;
     text-align: center;
     font-family: 'Roboto';
     padding: 0.5em;

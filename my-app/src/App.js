@@ -4,9 +4,13 @@ import Footer from './components/Footer'
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Helmet } from "react-helmet";
+import { useSelector } from "react-redux";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./styles/globalStyles";
+import { darkTheme, lightTheme } from "./styles/theme";
 
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
+
 import SignUp from './components/pages/SignUp';
 import Agronegocio from './components/pages/Agronegocio';
 import Orcamentarios from './components/pages/Orcamentarios';
@@ -37,6 +41,7 @@ import Agua from './components/pages/pagesBI/Infraestrutura/Agua';
 import Esgoto from './components/pages/pagesBI/Infraestrutura/Esgoto';
 import Iluminacao from './components/pages/pagesBI/Infraestrutura/Iluminacao';
 import Despesas from './components/pages/pagesBI/Economia/Despesas';
+import DespesasPessoal from './components/pages/pagesBI/Economia/DespesasPessoal';
 import Receitas from './components/pages/pagesBI/Economia/Receitas';
 import Lixo from './components/pages/pagesBI/Infraestrutura/Lixo';
 import MeioAmbientecard from './components/pages/pagesBI/MeioAmbiente/MeioAmbiente';
@@ -48,11 +53,28 @@ import MeioAmbientemaps from './components/pages/Mapas/MeioAmbiente/MeioAmbiente
 import Patrimoniomaps from './components/pages/Mapas/PatrimonioPublico/Patrimonio';
 import Turismomaps from './components/pages/Mapas/Turismo/Turismo';
 
-function App() {
+import DespesasMenu from './components/pages/pagesBI/Economia/DespesasFork';
+
+
+const App = () => {
+  const { theme } = useSelector((state) => state.ui);
+  const currentTheme = theme === "light" ? lightTheme : darkTheme;
   return (
-    <>
-      <Router>
-        <Navbar />
+
+      <ThemeProvider theme={currentTheme}>
+          <GlobalStyles />
+          <Helmet>
+              <title>Observatório de desenvolvimento de Parauapebas</title>
+              <link rel="preconnect" href="https://fonts.googleapis.com" />
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+              <link
+                  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+                  rel="stylesheet"
+              />
+          </Helmet>
+          <>
+          <Navbar />
+       
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/meioambiente' exact element={<MeioAmbiente />} />
@@ -60,8 +82,6 @@ function App() {
           <Route path='/empregos' exact element={<Empregos />} />
           <Route path='/educacao' exact element={<Educacao />} />
           <Route path='/desenvolvimentohumano' exact element={<DesenvolvimentoHumano />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/products' element={<Products />} />
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/agronegocio' element={<Agronegocio />} />
           <Route path='/Orcamentarios' element={<Orcamentarios />} />
@@ -87,17 +107,24 @@ function App() {
           <Route path='/receitas' element={<Receitas />} />
           <Route path='/lixo' element={<Lixo />} />
           <Route path='/meioambientecard' element={<MeioAmbientecard />} />
+          <Route path='/despesaspessoal' element={<DespesasPessoal />} />
+
+          
           <Route path='/mapas' element={<Mapas />} />
           <Route path='/infraestruturamaps' element={<Infraestruturamaps />} />
           <Route path='/urbanismomaps' element={<Urbanismomaps />} />
           <Route path='/meioambientemaps' element={<MeioAmbientemaps />} />
           <Route path='/patrimoniomaps' element={<Patrimoniomaps />} />
           <Route path='/turismomaps' element={<Turismomaps />} />
+
+          <Route path='/despesasmenu' element={<DespesasMenu />} />
+
         </Routes>
-        <Footer />
-      </Router>
-    </>
+        <Footer /> 
+          </>
+      </ThemeProvider>
   );
-}
+};
 
 export default App;
+

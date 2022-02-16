@@ -24,7 +24,7 @@ export default function DesenvolvimentoHumano() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/desenvolvimentoHuman.png"
+              src="https://img.icons8.com/dotty/80/26e07f/fingerprint.png"
               text=""
               label="Desenvolvimento Humano"
               path="/desenvhumano"
@@ -32,7 +32,6 @@ export default function DesenvolvimentoHumano() {
            
           </ul>
           <ul className="cards__items">
-
           </ul>
         </div>
       </div>

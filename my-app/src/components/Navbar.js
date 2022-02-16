@@ -139,7 +139,7 @@ function Navbar() {
       <nav className='navbar'>
          
           <p className='navbar-logo' >
-          <img src='images/logo.png' className='logo' />
+          <img src='images/logoIcon.png' className='logo' />
           Observatório de Desenvolvimento <br/> de Parauapebas
           </p>
  
@@ -164,21 +164,7 @@ function Navbar() {
 </li>
 </ul>
 
-
-          <li className='nav-item'>
-            <Link
-              to='/mapas'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-             Mapas temáticos
-            </Link>
-          </li>
-
-  
-
-
-                    <ul className={boxClass.join(' ')}>
+<ul className={boxClass.join(' ')}>
 
 <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Indicadores &nbsp;<FiChevronDown /> </Link>
     <ul className={boxClassSubMenu.join(' ')}> 
@@ -195,6 +181,15 @@ function Navbar() {
 
 </ul>
 
+          <li className='nav-item'>
+            <Link
+              to='/mapas'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+             Mapas temáticos
+            </Link>
+          </li>
 
 <li className='nav-item'>
             <Link

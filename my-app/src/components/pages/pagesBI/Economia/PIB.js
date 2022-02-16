@@ -40,7 +40,7 @@ export default function PIB() {
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
         <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiNjQ4ZjIzYjUtNDkzMi00MmQ1LThlYmMtOTQ0NDM3ODI5ZjYzIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9&pageName=ReportSection9c4499242c01db74c377"
+        url= "https://app.powerbi.com/view?r=eyJrIjoiYTgyYTE5ZTYtYjU2NS00ZTMzLWJhY2QtM2Y4ZTMxNDQ0NmU1IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Valor Adicionado"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />

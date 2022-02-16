@@ -24,25 +24,25 @@ export default function Infraestrutura() {
           <ul className="cards__items">
   
             <CardItem
-              src="images/lixo.png"
+              src="https://img.icons8.com/dotty/80/26e07f/waste.png"
               text=""
               label="Lixo"
               path="/lixo"
             />
                         <CardItem
-              src="images/esgoto.png"
+           src="https://img.icons8.com/dotty/80/26e07f/piping.png"
               text=""
               label="Esgoto"
               path="/esgoto"
             />
                         <CardItem
-              src="images/agua.png"
+           src="https://img.icons8.com/dotty/80/26e07f/plumbing.png"
               text=""
               label="Água"
               path="/agua"
             />
                                 <CardItem
-              src="images/iluminacao.png"
+              src="https://img.icons8.com/dotty/80/26e07f/light-on.png"
               text=""
               label="Iluminação"
               path="/iluminacao"

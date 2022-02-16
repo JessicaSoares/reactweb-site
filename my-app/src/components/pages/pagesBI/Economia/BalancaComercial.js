@@ -53,7 +53,7 @@ export default function Graphs() {
           </Row>
         </Container>
       </section>
-      < Footer />
+
     </>
   );
 }

@@ -26,7 +26,7 @@ export default function MeioAmbiente() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/meioambiente.png"
+           src="https://img.icons8.com/dotty/80/26e07f/hand-planting.png"
               text=""
               label="Meio Ambiente"
               path="/meioambientecard"

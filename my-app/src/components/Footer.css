@@ -7,16 +7,6 @@
   align-items: center;
 }
 
-.graphfooter-container {
-  background-color: #ffffff;
-  height: 57px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 75px;
-}
 
 .footer-subscription {
   display: flex;
@@ -28,6 +18,20 @@
   padding: 24px;
   color: #fff;
 }
+
+
+.relative-parent {
+  background: #ffffff;
+  height: 1px;
+}
+
+.relative {
+  background-color: #ffffff;
+  height: 55px;
+  position: relative;
+  bottom: 73px;
+}
+
 
 .footer-subscription > p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -75,7 +79,7 @@
   align-items: flex-start;
   margin: 16px;
   text-align: left;
-  width: 160px;
+  width: 120px;
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
   'Lucida Sans', Arial, sans-serif;

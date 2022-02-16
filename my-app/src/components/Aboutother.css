@@ -1375,7 +1375,7 @@
   color: #192d3f !important;
   text-align: left;
   font-family: 'Roboto';
-  font-size: 16px;
+  font-size: 13px;
   
 }
   
@@ -4956,7 +4956,6 @@
   }
   
   .page-section {
-    padding: 5rem 0;
     font-family: 'Roboto';
     text-align: justify;
 

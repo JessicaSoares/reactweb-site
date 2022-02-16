@@ -25,19 +25,19 @@ export default function Agronegocio() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/producaoagricola.png"
+        src="https://img.icons8.com/dotty/80/26e07f/sprout.png"
               text=""
               label="Produção agrícola Municipal"
               path="/producaoagricola"
             />
             <CardItem
-              src="images/centrodeabastecimento.png"
+             src="https://img.icons8.com/dotty/80/26e07f/spade.png"
               text=""
               label="Agricultura Familiar"
               path="/centrodeabastecimento"
             />
             <CardItem
-              src="images/pecuaria.png"
+            src="https://img.icons8.com/dotty/80/26e07f/cuts-of-beef.png"
               text=""
               label="Produção Pecuária Municipal"
               path="/pecuaria"

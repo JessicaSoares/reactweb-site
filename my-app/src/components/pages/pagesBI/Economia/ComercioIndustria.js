@@ -37,7 +37,7 @@ export default function Graphs() {
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
         <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiNzhkNzU1NjgtMWM0Yi00Nzk0LWJmZmMtOTQzMjUwM2FjZmI1IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
+        url= "https://app.powerbi.com/view?r=eyJrIjoiZTZmMmFhMmItMmE0Mi00N2MxLTg2MGQtZWVmM2MwZDk4N2E3IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Top 5 - Principais Atividade"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
