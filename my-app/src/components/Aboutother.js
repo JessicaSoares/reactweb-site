@@ -38,7 +38,7 @@ function Aboutother() {
                     <li>
                       • Funcionar como ferramenta de apoio à gestão pública;
                     </li>
-                    <li>• Subsidiar as tomadas de decisões;</li>
+                    <li>• Subsidiar as tomadas de decisões.</li>
                   </ol>
                 </div>
               </div>
@@ -50,13 +50,13 @@ function Aboutother() {
                       <CgSearch color="#00773D;" />
                     </i>
                   </div>
-                  <h3 class="h4 mb-2">O que encontra</h3>
+                  <h3 class="h4 mb-2">O que encontrar</h3>
                   <ol class="text-muted mb-0">
                     <li>• Dashboards, gráficos, infográficos e mapas;</li>
                     <li>• Relatórios estatísticos;</li>
                     <li>• Indicadores de desempenho;</li>
                     <li>• Georreferenciamento de Informações;</li>
-                    <li>• Transparências de ações e investimentos</li>
+                    <li>• Transparências de ações e investimentos.</li>
                   </ol>
                 </div>
               </div>
@@ -99,13 +99,13 @@ function Aboutother() {
                       decisão;{" "}
                     </li>
                     <li> • Empresários e Investidores; </li>
-                    <li> • Comunidade Científica;; </li>
+                    <li> • Comunidade Científica;</li>
                     <li>
                       {" "}
                       • Comunidade Universitária e Estudantes do ensino
                       Fundamental e Médio;
                     </li>
-                    <li> • Público em Geral; . </li>
+                    <li> • Público em Geral;</li>
                   </ol>
                 </div>
               </div>

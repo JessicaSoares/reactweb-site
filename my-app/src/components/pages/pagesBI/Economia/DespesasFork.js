@@ -30,7 +30,7 @@ export default function DespesasFork() {
             <CardItem
               src="https://img.icons8.com/dotty/80/26e07f/low-price.png"
               text=""
-              label="Despesas Orçamentárias"
+              label="Despesas"
               path="/despesas"
             />
             <CardItem

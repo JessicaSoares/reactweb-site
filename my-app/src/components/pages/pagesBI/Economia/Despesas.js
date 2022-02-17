@@ -133,7 +133,7 @@ xlsx(rows, settings)
       
       <TextSectionItem
       titlesection = "Despesas"
-      textsection = "Despesa, ato ou efeito de desembolsar dinheiro em compras, doações, obrigações etc, ou seja todo o gasto de caráter geral, relacionado com a administração e vendas, exemplo: material de escritório. Os dados dos gráficos abaixo foram coletados da fonte: ASPEC - PMP"
+      textsection = "Despesa, ato ou efeito de desembolsar dinheiro em compras, doações, obrigações etc, ou seja todo o gasto de caráter geral, relacionado com a administração e vendas, exemplo: material de escritório."
       />
 
       
@@ -141,22 +141,22 @@ xlsx(rows, settings)
         <Container>
           <Row>
         <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMWM5NDNiMzQtNjZjZi00Y2EzLWEyMzEtYmE3NWMxOTAzMzMxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9&pageName=ReportSection6a19156f389c7f923d78"
+        url= "https://app.powerbi.com/view?r=eyJrIjoiNzIzMzhmYjgtMmY5OS00ODA2LWIyYzktYjhlODEyYmFkYWUyIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Despesa Orçamentária"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
         <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiYTVmYjY0NWQtOTdmYy00YTEzLTlhYmQtNGY4NWNiNjM4ZTM2IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9&pageName=ReportSection6a19156f389c7f923d78"
+        url= "https://app.powerbi.com/view?r=eyJrIjoiYTVmYjY0NWQtOTdmYy00YTEzLTlhYmQtNGY4NWNiNjM4ZTM2IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Rank por Natureza de Despesa"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
         <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiNzJlODMyYjctOTUzNS00NWI5LWI2ZGEtMjdhMGRlYmViOTRkIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9&pageName=ReportSection6a19156f389c7f923d78"
-        titulobi="Despesa X Previsão"
+        url= "https://app.powerbi.com/view?r=eyJrIjoiNzJlODMyYjctOTUzNS00NWI5LWI2ZGEtMjdhMGRlYmViOTRkIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
+        titulobi="Despesa X Receita"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
         <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiM2I2ZTMzYjQtZTdhOS00YzBkLTliNGUtNDI5M2NhYzVjOWFlIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9&pageName=ReportSection6a19156f389c7f923d78"
+        url= "https://app.powerbi.com/view?r=eyJrIjoiM2I2ZTMzYjQtZTdhOS00YzBkLTliNGUtNDI5M2NhYzVjOWFlIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Evolução da Despesa por Mês"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />

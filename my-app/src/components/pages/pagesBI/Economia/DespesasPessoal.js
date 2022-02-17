@@ -107,8 +107,6 @@ xlsx(rows, settings)
       });
   }
 
-
-  
   searchTitle() {
     this.setState({
       currentTutorial: null,

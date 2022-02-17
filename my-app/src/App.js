@@ -45,6 +45,10 @@ import DespesasPessoal from './components/pages/pagesBI/Economia/DespesasPessoal
 import Receitas from './components/pages/pagesBI/Economia/Receitas';
 import Lixo from './components/pages/pagesBI/Infraestrutura/Lixo';
 import MeioAmbientecard from './components/pages/pagesBI/MeioAmbiente/MeioAmbiente';
+import AtendimentoMulher from './components/pages/pagesBI/Social/AtendimentoMulher';
+
+
+
 
 import Mapas from './components/pages/Mapas';
 import Infraestruturamaps from './components/pages/Mapas/Infraestrutura/Infraestrutura';
@@ -108,6 +112,7 @@ const App = () => {
           <Route path='/lixo' element={<Lixo />} />
           <Route path='/meioambientecard' element={<MeioAmbientecard />} />
           <Route path='/despesaspessoal' element={<DespesasPessoal />} />
+          <Route path='/atendimentomulher' element={<AtendimentoMulher />} />
 
           
           <Route path='/mapas' element={<Mapas />} />
@@ -118,6 +123,7 @@ const App = () => {
           <Route path='/turismomaps' element={<Turismomaps />} />
 
           <Route path='/despesasmenu' element={<DespesasMenu />} />
+         
 
         </Routes>
         <Footer /> 

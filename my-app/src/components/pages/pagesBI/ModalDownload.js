@@ -8,8 +8,8 @@ import { Form } from "react-bootstrap";
 
 const customStyles = {
   content: {
-    top: '50%',
-    left: '50%',
+    top: '70px',
+    left: '50px',
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
@@ -41,30 +41,40 @@ const [open, setOpen] = useState(false);
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
 
+  if (estado ==0 ) {
+    var clique =props.download1()
+  }
+  
+  if (estado ==1) {
+    var clique =props.download2()
+  }
+  if (estado ==2 ) {
+    var clique =props.download3()
+  }
+  if (estado ==3 ) {
+    var clique =props.download4()
+  }
+  if (estado ==4 ) {
+    var clique =props.download5()
+  }
+
   return (
     <div>
       <button onClick={onOpenModal}>Download de dados</button>
-      <Modal open={open} onClose={onCloseModal} center>
-        <h2>Escolha o tipo de dados</h2>
-        <form onSubmit={editarEstado}>
-        <label>Estado: </label>
+      <Modal open={open} style={customStyles}  onClose={onCloseModal} center>
+       
+        <label>Tipo: </label>
         <select name="estado" value={estado} onChange={texto => setEstado(texto.target.value)}>
-          <option  className={props.classeSecundaria1} value={props.download1()} >Selecione</option>
-          <option value="1">RS</option>
-          <option value="2">SC</option>
-          <option value="3">PR</option>
-          <option value="4">SP</option>
-        </select><br /><br />
+          <option  className={props.classeSecundaria1} value="0" >{props.titulo1} </option>
+          <option className={props.classeSecundaria2} value="1">{props.titulo2} </option>
+          <option className={props.classeSecundaria3} value="2">{props.titulo3} </option>
+          <option className={props.classeSecundaria4} value="3">{props.titulo4} </option>
+          <option className={props.classeSecundaria5} value="4">{props.titulo5} </option>
+        </select>
+        <Button onClick={clique}  color="success"  startIcon= {< AiOutlineCloudDownload />} variant="contained">Download</Button><br/>
+   
 
-        <button  onClick={estado}  type="submit">Editar</button>
-
-      </form>
-
-        <Button onClick={props.download1()}  className={props.classeSecundaria1} color="success"  startIcon= {< AiOutlineCloudDownload />} variant="contained">Empregos por Sexo</Button><br/>
-        <Button  className={props.classeSecundaria2} color="success" onClick={props.download2()}  startIcon= {< AiOutlineCloudDownload />} variant="contained">Empregos por Setor   </Button><br/>
-        <Button  className={props.classeSecundaria3} color="success" onClick={props.download3()}  startIcon= {< AiOutlineCloudDownload />} variant="contained">Empregos por Município   </Button><br/>
-     
-     
+      
       </Modal>
 
  

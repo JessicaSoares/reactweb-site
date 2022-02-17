@@ -15,7 +15,7 @@ export default function Esgoto() {
       
       <TextSectionItem
       titlesection = "Esgoto"
-      textsection = "Esgoto é um sistema destinado a escoar e tratar os dejetos dos diversos aglomerados populacionais. Esses dejetos são a água proveniente do banho, limpeza de roupas, louças ou descarga do vaso sanitário. Dependendo do uso, há distintas denominações. Os resíduos provenientes das residências formam os esgotos domésticos, os formados no processo de fábricas recebem o nome de esgotos industriais e as água das chuvas são denominados pluviais e não podem ser lançados na rede de esgoto."
+          textsection = "Esgoto é um sistema destinado a escoar e tratar os dejetos dos diversos aglomerados populacionais. Esses dejetos são a água proveniente do banho, limpeza de roupas, louças ou descarga do vaso sanitário."
       />
       <section class="page-section-sub-boxlegend " id="about">
         <Container>

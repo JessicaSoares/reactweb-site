@@ -196,10 +196,10 @@ xlsx(rows, settings)
       return this.downloadempregosporsexo
     }
     const setor=()=>{
-      return this.downloadempregosporsexo
+      return this.downloadempregosporsetor
     }
     const municipio=()=>{
-      return this.downloadempregosporsexo
+      return this.downloadempregospormunicipio
     }
 
   
@@ -214,7 +214,11 @@ xlsx(rows, settings)
 
 <div className = "teste">   
 
-<ModalDownload download1 = {sexo} classeSecundaria1="show" download2 = {setor} classeSecundaria2="show"  download3 = {municipio} classeSecundaria3="show"/>
+<ModalDownload download1 = {sexo} classeSecundaria1="show" titulo1 ="Por sexo" 
+              download2 = {setor} classeSecundaria2="show"  titulo2 = "Por setor"
+              download3 = {municipio} classeSecundaria3="show "titulo3 = "Por município"
+              download4 = {municipio} classeSecundaria4="hide" 
+              download5 = {municipio} classeSecundaria5="hide"/>
 
          </div>
 

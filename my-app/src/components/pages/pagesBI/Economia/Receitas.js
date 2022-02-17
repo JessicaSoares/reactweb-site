@@ -15,18 +15,18 @@ export default function Receitas() {
       
       <TextSectionItem
       titlesection = "Receitas"
-      textsection = "Receita é o direito que uma organização possui de receber um determinado montante, no imediato ou em um momento futuro. Resulta, por exemplo, de operações de venda de bens e de prestação de serviços. Os dados dos gráficos abaixo foram coletados da fonte: ASPEC - PMP"
+      textsection = "Receita é o direito que uma organização possui de receber um determinado montante, no imediato ou em um momento futuro. Resulta, por exemplo, de operações de venda de bens e de prestação de serviços."
       />
       <section class="page-section-sub-boxlegend " id="about">
         <Container>
           <Row>
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiNzZkMjUxMmEtZDhjMy00NmQ4LTg5ZTgtNDc3OTRlZjRlY2YwIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9&pageName=ReportSection"
-        titulobi="Receita Arrecadada"
+        titulobi="Receita Arrecardada"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
         <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiYjZiMmIxMmQtZDRjYi00NjUxLTg4MzEtNmMzMjM5MzZlNzQxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9&pageName=ReportSection"
+        url= "https://app.powerbi.com/view?r=eyJrIjoiYjZiMmIxMmQtZDRjYi00NjUxLTg4MzEtNmMzMjM5MzZlNzQxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Rank por Especificação"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
@@ -37,7 +37,7 @@ export default function Receitas() {
         />
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiYWU4OWQzM2MtMjFmMS00NzJmLWJhY2YtZDY3MjIyYmI3M2YyIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9&pageName=ReportSection03b074699b43695ca0a7"
-        titulobi="Receita Prevista x Receita Arrecadada"
+        titulobi="Comparativo Receita Prevista x Receita Arrecadada"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
           </Row>
