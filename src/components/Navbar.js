@@ -137,12 +137,12 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-          <Link to='/sign-up' className='btn-mobile'>
+         
           <p className='navbar-logo' >
-          <img src='images/logo.png'/> 
+          <img src='images/logo.png' className='logo' />
           Observatório de Desenvolvimento <br/> de Parauapebas
           </p>
-    </Link>
+ 
     
           <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -157,24 +157,25 @@ function Navbar() {
 
 <li onClick={toggleSubmenu2} className="menu-item sub__menus__arrows" > <Link to="#"> Perfil do município &nbsp; <FiChevronDown /> </Link>
     <ul className={boxClassSubMenu2.join(' ')}> 
-    <li> <NavLink  onClick={closeMobileMenu2} activeClassName='is-active' to={`/Agronegocio`}> Agronegócio </NavLink> </li>
-        <li><NavLink onClick={closeMobileMenu2} activeClassName='is-active' to={`/Orcamentarios`}> Paineis Orçamentários </NavLink> </li>
+    <li> <NavLink  onClick={closeMobileMenu2} activeClassName='is-active' to={`/Agronegocio`}> Parauapebas em números </NavLink> </li>
+
        
     </ul>
 </li>
 </ul>
 
 
-
           <li className='nav-item'>
             <Link
-              to='/Products'
+              to='/mapas'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-             Mapas dinâmicos
+             Mapas temáticos
             </Link>
           </li>
+
+  
 
 
                     <ul className={boxClass.join(' ')}>
@@ -191,17 +192,23 @@ function Navbar() {
         <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Transito`}> Trânsito </NavLink> </li>
     </ul>
 </li>
+
 </ul>
-          <li className='nav-item'>
+
+
+<li className='nav-item'>
             <Link
-              to='/Products'
+              to='/DashboardsGov'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-             Entrar  &nbsp; <GiPadlock />
+            Dashboards Governamentais
             </Link>
           </li>
+
         </ul>
+
+        
       </nav>
     </>
   );

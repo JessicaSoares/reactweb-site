@@ -6,14 +6,40 @@
 
   }
 
-    
+    .botaobaixar {
+      height:100px; 
+      width:300px; 
+      margin: -20px -50px; 
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position:relative;
+      top:50%; 
+      left:50%;
+    }
+
   .page-section-sub {
     padding: 3rem 0;
     font-family: 'Roboto';
     text-align: justify;
-
   }
-  
+
+  .teste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0;
+    margin-left:10%;
+    margin-right:10%;
+  }
+
+  .maisinfos {
+    padding: 3rem 0;
+    font-family: 'Roboto';
+    text-align: justify;
+  }
+ 
   @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&family=Yanone+Kaffeesatz&display=swap');
   .economia
  {
@@ -52,6 +78,7 @@
   }
 
 
+
   @media only screen and (max-width: 375px) {
 
  .economia
@@ -63,6 +90,10 @@
       justify-content: center;
       font-size: 10rem;
     }
+
+    
+ 
+
   }
 
 @media only screen and (min-width: 375px) and (max-width: 768px) {

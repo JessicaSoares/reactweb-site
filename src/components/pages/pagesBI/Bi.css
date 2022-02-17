@@ -45,10 +45,11 @@
   
   .titulobi {
     color: rgb(4, 65, 80);
-    font-size: 17px;
+    font-size: 22px;
     text-align: center;
     font-family: 'Roboto';
     padding: 0.5em;
+    padding-bottom: 50px;
   }
 
   @media only screen and (max-width: 375px) {

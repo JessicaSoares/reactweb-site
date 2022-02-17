@@ -882,6 +882,7 @@
     margin-top: 0 !important;
     font-family: 'Roboto';
     font-size: 32px;
+    margin-bottom: 40px;
   }
   
   .mt-1 {
@@ -4985,7 +4986,7 @@
   }
   
   hr.divider-light {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
   }
   
   #mainNav {

@@ -8,14 +8,16 @@ export default function NavMeioAmbiente() {
   return (
     
     <NavSubItem 
-    link1 = "/agua"
-    name1 = "Agua"
-    link2 = "/esgoto"
-    name2 = "Esgoto"
-    link3 = "/ilumincao"
-    name3 = "Iluminação Pública"
+    link1 = "/meioambientecard"
+    name1 = "Meio Ambiente"
+    link2 = ""
+    name2 = ""
+    link3 = ""
+    name3 = ""
     link4 = ""
     name4 = ""
+    imageicon = "images/meioambienteIcon.png"
+    subname = "Meio Ambiente"
     />
       ); 
     }

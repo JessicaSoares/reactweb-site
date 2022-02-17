@@ -3,17 +3,20 @@ import "../BoxLegend.css";
 import React, { useState, useEffect } from "react";
 import NavSubItem from "../NavSubItem";
 
-export default function NavEconomia() {
+
+export default function   NavDesenvolvimento() {
 
   return (
     
     <NavSubItem 
-    link1 = "/balancacomercial"
-    name1 = "Balança comercial"
-    link2 = "/PIBBI"
-    name2 = "PIB"
-    link3 = "/comercioeindustria"
-    name3 = "Comércio e industria"
+    link1 = "/desenvHumano"
+    name1 = "Desenvolvimento Humano"
+    link2 = ""
+    name2 = ""
+    link3 = ""
+    name3 = ""
+    link4 = ""
+    name4 = ""
     imageicon = "images/desenvolvimentoHumanIcon.png"
     subname = "Desenvolvimento Humano"
     />

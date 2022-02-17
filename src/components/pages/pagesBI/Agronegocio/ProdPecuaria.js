@@ -26,42 +26,42 @@ export default function Graphs() {
           <Row>
           <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiMTJiZWE3OWMtODBiMC00ODYwLWJkY2UtM2FlYzI0MmUzMjIwIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Rebanho"
+        titulobi="Quantidade Produzida - Rebanho"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiNDhkYTUzNWItZTQ3Ni00YzA3LTllNmItMTgxNzU1ZGNhNmUwIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Efetivo de Rebanho"
+        titulobi="Percentual Produzido - Rebanho"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiZDc4NTYxNmQtYjIyZS00YTE0LWFiODAtMDE3MTc2ZmI0ZWUzIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Série Histórica de Efetivo de Rebanho"
+        titulobi="Série Histórica - Rebanho"
+        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
+        />
+        <GraphItem
+        url= "https://app.powerbi.com/view?r=eyJrIjoiMzcyNWYwYzItOGVkMy00MTY3LWJkMDMtMzEyZDlkMWMyYTA3IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
+        titulobi="Ranking de Rebanho por Municipio"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
          <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiNWMzZTRhMGYtZmU1My00Y2JjLWFlNWYtODI3NTIwNWIzNWUzIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Produção Animal"
+        titulobi="Quantidade Produzida - Animal"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
+        />        
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiNGIxNzhkZTYtNWEyMC00NjBhLTg4NjItZDM4OWQ3ODkzNjM0IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Efetivo Animal"
+        titulobi="Percentual Produzido - Animal"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiMjQyOWY0ZmQtZDZjZS00MjY0LTg1NzAtN2M4NjY4NTUzMTNjIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Série Histórica de Efetivo Animal"
+        titulobi="Série Histórica - Produção Animal"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-         <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMzcyNWYwYzItOGVkMy00MTY3LWJkMDMtMzEyZDlkMWMyYTA3IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Ranking de Efetivo Rebanho por Municipio"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
+        />         
          <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiZjRiYjVlZjQtMTgxOS00ZWEyLWE0NjQtYTcyMDM4MjQyMzdkIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Ranking de Efetivo Animal por Municipio"
+        titulobi="Ranking de Produção Animal por Municipio"
         legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
         />
          

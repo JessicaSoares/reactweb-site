@@ -6,17 +6,17 @@ import NavSubItem from "../pages/pagesBI/NavSubItem";
 
 export default function DesenvolvimentoHumano() {
   return <>
-    <NavSubItem 
-      link1 = "/balancacomercial"
-      name1 = "Balança comercial"
-      link2 = "/PIBBI"
-      name2 = "PIB"
-      link3 = "/comercioeindustria"
-      name3 = "Comércio e industria"
-      link4 = "/comercioeindustria"
-      name4 = "Comércio e industria"
-      imageicon = "images/economy-icon.png"
-      subname = "economia"
+      <NavSubItem 
+      link1 = "/desenvHumano"
+      name1 = "Desenvolvimento Humano"
+      link2 = ""
+      name2 = ""
+      link3 = ""
+      name3 = ""
+      link4 = ""
+      name4 = ""
+      imageicon = "images/desenvolvimentoHumanIcon.png"
+      subname = "Desenvolvimento Humano"
       />
       <div className="cards">
       <h1>Indicadores de Desenvolvimento Humano</h1>
@@ -27,7 +27,7 @@ export default function DesenvolvimentoHumano() {
               src="images/desenvolvimentoHuman.png"
               text=""
               label="Desenvolvimento Humano"
-              path="/DesenvolvimentoHumano"
+              path="/desenvhumano"
             />
            
           </ul>

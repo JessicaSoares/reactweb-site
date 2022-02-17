@@ -10,6 +10,9 @@ import { AiOutlineCloudDownload } from "react-icons/ai";
 import GraphItem from "./GraphItem";
 import TextSectionItem from "./TextSectionItem";
 import NavSubItem from "./NavSubItem";
+import Footer from '../../Footer';
+import Accordion from 'react-bootstrap/Accordion'
+
 
 export default function Graphs() {
 
@@ -23,6 +26,8 @@ export default function Graphs() {
       link3 = "/comercioeindustria"
       name3 = "Comércio e industria"
       />
+
+
       
       <TextSectionItem
       titlesection = "teste"
@@ -30,8 +35,36 @@ export default function Graphs() {
       />
       <section class="page-section-sub-boxlegend " id="about">
         <Container>
+
+          <Accordion defaultActiveKey="0">
+  <Accordion.Item eventKey="0">
+    <Accordion.Header>Accordion Item #1</Accordion.Header>
+    <Accordion.Body>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="1">
+    <Accordion.Header>Accordion Item #2</Accordion.Header>
+    <Accordion.Body>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </Accordion.Body>
+  </Accordion.Item>
+</Accordion>
           <Row>
         <GraphItem
+        
         url= "https://app.powerbi.com/view?r=eyJrIjoiOWI4ZjgyM2MtMTJjNC00YWM1LWExZmYtMjZlODVjOGYyZTQxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="sdsdsdsd"
         legend = "sdsdsd"
@@ -44,6 +77,9 @@ export default function Graphs() {
           </Row>
         </Container>
       </section>
+      < Footer />
+    
     </>
+    
   );
 }
