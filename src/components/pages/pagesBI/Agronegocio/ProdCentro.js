@@ -12,22 +12,14 @@ import TextSectionItem from "../TextSectionItem";
 import NavAgronegocio from "./NavAgronegocio";
 import PortalDataService from "../../../services/portal.service";
 
-
-
-
 let xlsx = require('json-as-xlsx')
 
 export default class ProdCentro extends Component {
   constructor(props) {
     super(props);
-    this.onChangeSearchTitle = this.onChangeSearchTitle.bind(this);
-    this.retrieveTutorials = this.retrieveTutorials.bind(this);
+    
     this.refreshList = this.refreshList.bind(this);
-    this.setActiveTutorial = this.setActiveTutorial.bind(this);
-    this.removeAllTutorials = this.removeAllTutorials.bind(this);
-    this.searchTitle = this.searchTitle.bind(this);
     this.downloadagrifamiliar = this.downloadagrifamiliar.bind(this);
-
 
     this.state = {
       tutorials: [],
@@ -70,23 +62,6 @@ export default class ProdCentro extends Component {
     });
   }
 
-  setActiveTutorial(tutorial, index) {
-    this.setState({
-      currentTutorial: tutorial,
-      currentIndex: index
-    });
-  }
-
-  removeAllTutorials() {
-    PortalDataService.deleteAll()
-      .then(response => {
-        console.log(response.data);
-        this.refreshList();
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  }
 
   downloadagrifamiliar() {
     PortalDataService.downloadagrifamiliar()
@@ -112,23 +87,6 @@ xlsx(rows, settings)
       });
   }
   
-  searchTitle() {
-    this.setState({
-      currentTutorial: null,
-      currentIndex: -1
-    });
-
-    PortalDataService.findByTitle(this.state.searchTitle)
-      .then(response => {
-        this.setState({
-          tutorials: response.data
-        });
-        console.log(response.data);
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  }
 
   render() {
     const { searchTitle, tutorials, currentTutorial, currentIndex } = this.state;

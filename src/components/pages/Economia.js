@@ -16,7 +16,7 @@ export default function Economia() {
     name2 = "PIB"
     link3 = "/comercioindustria"
     name3 = "Comércio e industria"
-    link4 = "/despesas"
+    link4 = "/despesasfork"
     name4 = "Despesas"
     link5 = "/receitas"
     name5 = "Receitas"
@@ -29,34 +29,34 @@ export default function Economia() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/balance.png"
+           src="https://img.icons8.com/dotty/80/26e07f/scales.png"
               text=""
               label="Balança comercial"
               path="/balancacomercial"
             />
             <CardItem
-              src="images/PIB.png"
+           src="https://img.icons8.com/dotty/80/26e07f/banknotes.png"
               text=""
               label="PIB"
               path="/pib"
             />
             <CardItem
-              src="images/industry.png"
+             src="https://img.icons8.com/dotty/80/26e07f/factory.png"
               text=""
               label="Comercio e Industria"
               path="/comercioindustria"
             />         
             <CardItem
-              src="images/receitas.png"
+            src="https://img.icons8.com/dotty/80/26e07f/ledger.png"
               text=""
               label="Receitas"
               path="/receitas"
             />
             <CardItem
-              src="images/despesas.png"
+           src="https://img.icons8.com/dotty/80/26e07f/low-price.png"
               text=""
               label="Despesas"
-              path="/despesas"
+              path="/despesasmenu"
             />
           </ul>
           <ul className="cards__items">

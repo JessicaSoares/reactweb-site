@@ -16,13 +16,13 @@ export default function Mapas() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/inframaps.png"
+            src="images/inframap.png"
               text=""
               label="Infraestrutura"
               path="/infraestruturamaps"
             />
                      <CardItem
-              src="images/ambientemaps.png"
+               src="images/ambientemap.png"
               text=""
               label="Meio Ambiente"
               path="/meioambientemaps"
@@ -34,13 +34,13 @@ export default function Mapas() {
               path="/patrimoniomaps"
             />
                      <CardItem
-              src="images/turismaps.png"
+              src="images/turismomaps.png"
               text=""
               label="Turismo"
               path="/turismomaps"
             />
                      <CardItem
-              src="images/dinheiromaps.png"
+              src="images/urbanismomaps.png"
               text=""
               label="Urbanismo"
               path="/urbanismomaps"

@@ -4,6 +4,16 @@
   padding: 0;
 
 }
+
+
+.AreaTexto{float:left; width: 80%; margin: 30px 10%; background: gray; color: #fff; border-radius: 10px; padding: 15px; font-size: 18px; line-height: 35px;}
+
+.DivBotao{float:left; width: 100%; text-align: center;}
+.Botao{display:inline-block; border:0; padding: 10px 20px; background: black; color: red; border-radius: 15px; cursor:pointer; font-weight: bold; font-size: 17px;}
+    .Botao:hover{opacity: 0.6;}
+
+.show{display:block !important;}
+.hide{display:none !important;}
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Asap:ital,wght@1,700&family=Coustard&family=Crete+Round&family=Roboto:wght@300&family=Yanone+Kaffeesatz&display=swap');
 .home,
 .services,

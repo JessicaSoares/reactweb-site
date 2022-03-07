@@ -2,7 +2,9 @@ import React from "react";
 import "../../App.css";
 import "../Cards.css";
 import CardItem from "../CardItem";
-import NavSubSocial from "../pages/pagesBI/Social/NavSubSocial";
+import NavSubSocial from "../pages/pagesBI/Economia/NavSubEconomia";
+
+
 
 export default function Social() {
   return( <>
@@ -15,6 +17,9 @@ export default function Social() {
       name3 = "Saúde"
       link4 = "/empregos"
       name4 = "Empregos"
+      link5 = "/atendimentomulher"
+      name5 = "Atendimento à Mulher"
+
 
       imageicon = "images/populacaoatendidaIcon.png"
       subname = "Social"
@@ -25,28 +30,34 @@ export default function Social() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/raiox.png"
+         src="https://img.icons8.com/dotty/80/26e07f/motarboard.png"
               text=""
               label="Educacao"
               path="/educacao"
             />
             <CardItem
-              src="images/populacaoatendida.png"
+       src="https://img.icons8.com/dotty/80/26e07f/crowd.png"
               text=""
               label="População"
               path="/populacao"
             />
             <CardItem
-              src="images/saude.png"
+           src="https://img.icons8.com/dotty/80/26e07f/heart-with-pulse.png"
               text=""
               label="Saúde"
               path="/saude"
             />
             <CardItem
-              src="images/emprego.png"
+        src="https://img.icons8.com/dotty/80/26e07f/meeting.png"
               text=""
               label="Empregos"
               path="/empregos"
+            />
+                        <CardItem
+       src="https://img.icons8.com/dotty/80/26e07f/person-female.png"
+              text=""
+              label="Atendimento à mulher"
+              path="/atendimentomulher"
             />
           </ul>
           <ul className="cards__items">

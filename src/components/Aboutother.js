@@ -7,28 +7,12 @@ import './Aboutother.css';
 
 function Aboutother() {
     return (
-      <>
-        <section class="page-section bg-primary" id="about">
-          <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-              <div class="col-lg-8 text-center">
-                <h2 class="text-white mt-0">Sobre o Observatório</h2>
-              
-                <p class="text-white-75 mb-4">
-                  É um portal voltado ao monitoramento e planejamento do
-                  desenvolvimento do Município de Parauapebas. Consiste em um
-                  Repositório único de dados para exposição de informações que
-                  visam subsidiar e oferecer ao Governo do Município, suporte ao
-                  planejamento de políticas públicas, investimentos, tomada de
-                  decisões e análise dos principais fatores que afetam a
-                  competitividade e desempenho econômico do Município em
-                  diversos segmentos tais como: saúde, educação, agronegócios,
-                  indústria, segurança, infra-estrutura e economia.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <> 
+
+
+     
+
+
 
         <section class="page-section" id="services">
           <div class="container px-4 px-lg-5">
@@ -54,7 +38,7 @@ function Aboutother() {
                     <li>
                       • Funcionar como ferramenta de apoio à gestão pública;
                     </li>
-                    <li>• Subsidiar as tomadas de decisões;</li>
+                    <li>• Subsidiar as tomadas de decisões.</li>
                   </ol>
                 </div>
               </div>
@@ -66,13 +50,13 @@ function Aboutother() {
                       <CgSearch color="#00773D;" />
                     </i>
                   </div>
-                  <h3 class="h4 mb-2">O que encontra</h3>
+                  <h3 class="h4 mb-2">O que encontrar</h3>
                   <ol class="text-muted mb-0">
                     <li>• Dashboards, gráficos, infográficos e mapas;</li>
                     <li>• Relatórios estatísticos;</li>
                     <li>• Indicadores de desempenho;</li>
                     <li>• Georreferenciamento de Informações;</li>
-                    <li>• Transparências de ações e investimentos</li>
+                    <li>• Transparências de ações e investimentos.</li>
                   </ol>
                 </div>
               </div>
@@ -115,13 +99,13 @@ function Aboutother() {
                       decisão;{" "}
                     </li>
                     <li> • Empresários e Investidores; </li>
-                    <li> • Comunidade Científica;; </li>
+                    <li> • Comunidade Científica;</li>
                     <li>
                       {" "}
                       • Comunidade Universitária e Estudantes do ensino
                       Fundamental e Médio;
                     </li>
-                    <li> • Público em Geral; . </li>
+                    <li> • Público em Geral;</li>
                   </ol>
                 </div>
               </div>

@@ -14,6 +14,8 @@
 img {
 height:50px;
 width:50px;
+margin-right: 1%;
+
 }
 
 .navbar-container {
@@ -25,16 +27,18 @@ width:50px;
 }
 
 .navbar-logo {
-  color: #00773D;;
+  color: #4891DD;
   justify-self: center;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: -0.2%;
   cursor: pointer;
   font-family: 'Yanone Kaffeesatz';
-  text-decoration: none;
+
   font-size: 1.3rem;
   display: flex;
   align-items: center;
   white-space: nowrap;
+  font-weight: 100;
 }
 
 .fa-typo3 {
@@ -58,18 +62,20 @@ width:50px;
 }
 
 .nav-links {
-  color: #000000;
+  color: rgba(156,57,57,0.86);
   display: flex;
   align-items: center;
   text-decoration: none;
   font-family: 'Roboto';
-  font-size: 0.9rem;
-  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
   height: 100%;
+  font-weight: bold;
+  
 }
 
 .nav-links:hover {
-  border-bottom: 5px solid #00773D;
+  border-bottom: 5px solid #4891DD;
   transition: all 0.2s ease-out;
 }
 
@@ -88,6 +94,18 @@ width:50px;
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
+  }
+
+  .sub__menus {
+    position: none;
+    display: none;
+    background: white;
+    border: 1px solid lavender;
+    width: 227px;
+    left: -50px;
+    padding: 2px 0 0 0;
+    z-index: 1000;
+    box-shadow: 0 10px 12px rgb(22 33 39 / 25%);
   }
 
   .nav-menu {
@@ -299,10 +317,10 @@ li {
   margin: 7px 27px;
 }
 .menu-item:hover > a{
-  color: #00773D !important;
+  color: #4891DD !important;
 }
 .menu-item .sub__menus li:hover a{
-  color: #00773D !important;
+  color: #4891DD !important;
 }
 
 .header__middle__logo img{

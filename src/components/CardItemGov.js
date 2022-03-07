@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 function CardItem(props) {
   return (
     <>
-      <li className="cards__itemgov">
+      <li className="cards__item">
 
-      <a className="cards__item__linkgov"   target="_blank" href={props.path}>
-          <figure className="cards__item__pic-wrapgov" data-category={props.label}>
+      <a className="cards__item__link"   target="_blank" href={props.path}>
+          <figure className="cards__item__pic-wrap" data-category={props.label}>
             <img
-              className="cards__item__imggov"
+              className="cards__item__img"
               alt="Travel Image"
               src={props.src}
             />

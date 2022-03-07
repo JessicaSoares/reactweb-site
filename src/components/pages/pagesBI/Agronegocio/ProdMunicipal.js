@@ -13,14 +13,15 @@ import NavAgronegocio from "./NavAgronegocio";
 
 export default function Graphs() {
 
-  return (
+
+   return (
     <>
       <NavAgronegocio/>
       
       <TextSectionItem
-      titlesection = "Agricultura Municipal - Produção"
-      textsection = " A Produção Agricultura Municipal é um conjunto de produtos das lavouras temporárias e permanentes do município que se caracterizam não só pela grande importância econômica que possuem na pauta de exportações, como também por sua relevância social, componentes que são da cesta básica do cidadão."
-      />
+      titlesection = "Produção Agrícola Municipal"
+      textsection = " A Produção Agrícola Municipal é um conjunto de produtos das lavouras temporárias e permanentes do município que se caracterizam não só pela grande importância econômica que possuem na pauta de exportações, como também por sua relevância social, componentes que são da cesta básica do cidadão. Os dados dos gráficos a seguir foram coletados da FONTE: IBGE-PAM."
+      />    
       <section class="page-section-sub-boxlegend " id="about">
         <Container>
           <Row>

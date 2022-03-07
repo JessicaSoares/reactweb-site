@@ -23,7 +23,7 @@ export default function Transito() {
             <div className="cards__wrapper">
               <ul className="cards__items">
                 <CardItem
-                  src="images/transito.png"
+                src="https://img.icons8.com/dotty/80/26e07f/traffic-light.png"
                   text=""
                   label="Trânsito"
                   path="/transito"

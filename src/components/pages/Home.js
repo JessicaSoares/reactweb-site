@@ -1,16 +1,23 @@
 import React from 'react';
 import '../../App.css';
 import Cards from '../Cards';
-import HeroSection from '../HeroSection';
-import Footer from '../Footer';
-import About from '../About';
-import Aboutother from '../Aboutother';
+import { GlobalStyle } from "../../globalStyles";
+import { lazy, Suspense } from "react";
+const Homeo = lazy(() => import("../../estilo/Home"));
+
+
+const ScrollToTop = lazy(() => import("../../components/ScrollToTop/index"));
+
+
 
 function Home() {
   return (
     <>
-      <HeroSection />
-      <Aboutother />
+          <Suspense fallback={null}>
+        <GlobalStyle />
+        <ScrollToTop />
+        <Homeo /> 
+      </Suspense>
       <Cards />
     </>
   );

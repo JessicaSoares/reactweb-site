@@ -25,6 +25,21 @@ class TutorialDataService {
     return http.get("/tutorials/downloadagrifamiliar");
   }
 
+  
+  downloadempregospormunicipio() {
+    return http.get("/tutorials/downloadempregospormunicipio");
+  }
+
+
+  downloadempregosporsetor() {
+    return http.get("/tutorials/downloadempregosporsetor");
+  }
+
+  
+  downloadempregosporsexo() {
+    return http.get("/tutorials/downloadempregosporsexo");
+  }
+
   get(id) {
     return http.get(`/tutorials/${id}`);
   }

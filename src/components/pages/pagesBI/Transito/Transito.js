@@ -6,6 +6,7 @@ import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavTransito from "./NavTransito";
 import Footer from '../../../Footer';
+import ModalDownload from '../ModalDownload'
 
 export default function Transito() {
 
@@ -17,6 +18,8 @@ export default function Transito() {
       titlesection = "Trânsito"
       textsection = "teste2"
       />
+
+      <ModalDownload />
       <section class="page-section-sub-boxlegend " id="about">
         <Container>
           <Row>
