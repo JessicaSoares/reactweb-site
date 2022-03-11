@@ -21,22 +21,22 @@ export default function Populacao() {
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiZjU2MzhiYjgtNzA5Ny00ODg0LTg5NDctYjdmMzM5ZTIyMTk1IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Número de Eleitores"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
+        legend = "Fonte:TSE"
         />
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiNGNkNWM1NjAtMzMwYy00MzM3LWJjNjEtMDA1NTJjYmM5NTExIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="PIB per Capita"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
+        legend = "Fonte:IBGE"
         />
         <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiMDNiZGQ3ZTctNWVjNS00MTdhLWFhNTAtZTU2MTMzZDMwZGU5IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Estimativa da População"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
+        legend = "Fonte:IBGE"
         />
          <GraphItem
         url= "https://app.powerbi.com/view?r=eyJrIjoiMTM2M2Y2NGItODZlYi00ZWZlLTllNDktNjc4ZTU3M2Q3ZTViIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
         titulobi="Área Territorial"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
+        legend = "Fonte:IBGE"
         />
         
           </Row>
