@@ -11,7 +11,8 @@ import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavEconomia from "./NavEconomia";
 import Footer from '../../../Footer';
-
+import ListarPaineis from '../../../ListarPaineis';
+import initialDetails from '../../../data/initialDetails';
 export default function Graphs() {
 
   return (
@@ -22,40 +23,13 @@ export default function Graphs() {
       titlesection = "Comércio e Indústria"
       textsection = " Comércio e Indústria é toda atividade humana que através do trabalho transforma matéria prima em produtos manufaturados que podem ou não ser comercializados."
       />
-      <section class="page-section-sub-boxlegend " id="about">
+         <section class="page-section-sub-boxlegend " id="about">
         <Container>
-          <Row>
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiODRjMTZiMDgtZmM5Zi00ZmU4LTg5YTAtOWY0YTNhMDk1YjA2IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Empresas por Situação"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        mais= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMTZjZGE3OWEtOWRmNi00ZjJlLTg5NmUtNjZmYzkyODM1ZmVmIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Série Histórica - Porte das Empresas Ativas"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiZTZmMmFhMmItMmE0Mi00N2MxLTg2MGQtZWVmM2MwZDk4N2E3IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Top 5 - Principais Atividade"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMTM2ZmYxNzctZDJiYS00ZmQxLTk1NzAtMTkyZDA5ODNmYWZhIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Evolução das Empresas"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiNjdiZmMxYWYtZmRmYi00MGQ5LTlhOWUtMzhiZjYxNGJiMTI0IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Empresas"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        
-        />
-          </Row>
+       
+       <ListarPaineis details={initialDetails} props ="ComercioIndustria" />
         </Container>
       </section>
-      < Footer />
+    
     </>
   );
 }

@@ -155,13 +155,7 @@ function Navbar() {
           </li>
           <ul className={boxClass.join(' ')}>
 
-<li onClick={toggleSubmenu2} className="menu-item sub__menus__arrows" > <Link to="#"> Perfil do município &nbsp; <FiChevronDown /> </Link>
-    <ul className={boxClassSubMenu2.join(' ')}> 
-    <li> <NavLink  onClick={closeMobileMenu2} activeClassName='is-active' to={`/Agronegocio`}> Parauapebas em números </NavLink> </li>
 
-       
-    </ul>
-</li>
 </ul>
 
 <ul className={boxClass.join(' ')}>
@@ -171,7 +165,7 @@ function Navbar() {
     <li> <NavLink  onClick={closeMobileMenu} activeClassName='is-active' to={`/Agronegocio`}> Agronegócio </NavLink> </li>
 
         <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Social`}> Social </NavLink> </li>
-        <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/DesenvolvimentoHumano`}> Desenvolvimento Humano</NavLink> </li>
+      
         <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Economia`}> Economia </NavLink> </li>
         <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/Infraestrutura`}> Infraestrutura </NavLink> </li>
         <li><NavLink onClick={closeMobileMenu} activeClassName='is-active' to={`/MeioAmbiente`}> Meio ambiente </NavLink> </li>

@@ -5,7 +5,8 @@ import React, { useState, useEffect } from "react";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavSocial from "./NavSocial";
-
+import ListarPaineis from '../../../ListarPaineis';
+import initialDetails from '../../../data/initialDetails';
 export default function Saude() {
 
   return (
@@ -25,55 +26,10 @@ Com o objetivo de garantir esse direito, a Constituição Federal atribuiu à Un
 
 Vale mencionar que a Constituição de 1988 foi a primeira a tratar a saúde como pauta política. Antes dela, não havia legislação que sujeitasse o Poder Público a investir na área."
       />
-      <section class="page-section-sub-boxlegend " id="about">
+<section class="page-section-sub-boxlegend " id="about">
         <Container>
-          <Row>
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiYWZkNDIyOWEtMjk1My00MmQ2LWIxMDEtZjdjODAwN2MzYmNlIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Estabelecimentos por Esfera"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMTRkMmJkYmYtMzNhNC00NDEzLTlkMzMtMTIwZmRjMzE1MDVjIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Médicos por Àrea"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiYTNhYmNlODUtOGM0OS00NmJiLTg3YzItYTdmOTVhMzQ2MWFmIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Óbitos por Sexo"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-         <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiYjFlNGI2MzYtYzFmOC00NTM2LWE3ODctNGZjY2RhYWFlOTNhIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9&pageName=ReportSection5806eea11c9e7c0750a9"
-        titulobi="Quantidade de Óbitos por Local de Ocorrência"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiNmNmMzFlNTUtZWVjNS00OWQ3LTg5OTEtNTQ2ODM1M2VlZjkzIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Óbitos por Faixa Étaria"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMjI1OTViZTAtZWY5NS00Njg2LWJlMDgtYjI0Njg1ODc0MGM0IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Nascidos Vivos por Consulta"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMjFmN2I2ZjMtNmM3MS00NWFiLWJhYzMtNTEyNGFhMzZiMjZiIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Nascidos Vivos por Idade"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiM2FmZTNmZWQtNTc4Yi00MGQ1LTk1ZDAtYzFkZTVlYmI5ZDk3IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Nascidos Vivos por Tipo Parto"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMTNiMzJkN2YtYzMzNC00Njk4LWJmMzYtZTcxMzZlMTkwZTEwIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Quantidade de Nascidos Vivos por Instrução da Mãe"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-          </Row>
+       
+       <ListarPaineis details={initialDetails} props ="saude" />
         </Container>
       </section>
     </>

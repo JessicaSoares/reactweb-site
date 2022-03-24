@@ -14,7 +14,7 @@ const move = keyframes`
 
 const HomeSection = styled.section`
   width: 100vw;
-  height: 30vw;
+  height: 20vw;
   background-color:#376D2B;
   display: flex;
   justify-content: center;
@@ -76,10 +76,11 @@ const MainContent = styled.div`
 `;
 
 const MobileSvg = styled.img`
-  max-width: 50%;
+  max-width: 30%;
   width: calc(20% + 20vw);
   height: auto;
   z-index: 7;
+  padding-top: 290px;
   animation: ${move} 2.5s ease infinite;
   @media only Screen and (max-width: 48em) {
     align-self: flex-start;
@@ -137,10 +138,12 @@ const Circle = styled.span`
 `;
 
 const Title = styled.h1`
-  font-size: calc(1.6rem + 1vw);
+  font-size: calc(2rem);
   line-height: 1.2;
   padding: 0.8rem 0;
   margin-right: 3px;
+  text-align: left;
+  
 `;
 
 const SubText = styled.h5`
@@ -185,7 +188,7 @@ const HeroSection = () => {
 
      
           <Title>
-          Observatório de dados estatíticos e geográficos do Município de Parauapebas
+          Observatório de dados estatíticos e geográficos do município de Parauapebas
           </Title>
     
         </Lb>

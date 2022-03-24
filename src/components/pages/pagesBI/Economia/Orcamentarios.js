@@ -11,7 +11,8 @@ import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
 import NavEconomia from "./NavEconomia";
 import Footer from '../../../Footer';
-
+import ListarPaineis from '../../../ListarPaineis';
+import initialDetails from '../../../data/initialDetails';
 
 
 let xlsx = require('json-as-xlsx')
@@ -138,25 +139,10 @@ xlsx(rows, settings)
       />
 
 <Button color="success" onClick={this.downloadagrifamiliar} startIcon= {< AiOutlineCloudDownload />} variant="contained">Download dos dados da agricultura familiar    </Button> 
-      <section class="page-section-sub-boxlegend " id="about">
+<section class="page-section-sub-boxlegend " id="about">
         <Container>
-          <Row>
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiNzZkMjUxMmEtZDhjMy00NmQ4LTg5ZTgtNDc3OTRlZjRlY2YwIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Arrecadação do Município"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiOWI4ZjgyM2MtMTJjNC00YWM1LWExZmYtMjZlODVjOGYyZTQxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="sdsdsdsd"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiOWI4ZjgyM2MtMTJjNC00YWM1LWExZmYtMjZlODVjOGYyZTQxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="sdsdsdsd"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-          </Row>
+       
+       <ListarPaineis details={initialDetails} props ="Orcamentarios" />
         </Container>
       </section>
  

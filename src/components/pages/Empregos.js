@@ -8,16 +8,7 @@ import NavSubItem from "../pages/pagesBI/NavSubItem";
 export default function Empregos() {
   return (
     <>
-        <NavSubItem 
-      link1 = "/balancacomercial"
-      name1 = "Balança comercial"
-      link2 = "/PIBBI"
-      name2 = "PIB"
-      link3 = "/comercioeindustria"
-      name3 = "Comércio e industria"
-      link4 = "/comercioeindustria"
-      name4 = "Comércio e industria"
-      />
+
       <div className="cards">
       <h1>Indicadores da economia</h1>
       <div className="cards__container">

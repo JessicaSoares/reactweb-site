@@ -16,6 +16,8 @@ export default function NavInfraestrutura() {
     name3 = "Esgoto"
     link4 = "/iluminacao"
     name4 = "Iluminação"
+    imageicon = "images/infracon.png"
+    subname = "Infraestrutura"
     />
       ); 
     }

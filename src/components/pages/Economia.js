@@ -9,20 +9,7 @@ export default function Economia() {
   return (
     <>
     
-    <NavSubItem 
-    link1 = "/balancacomercial"
-    name1 = "Balança comercial"
-    link2 = "/pib"
-    name2 = "PIB"
-    link3 = "/comercioindustria"
-    name3 = "Comércio e industria"
-    link4 = "/despesasfork"
-    name4 = "Despesas"
-    link5 = "/receitas"
-    name5 = "Receitas"
-    imageicon = "images/economy-icon.png"
-    subname = "economia"
-    />
+
       <div className="cards">
       <h1>Indicadores da economia</h1>
       <div className="cards__container">

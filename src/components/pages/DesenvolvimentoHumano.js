@@ -6,18 +6,7 @@ import NavSubItem from "../pages/pagesBI/NavSubItem";
 
 export default function DesenvolvimentoHumano() {
   return <>
-      <NavSubItem 
-      link1 = "/desenvHumano"
-      name1 = "Desenvolvimento Humano"
-      link2 = ""
-      name2 = ""
-      link3 = ""
-      name3 = ""
-      link4 = ""
-      name4 = ""
-      imageicon = "images/desenvolvimentoHumanIcon.png"
-      subname = "Desenvolvimento Humano"
-      />
+
       <div className="cards">
       <h1>Indicadores de Desenvolvimento Humano</h1>
       <div className="cards__container">

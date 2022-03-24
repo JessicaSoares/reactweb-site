@@ -7,9 +7,6 @@ import CardItem from "../CardItem";
 export default function Mapas() {
   return (
     <>
-        <NavMaps 
- 
-      />
       <div className="cards">
       <h1>Mapas temáticos</h1>
       <div className="cards__container">

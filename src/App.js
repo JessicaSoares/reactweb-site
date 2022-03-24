@@ -10,6 +10,9 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./styles/globalStyles";
 import { darkTheme, lightTheme } from "./styles/theme";
 
+import Search from './components/Search';
+import initialDetails from './components/data/initialDetails';
+
 
 import SignUp from './components/pages/SignUp';
 import Agronegocio from './components/pages/Agronegocio';
@@ -46,7 +49,7 @@ import Receitas from './components/pages/pagesBI/Economia/Receitas';
 import Lixo from './components/pages/pagesBI/Infraestrutura/Lixo';
 import MeioAmbientecard from './components/pages/pagesBI/MeioAmbiente/MeioAmbiente';
 import AtendimentoMulher from './components/pages/pagesBI/Social/AtendimentoMulher';
-
+import Transitosub from './components/pages/pagesBI/Transito/Transito';
 
 
 
@@ -59,6 +62,10 @@ import Turismomaps from './components/pages/Mapas/Turismo/Turismo';
 
 import DespesasMenu from './components/pages/pagesBI/Economia/DespesasFork';
 
+import AgronegocioGov from './components/pages/AgronegocioGov';
+import MeioAmbienteGov from './components/pages/MeioAmbienteGov';
+
+import Bitest from './components/pages/pagesBI/Agronegocio/Bitest';
 
 const App = () => {
   const { theme } = useSelector((state) => state.ui);
@@ -77,8 +84,9 @@ const App = () => {
               />
           </Helmet>
           <>
+
           <Navbar />
-       
+          <Search details={initialDetails}/>
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/meioambiente' exact element={<MeioAmbiente />} />
@@ -123,7 +131,10 @@ const App = () => {
           <Route path='/turismomaps' element={<Turismomaps />} />
 
           <Route path='/despesasmenu' element={<DespesasMenu />} />
-         
+
+          <Route path='/agronegociogov' element={<AgronegocioGov />} />
+          <Route path='/meioambientegov' element={<MeioAmbienteGov />} />
+          <Route path='/transitosub' element={<Transitosub />} />
 
         </Routes>
         <Footer /> 

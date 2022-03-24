@@ -1,54 +1,234 @@
+
 import "../graphs.css";
-import { Link } from "react-router-dom";
-import Iframe from "react-iframe";
-import NavbarSub from "../NavbarSub";
+
 import { Container, Row, Col } from "react-grid-system";
 import "../BoxLegend.css";
-import React, { useState, useEffect } from "react";
-import Button from "@material-ui/core/Button";
-import { AiOutlineCloudDownload } from "react-icons/ai";
-import GraphItem from "../GraphItem";
+import React, { useState, useEffect, Component } from "react";
+
 import TextSectionItem from "../TextSectionItem";
+
+import ListarPaineis from '../../../ListarPaineis';
+import initialDetails from '../../../data/initialDetails';
+import ModalDownload from '../ModalDownload';
 import NavAgronegocio from "./NavAgronegocio";
+import PortalDataService from "../../../services/portal.service";
+let xlsx = require('json-as-xlsx')
 
-export default function Graphs() {
+
+export default class TutorialsList extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.refreshList = this.refreshList.bind(this);
+    this.downloadproducaoagricola = this.downloadproducaoagricola.bind(this);
 
 
-   return (
+    this.state = {
+      tutorials: [],
+      currentTutorial: null,
+      currentIndex: -1,
+      searchTitle: "",
+      nomeBotao:'Esconder',
+      classeDiv:'show'
+    };
+  }
+
+  alterarEstado(){
+    var Estado;
+    var NomeBotao;
+    if(this.state.classeDiv === 'show'){
+        Estado="hide";
+        NomeBotao='Mostrar';
+    }else{
+        Estado="show";
+        NomeBotao='Esconder';
+    }
+    this.setState({
+        nomeBotao: NomeBotao,
+        classeDiv: Estado
+    })
+}
+
+
+
+
+
+  
+  componentDidMount() {
+    this.retrieveTutorials();
+  }
+
+  onChangeSearchTitle(e) {
+    const searchTitle = e.target.value;
+
+    this.setState({
+      searchTitle: searchTitle
+    });
+  }
+
+  retrieveTutorials() {
+    PortalDataService.getAll()
+      .then(response => {
+        this.setState({
+          tutorials: response.data
+        });
+        console.log(response.data);
+      })
+      .catch(e => {
+        console.log(e);
+      });
+  }
+
+  refreshList() {
+    this.retrieveTutorials();
+    this.setState({
+      currentTutorial: null,
+      currentIndex: -1
+    });
+  }
+
+
+  downloadproducaoagricola() {
+    PortalDataService.downloadproducaoagricola()
+      .then(response => {
+
+        const rows = response.data;
+        console.log(response.data);
+        let csvContent = "data:text/csv;charset=utf-8," 
+        + rows;
+        var encodedUri = encodeURI(csvContent);
+window.open(encodedUri);
+let settings = {
+  fileName: 'MySpreadsheet', // Name of the resulting spreadsheet
+  extraLength: 3, // A bigger number means that columns will be wider
+  writeOptions: {} // Style options from https://github.com/SheetJS/sheetjs#writing-options
+}
+
+xlsx(rows, settings)
+        this.refreshList();
+      })
+      .catch(e => {
+        console.log(e);
+      });
+  }
+
+  downloadempregosporsetor() {
+    PortalDataService.downloadempregosporsetor()
+      .then(response => {
+
+        const rows = response.data;
+        console.log(response.data);
+        let csvContent = "data:text/csv;charset=utf-8," 
+        + rows;
+        var encodedUri = encodeURI(csvContent);
+window.open(encodedUri);
+let settings = {
+  fileName: 'MySpreadsheet', // Name of the resulting spreadsheet
+  extraLength: 3, // A bigger number means that columns will be wider
+  writeOptions: {} // Style options from https://github.com/SheetJS/sheetjs#writing-options
+}
+
+xlsx(rows, settings)
+        this.refreshList();
+      })
+      .catch(e => {
+        console.log(e);
+      });
+  }
+
+
+  downloadempregosporsexo() {
+    PortalDataService.downloadempregosporsexo()
+      .then(response => {
+
+        const rows = response.data;
+        console.log(response.data);
+        let csvContent = "data:text/csv;charset=utf-8," 
+        + rows;
+        var encodedUri = encodeURI(csvContent);
+window.open(encodedUri);
+let settings = {
+  fileName: 'MySpreadsheet', // Name of the resulting spreadsheet
+  extraLength: 3, // A bigger number means that columns will be wider
+  writeOptions: {} // Style options from https://github.com/SheetJS/sheetjs#writing-options
+}
+
+xlsx(rows, settings)
+        this.refreshList();
+      })
+      .catch(e => {
+        console.log(e);
+      });
+  }
+
+
+
+  render() {
+
+    const { searchTitle, tutorials, currentTutorial, currentIndex } = this.state;
+    const pib=()=>{
+      return this.downloadproducaoagricola
+    }
+    const setor=()=>{
+      return this.downloadproducaoagricola
+    }
+    const municipio=()=>{
+      return this.downloadempregospormunicipio
+    }
+
+  
+    return (
+     
     <>
-      <NavAgronegocio/>
-      
-      <TextSectionItem
+   <NavAgronegocio/>
+   <TextSectionItem
       titlesection = "Produção Agrícola Municipal"
-      textsection = " A Produção Agrícola Municipal é um conjunto de produtos das lavouras temporárias e permanentes do município que se caracterizam não só pela grande importância econômica que possuem na pauta de exportações, como também por sua relevância social, componentes que são da cesta básica do cidadão. Os dados dos gráficos a seguir foram coletados da FONTE: IBGE-PAM."
+      textsection = " A Produção Agrícola Municipal é um conjunto de produtos das lavouras temporárias e permanentes do município que se caracterizam não só pela grande importância econômica que possuem na pauta de exportações, como também por sua relevância social, componentes que são da cesta básica do cidadão."
       />    
-      <section class="page-section-sub-boxlegend " id="about">
+
+<div className = "teste">   
+
+<ModalDownload download1 = {pib} classeSecundaria1="show" titulo1 ="Produção agrícola municipal" 
+              download2 = {setor} classeSecundaria2="hide"  titulo2 = "Por setor"
+              download3 = {municipio} classeSecundaria3="hide "titulo3 = "Por município"
+              download4 = {municipio} classeSecundaria4="hide" 
+              download5 = {municipio} classeSecundaria5="hide"/>
+
+         </div>
+
+
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<section class="page-section-sub-boxlegend " id="about">
         <Container>
-          <Row>
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMDUzOGJlMjMtZGNkZS00MzcxLTkwZTYtYzI2NzY2YWEwYWQzIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Produtos mais Produzidos no Município"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiNTViZjU0NDgtNzg2YS00OTU1LTgyY2UtYTE3OTVjZjA3Y2E5IiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Evolução da Produção Municipal"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiMWFjOTM4ZWMtN2MxNS00YjE0LTk4YWMtOWUyZjE5YzUwYjNlIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Área Colhida (Héctares) X Área Plantada (Héctares)"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiZTUzNzc0ODItYWUzYi00NGJkLTg3MTgtOTA3MGY0ZDMyMDIxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="Ranking dos Produtos mais Produzidos por Municipio"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        
-          </Row>
+       
+       <ListarPaineis details={initialDetails} props ="ProdMunicipal" />
         </Container>
       </section>
     </>
   );
-}
+}}
+
+

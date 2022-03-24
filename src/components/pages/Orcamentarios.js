@@ -7,16 +7,7 @@ import NavSubItem from "../pages/pagesBI/NavSubItem";
 export default function Orcamentarios() {
   return (
     <>
-        <NavSubItem 
-      link1 = "/despesaorcamentaria"
-      name1 = "Despesas Orçamentárias"
-      link2 = "/receitaorcamentaria"
-      name2 = "Receitas Orçamentárias"
-      link3 = ""
-      name3 = ""
-      link4 = ""
-      name4 = ""
-      />
+
       <div className="cards">
       <h1>Painéis Orçamentários</h1>
       <div className="cards__container">

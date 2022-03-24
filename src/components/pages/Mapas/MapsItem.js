@@ -1,17 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./graphs.css";
+import "../pagesBI/graphs.css";
 import Iframe from "react-iframe";
-import NavbarSub from "./NavbarSub";
+import NavbarSub from "../pagesBI/NavbarSub";
 import { Container, Row, Col } from "react-grid-system";
-import "./BoxLegend.css";
+import "../pagesBI/BoxLegend.css"
 import Button from "@material-ui/core/Button";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 import Footer from '../../GraphFooter';
 import Report from "powerbi-report-component";
-function GraphItem({person}) {
+function GraphItem(person) {
 
   return (
       <>
@@ -19,14 +19,14 @@ function GraphItem({person}) {
 <div class="container">
     <div class="row">
       <div class="col-sm"></div>
-      <Col sm={8}>
+      <Col sm={11}>
         {" "}
         <div className="boxlegend">
           <h1 className="titulobi">
             {person.titulobi}
           </h1>
          
-          <iframe src={person.url} className="economia"
+          <iframe src={person.url} className="mapas"
         loading="eager"
        ></iframe> <br />
           <Accordion classname = "maisinfos" defaultActiveKey="1" >

@@ -8,27 +8,16 @@ import NavSubItem from "../pages/pagesBI/NavSubItem";
 export default function MeioAmbiente() {
   return (
     <>
-        <NavSubItem 
-      link1 = "/meioambientecard"
-      name1 = "Meio Ambiente"
-      link2 = ""
-      name2 = ""
-      link3 = ""
-      name3 = ""
-      link4 = ""
-      name4 = ""
-      imageicon = "images/meioambienteIcon.png"
-      subname = "Meio Ambiente"
-      />
+
       <div className="cards">
       <h1>Indicadores do meio ambiente</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-           src="https://img.icons8.com/dotty/80/26e07f/hand-planting.png"
+              src="https://img.icons8.com/dotty/80/26e07f/wildfire.png"
               text=""
-              label="Meio Ambiente"
+              label="Queimadas"
               path="/meioambientecard"
             />
           </ul>

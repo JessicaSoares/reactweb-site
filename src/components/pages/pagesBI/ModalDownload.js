@@ -6,20 +6,18 @@ import Button from "@material-ui/core/Button";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { Form } from "react-bootstrap";
 
-const customStyles = {
-  content: {
-    top: '70px',
-    left: '50px',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-  },
-};
-
-
 
 function ModalDownload(props) {
+
+  const customStyles = {
+    content: {
+      top: '70px',
+      left: '50px',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+    },};
 
   const [estado, setEstado] = useState(4);
 
@@ -60,31 +58,26 @@ const [open, setOpen] = useState(false);
 
   return (
     <div>
-      <button onClick={onOpenModal}>Download de dados</button>
+    
+      <Button onClick={onOpenModal}  color="success"  startIcon= {< AiOutlineCloudDownload />} variant="contained">Download dos dados</Button><br/>
       <Modal open={open} style={customStyles}  onClose={onCloseModal} center>
-       
-        <label>Tipo: </label>
-        <select name="estado" value={estado} onChange={texto => setEstado(texto.target.value)}>
-          <option  className={props.classeSecundaria1} value="0" >{props.titulo1} </option>
+      <br/>
+      
+        <h4>Escolha a categoria: </h4>
+        <br/>
+
+  
+        <Form.Select aria-label="Escolha a categoria"  name="estado" value={estado} onChange={texto => setEstado(texto.target.value)}>
+        <option  className={props.classeSecundaria1} value="0" >{props.titulo1} </option>
           <option className={props.classeSecundaria2} value="1">{props.titulo2} </option>
           <option className={props.classeSecundaria3} value="2">{props.titulo3} </option>
           <option className={props.classeSecundaria4} value="3">{props.titulo4} </option>
           <option className={props.classeSecundaria5} value="4">{props.titulo5} </option>
-        </select>
-        <Button onClick={clique}  color="success"  startIcon= {< AiOutlineCloudDownload />} variant="contained">Download</Button><br/>
-   
-
+</Form.Select>
+        <br/>
       
+        <Button onClick={clique}  color="success"  startIcon= {< AiOutlineCloudDownload />} variant="contained">Baixar dados</Button><br/>
       </Modal>
-
- 
-
-      
-
-   
-
-
-
     </div>
     
   );

@@ -18,7 +18,17 @@
 .economia
 {
   display: flex;
-  height: 90vh;
+  height: 60vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+}
+
+.mapas
+{
+  display: flex;
+  height: 85vh;
   width: 100%;
   align-items: center;
   justify-content: center;

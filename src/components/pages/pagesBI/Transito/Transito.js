@@ -7,6 +7,8 @@ import TextSectionItem from "../TextSectionItem";
 import NavTransito from "./NavTransito";
 import Footer from '../../../Footer';
 import ModalDownload from '../ModalDownload'
+import ListarPaineis from '../../../ListarPaineis';
+import initialDetails from '../../../data/initialDetails';
 
 export default function Transito() {
 
@@ -19,26 +21,11 @@ export default function Transito() {
       textsection = "teste2"
       />
 
-      <ModalDownload />
+   
       <section class="page-section-sub-boxlegend " id="about">
         <Container>
-          <Row>
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiOWI4ZjgyM2MtMTJjNC00YWM1LWExZmYtMjZlODVjOGYyZTQxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="sdsdsdsd"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiOWI4ZjgyM2MtMTJjNC00YWM1LWExZmYtMjZlODVjOGYyZTQxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="sdsdsdsd"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-        <GraphItem
-        url= "https://app.powerbi.com/view?r=eyJrIjoiOWI4ZjgyM2MtMTJjNC00YWM1LWExZmYtMjZlODVjOGYyZTQxIiwidCI6ImYxMTMzMGMxLTFmNDgtNDUyMi05YTBkLWM0ZDdjZmU1ZGY5NiJ9"
-        titulobi="sdsdsdsd"
-        legend = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel massa nisi. Suspendisse et dignissim urna, vel pretium odio. Curabitur sapien lectus, suscipit at erat a, fringilla tincidunt ante. Quisque."
-        />
-          </Row>
+       
+       <ListarPaineis details={initialDetails} props ="Transito" />
         </Container>
       </section>
     </>

@@ -40,6 +40,34 @@ class TutorialDataService {
     return http.get("/tutorials/downloadempregosporsexo");
   }
 
+    
+  downloadpib() {
+    return http.get("/tutorials/downloadpib");
+  }
+      
+  downloadproducaoagricola() {
+    return http.get("/tutorials/downloadproducaoagricola");
+  }
+  downloadproducaoanimal() {
+    return http.get("/tutorials/downloadproducaoanimal");
+  }
+
+  downloadrebanhomunicipal() {
+    return http.get("/tutorials/downloadrebanhomunicipal");
+  }
+
+  downloadaves() {
+    return http.get("/tutorials/downloadaves");
+  }
+
+  downloadbovinos() {
+    return http.get("/tutorials/downloadbovinos");
+  }
+
+  downloadprodutoscap() {
+    return http.get("/tutorials/downloadprodutoscap");
+  }
+
   get(id) {
     return http.get(`/tutorials/${id}`);
   }

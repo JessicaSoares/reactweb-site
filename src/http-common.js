@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://observatorioapp.parauapebas.pa.gov.br/api",
+  baseURL: "http://localhost:8082/api",
   headers: {
     "Content-type": "application/json"
   }

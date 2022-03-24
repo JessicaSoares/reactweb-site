@@ -9,7 +9,7 @@ export default function NavMeioAmbiente() {
     
     <NavSubItem 
     link1 = "/meioambientecard"
-    name1 = "Meio Ambiente"
+    name1 = "Queimadas"
     link2 = ""
     name2 = ""
     link3 = ""
