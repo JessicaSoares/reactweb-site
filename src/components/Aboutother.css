@@ -690,6 +690,17 @@
   
   .align-items-center {
     align-items: center !important;
+    
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    margin-top: 30px;
+    z-index: 998;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);   
   }
   
   .align-items-baseline {
@@ -1433,7 +1444,7 @@
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
-    --bs-primary-rgb: 0, 119, 61;
+    --bs-primary-rgb: 52, 148, 76;
     --bs-secondary-rgb: 108, 117, 125;
     --bs-success-rgb: 25, 135, 84;
     --bs-info-rgb: 13, 202, 240;

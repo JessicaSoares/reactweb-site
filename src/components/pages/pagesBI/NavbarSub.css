@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 800;
+  margin-top: 50px;
 }
 
 .navbar-logo-sub {

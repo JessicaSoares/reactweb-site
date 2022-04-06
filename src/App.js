@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
+
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -47,11 +48,11 @@ import Despesas from './components/pages/pagesBI/Economia/Despesas';
 import DespesasPessoal from './components/pages/pagesBI/Economia/DespesasPessoal';
 import Receitas from './components/pages/pagesBI/Economia/Receitas';
 import Lixo from './components/pages/pagesBI/Infraestrutura/Lixo';
-import MeioAmbientecard from './components/pages/pagesBI/MeioAmbiente/MeioAmbiente';
+import Queimadas from './components/pages/pagesBI/MeioAmbiente/Queimadas';
 import AtendimentoMulher from './components/pages/pagesBI/Social/AtendimentoMulher';
-import Transitosub from './components/pages/pagesBI/Transito/Transito';
 
 
+import Transitocard from './components/pages/pagesBI/Transito/Transitocard';
 
 import Mapas from './components/pages/Mapas';
 import Infraestruturamaps from './components/pages/Mapas/Infraestrutura/Infraestrutura';
@@ -118,7 +119,7 @@ const App = () => {
           <Route path='/despesas' element={<Despesas />} />
           <Route path='/receitas' element={<Receitas />} />
           <Route path='/lixo' element={<Lixo />} />
-          <Route path='/meioambientecard' element={<MeioAmbientecard />} />
+          <Route path='/queimadas' element={<Queimadas />} />
           <Route path='/despesaspessoal' element={<DespesasPessoal />} />
           <Route path='/atendimentomulher' element={<AtendimentoMulher />} />
 
@@ -134,7 +135,8 @@ const App = () => {
 
           <Route path='/agronegociogov' element={<AgronegocioGov />} />
           <Route path='/meioambientegov' element={<MeioAmbienteGov />} />
-          <Route path='/transitosub' element={<Transitosub />} />
+
+          <Route path='/transitocard' element={<Transitocard />} />
 
         </Routes>
         <Footer /> 

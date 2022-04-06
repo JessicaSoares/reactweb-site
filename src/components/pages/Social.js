@@ -38,12 +38,7 @@ export default function Social() {
               label="Empregos"
               path="/empregos"
             />
-                        <CardItem
-       src="https://img.icons8.com/dotty/80/26e07f/person-female.png"
-              text=""
-              label="Atendimento à mulher"
-              path="/atendimentomulher"
-            />
+ 
           </ul>
           <ul className="cards__items">
           </ul>

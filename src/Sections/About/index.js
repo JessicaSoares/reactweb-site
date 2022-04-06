@@ -25,7 +25,7 @@ const Waves = styled.img`
   width: 100%;
   height: auto;
   position: absolute;
-  top: -1rem;
+  top: -4rem;
   img,svg{
     width:100%;
     height:auto;
@@ -157,9 +157,12 @@ const AboutText = styled.div`
 
 const About = () => {
   return (
-    <AboutSection id="about">
-      <Waves src={wave} alt="" />
+
  
+    <AboutSection id="about">
+      
+       <Waves src={wave} alt="" />
+
       <Main>
         <div>
           <Title>Sobre Nós</Title>

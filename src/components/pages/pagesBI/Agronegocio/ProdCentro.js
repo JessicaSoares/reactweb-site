@@ -242,7 +242,7 @@ xlsx(rows, settings)
 <section class="page-section-sub-boxlegend " id="about">
         <Container>
        
-       <ListarPaineis details={initialDetails} props ="ProdMunicipal" />
+       <ListarPaineis details={initialDetails} props ="ProdCentro" />
         </Container>
       </section>
     </>

@@ -14,11 +14,12 @@ const move = keyframes`
 
 const HomeSection = styled.section`
   width: 100vw;
-  height: 20vw;
-  background-color:#376D2B;
+  height: 22vw;
+  background-color:#34944C;
   display: flex;
   justify-content: center;
   position: relative;
+  top: -30px;
   @media only Screen and (max-width: 48em) {
     height: 70vw;
     display: block;
@@ -143,6 +144,7 @@ const Title = styled.h1`
   padding: 0.8rem 0;
   margin-right: 3px;
   text-align: left;
+  color:  #ffff;
   
 `;
 
@@ -181,18 +183,12 @@ const CTA = styled.button`
 const HeroSection = () => {
   return (
     <HomeSection id="home">
-  
-
       <MainContent id="home">
         <Lb id="leftBlock">
-
-     
           <Title>
-          Observatório de dados estatíticos e geográficos do município de Parauapebas
+          Observatório de Dados Estatíticos e Geográficos do Município de Parauapebas
           </Title>
-    
         </Lb>
-
         <MobileSvg
           src={compiuter}
           alt="Mobile Svg"

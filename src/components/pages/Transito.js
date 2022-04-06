@@ -17,7 +17,7 @@ export default function Transito() {
                 src="https://img.icons8.com/dotty/80/26e07f/traffic-light.png"
                   text=""
                   label="Trânsito"
-                  path="/transitosub"
+                  path="/transitocard"
                 />
               </ul>
               <ul className="cards__items">

@@ -59,10 +59,9 @@ function Search({ details }) {
 
   return (
     <div className = "search">
-    <section className="garamond">
-      <br/>
+
 <Form>
-  <Row className="align-items-center">
+  <div className="align-items-center">
     <Col sm={8} className="my-1">
       <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
         Name
@@ -76,16 +75,14 @@ function Search({ details }) {
         <InputGroup.Text><AiOutlineSearch/></InputGroup.Text>
         <FormControl id="inlineFormInputGroupUsername" placeholder="Pesquisar no Portal" 	onChange = {handleChange} />
         <Col sm={4} >
-        <Button variant="outline-secondary" id="button-addon2">
-      Buscar
-    </Button>
+
       </Col>
       </InputGroup>
     </Col>
-  </Row>
+  </div>
 </Form>
 {searchList()}
-		</section>
+
     </div>
   );
 }

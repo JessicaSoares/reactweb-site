@@ -1,63 +1,39 @@
 import "../graphs.css";
-import { Link } from "react-router-dom";
-import Iframe from "react-iframe";
-import NavbarSub from "../NavbarSub";
 import { Container, Row, Col } from "react-grid-system";
 import "../BoxLegend.css";
-import React, { useState, useEffect, Component } from "react";
-import Button from "@material-ui/core/Button";
-import { AiOutlineCloudDownload } from "react-icons/ai";
+import React, { useState, useEffect, Component  } from "react";
 import GraphItem from "../GraphItem";
 import TextSectionItem from "../TextSectionItem";
-import NavInfraestrutura from "./NavInfraestrutura";
-import Footer from '../../../Footer';
+import NavMeioAmbiente from "./NavMeioAmbiente";                    
+import PortalDataService from "../../../services/portal.service";
 import ListarPaineis from '../../../ListarPaineis';
 import initialDetails from '../../../data/initialDetails';
 import ModalDownload from '../ModalDownload';
-
-import PortalDataService from "../../../services/portal.service";
 let xlsx = require('json-as-xlsx')
 
 
-export default class TutorialsList extends Component {
+
+export default class MeioAmbiente extends Component {
   constructor(props) {
     super(props);
-    
+    this.onChangeSearchTitle = this.onChangeSearchTitle.bind(this);
+    this.retrieveTutorials = this.retrieveTutorials.bind(this);
     this.refreshList = this.refreshList.bind(this);
-    this.downloadiluminacao = this.downloadiluminacao.bind(this);
+    this.setActiveTutorial = this.setActiveTutorial.bind(this);
+    this.removeAllTutorials = this.removeAllTutorials.bind(this);
+    this.searchTitle = this.searchTitle.bind(this);
+
+    this.downloadqueimadas = this.downloadqueimadas.bind(this);
 
 
     this.state = {
-      tutorials: [],
+      defesas: [],
       currentTutorial: null,
       currentIndex: -1,
-      searchTitle: "",
-      nomeBotao:'Esconder',
-      classeDiv:'show'
+      searchTitle: ""
     };
   }
 
-  alterarEstado(){
-    var Estado;
-    var NomeBotao;
-    if(this.state.classeDiv === 'show'){
-        Estado="hide";
-        NomeBotao='Mostrar';
-    }else{
-        Estado="show";
-        NomeBotao='Esconder';
-    }
-    this.setState({
-        nomeBotao: NomeBotao,
-        classeDiv: Estado
-    })
-}
-
-
-
-
-
-  
   componentDidMount() {
     this.retrieveTutorials();
   }
@@ -74,7 +50,7 @@ export default class TutorialsList extends Component {
     PortalDataService.getAll()
       .then(response => {
         this.setState({
-          tutorials: response.data
+          defesas: response.data
         });
         console.log(response.data);
       })
@@ -91,9 +67,26 @@ export default class TutorialsList extends Component {
     });
   }
 
+  setActiveTutorial(tutorial, index) {
+    this.setState({
+      currentTutorial: tutorial,
+      currentIndex: index
+    });
+  }
 
-  downloadiluminacao() {
-    PortalDataService.downloadiluminacao()
+  removeAllTutorials() {
+    PortalDataService.deleteAll()
+      .then(response => {
+        console.log(response.data);
+        this.refreshList();
+      })
+      .catch(e => {
+        console.log(e);
+      });
+  }
+
+  downloadqueimadas() {
+    PortalDataService.downloadqueimadas()
       .then(response => {
 
         const rows = response.data;
@@ -101,7 +94,7 @@ export default class TutorialsList extends Component {
         let csvContent = "data:text/csv;charset=utf-8," 
         + rows;
         var encodedUri = encodeURI(csvContent);
-window.open(encodedUri);
+window.open(encodedUri , "_Self");
 let settings = {
   fileName: 'MySpreadsheet', // Name of the resulting spreadsheet
   extraLength: 3, // A bigger number means that columns will be wider
@@ -115,66 +108,30 @@ xlsx(rows, settings)
         console.log(e);
       });
   }
+  
+  searchTitle() {
+    this.setState({
+      currentTutorial: null,
+      currentIndex: -1
+    });
 
-  downloadempregosporsetor() {
-    PortalDataService.downloadempregosporsetor()
+    PortalDataService.findByTitle(this.state.searchTitle)
       .then(response => {
-
-        const rows = response.data;
+        this.setState({
+          defesas: response.data
+        });
         console.log(response.data);
-        let csvContent = "data:text/csv;charset=utf-8," 
-        + rows;
-        var encodedUri = encodeURI(csvContent);
-window.open(encodedUri);
-let settings = {
-  fileName: 'MySpreadsheet', // Name of the resulting spreadsheet
-  extraLength: 3, // A bigger number means that columns will be wider
-  writeOptions: {} // Style options from https://github.com/SheetJS/sheetjs#writing-options
-}
-
-
-
-
-xlsx(rows, settings)
-        this.refreshList();
       })
       .catch(e => {
         console.log(e);
       });
   }
-
-
-  downloadempregosporsexo() {
-    PortalDataService.downloadempregosporsexo()
-      .then(response => {
-
-        const rows = response.data;
-        console.log(response.data);
-        let csvContent = "data:text/csv;charset=utf-8," 
-        + rows;
-        var encodedUri = encodeURI(csvContent);
-window.open(encodedUri);
-let settings = {
-  fileName: 'MySpreadsheet', // Name of the resulting spreadsheet
-  extraLength: 3, // A bigger number means that columns will be wider
-  writeOptions: {} // Style options from https://github.com/SheetJS/sheetjs#writing-options
-}
-
-xlsx(rows, settings)
-        this.refreshList();
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  }
-
-
 
   render() {
 
     const { searchTitle, tutorials, currentTutorial, currentIndex } = this.state;
     const pib=()=>{
-      return this.downloadiluminacao
+      return this.downloadqueimadas
     }
     const setor=()=>{
       return this.downloadempregosporsetor
@@ -183,30 +140,26 @@ xlsx(rows, settings)
       return this.downloadempregospormunicipio
     }
 
-  
-    return (
-     
+
+
+  return (
     <>
-     <NavInfraestrutura/>
+      <NavMeioAmbiente/>
       
       <TextSectionItem
-      titlesection = "Iluminação"
-      textsection = "Iluminação pública é o sistema de iluminação noturna das cidades, essencial à qualidade de vida nos centros urbanos, atuando como instrumento de cidadania, permitindo aos habitantes desfrutar, plenamente, do espaço público no período noturno."
+      titlesection = "Queimadas"
+      textsection = "A Defesa Civil de Parauapebas têm como objetivo articular um conjunto de medidas com a finalidade de prevenir e limitar os recursos, as perdas e os danos que estão sujeitos à população, em decorrência de calamidade pública e situação de emergência. Dentro de suas finalidades temos as queimadas que podem causar danos materiais e ambientais á população."
       />
 
 <div className = "teste">   
 
-<ModalDownload download1 = {pib} classeSecundaria1="show" titulo1 ="Iluminação" 
+<ModalDownload download1 = {pib} classeSecundaria1="show" titulo1 ="Queimadas" 
               download2 = {setor} classeSecundaria2="hide"  titulo2 = "Por setor"
               download3 = {municipio} classeSecundaria3="hide "titulo3 = "Por município"
               download4 = {municipio} classeSecundaria4="hide" 
               download5 = {municipio} classeSecundaria5="hide"/>
 
          </div>
-
-
-
-
 
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -232,7 +185,7 @@ xlsx(rows, settings)
 <section class="page-section-sub-boxlegend " id="about">
         <Container>
        
-        <ListarPaineis details={initialDetails} props ="Iluminacao" />
+       <ListarPaineis details={initialDetails} props ="Queimadas" />
         </Container>
       </section>
     </>

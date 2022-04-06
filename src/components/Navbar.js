@@ -140,7 +140,7 @@ function Navbar() {
          
           <p className='navbar-logo' >
           <img src='images/logoIcon.png' className='logo' />
-          Observatório de Desenvolvimento <br/> de Parauapebas
+          Observatório de Dados <br/> de Parauapebas
           </p>
  
     

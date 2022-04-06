@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className='graphfooter-container'></div>
+    <div className='relative'></div>
   );
 }
 

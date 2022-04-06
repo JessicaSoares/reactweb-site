@@ -18,7 +18,7 @@ export default function MeioAmbiente() {
               src="https://img.icons8.com/dotty/80/26e07f/wildfire.png"
               text=""
               label="Queimadas"
-              path="/meioambientecard"
+              path="/queimadas"
             />
           </ul>
           <ul className="cards__items">
