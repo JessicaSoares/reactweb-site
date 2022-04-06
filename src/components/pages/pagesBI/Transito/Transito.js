@@ -18,7 +18,7 @@ export default function Transito() {
       
       <TextSectionItem
       titlesection = "Trânsito"
-      textsection = "teste2"
+      textsection = "A divulgação do Relatório Global do Estado da Segurança Viária pela Organização Mundial da Saúde (OMS), em 2015, que 1,25 milhão de pessoas morrem anualmente e cerca de 20 a 50 milhões de pessoas sofrem graves lesões devido a acidentes de trânsito em todo o mundo, desde 2007, traz à tona uma preocupação da sociedade e, principalmente, dos governantes para o tema da segurança viária e suas consequências, uma vez que é a principal causa de morte entre jovens de 15 a 29 anos, superando causas como homicídios, doenças do coração e cerebrovasculares. (WORLD HEALTH ORGANIZATION, 2011, 2015)."
       />
 
    
